@@ -1,0 +1,25 @@
+body {
+  margin-top: 40vh;
+
+  main {
+    background-color: red !important;
+  }
+}
+
+:root {
+  /* Your default theme */
+  --background: white;
+  --foreground: black;
+}
+
+[data-theme="dark"] {
+  --background: black;
+  --foreground: white;
+}
+body [data-theme="dark"] {
+  margin-top: 40vh;
+
+  main {
+    background-color: hotpink !important;
+  }
+}

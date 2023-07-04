@@ -1,0 +1,32 @@
+name: Ambiente de Desenvolvimento
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  release:
+    name: Obtém o código-fonte e realiza a construção da aplicaçãos.
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        operating-system: [ubuntu-latest]
+        dependency-stability: [ 'prefer-stable' ]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js here
+        uses: actions/setup-node@v1
+        with:
+          node-version: '18.12.1'
+
+      - name: Cache node_modules directory
+        uses: actions/cache@v2
+        id: node_modules-cache
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('**/package.json') }}-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Install
+        run: npm i && GATSBY_CONCURRENT_DOWNLOAD=25 npm run build --workspace=gatsby-theme-v5-boilerplate
