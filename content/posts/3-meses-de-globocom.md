@@ -2,13 +2,13 @@
 layout: post
 title: "3 meses de globo.com"
 date: 2015-06-28 17:36:52
-image: '/assets/img/3-meses-globocom/main.png'
+image: "/assets/img/3-meses-globocom/main.png"
 description: "Um pouco do que passei desde o primeiro contato, processo seletivo, contratação, minha mudança e o dia-a-dia."
-main-class: 'dev'
-color: '#637a91'
+main-class: "dev"
+color: "#637a91"
 tags:
-- trabalho
-- globo
+  - trabalho
+  - globo
 categories:
 twitter_text: "Um pouco do que passei até chegar na gcom."
 introduction: "Um pouco do que passei desde o primeiro contato, processo seletivo, contratação, minha mudança e o dia-a-dia na globo.com"
@@ -32,13 +32,11 @@ Conversa vai, conversa vem, ele perguntou se eu um dia não teria interesse em t
 
 Não deu muito tempo e entraram em contato comigo, perguntando se eu teria interesse de participar do processo seletivo. Eu fiquei meio bolado e fui conversar com o Davidson sobre, ele falou para eu tentar, que não custava nada e ele acreditava bastante em mim. Como eu realmente não tinha nada a perder e queria saber meu nível, aceitei passar pelo teste.
 
-
 ## Processo Seletivo - Parte 1
 
 Ao aceitar participar, recebi um projeto com várias coisinhas para fazer e que eu deveria entregá-lo no tempo que eu desejasse. Me pegaram numa semana complicada, onde estava cheio de coisas para fazer, mandei um email avisando sobre isso e foram totalmente tranquilos quanto a isso, falando para eu não me preocupar. Mas como sou um cara desesperado e preocupado por natureza (um defeito que venho tentando corrigir), peguei uma madrugada desesperada e fiz tudo. Não era nada super difícil não, mas possuía alguns detalhes interessantes e podia fazer com qualquer linguagem e stack. Eu escolhi fazer em Javascript, usei uma stack que já estava bastante habituado a usar, que é o meu [Fast](https://github.com/willianjusten/fast).
 
 Passou por volta de 1 semana até eu receber uma resposta, que no caso foi positiva. Disseram que gostaram do que eu fiz e tinham interesse em fazer um entrevista agora por Skype e marcaram um dia comigo.
-
 
 ## Processo Seletivo - Parte 2
 
@@ -51,7 +49,6 @@ Quando finalmente chegou o dia do teste no skype, alguns programadores do TechTu
 Após a conversa, falaram que iriam fazer alguns testes comigo. Os 2 primeiros testes eram para escrever pequenos programinhas para resolver alguns problemas, resolvi fazer um em javascript e o outro em python. O primeiro problema eu demorei até começar, dei uma travada bonita, aquela preocupação de fazer algo com geral vendo do outro lado. O segundo já foi bem mais tranquilo e saiu mais fácil. Depois destes 2 problemas, me passaram acesso a um web app, para eu fazer a correção de pequenos trechos de código em Javascript. Não eram erros de sintaxe e sim erros de performance, como manipulação de DOM dentro de um loop, entre outros problemas graves. Essa parte já foi bem mais simples para mim, já que gosto bastante de performance e já havia visto aquelas falhas de performance, inclusive em códigos mais velhos meus.
 
 Depois de tudo feito, falaram que gostaram bastante, mas que iriam analisar um pouco mais e entrariam em contato para me avisar se eu passei e a próxima etapa.
-
 
 ## Processo Seletivo - Parte 3
 
@@ -70,12 +67,9 @@ Na parte da tarde conversei com o time do TechTudo, falei um pouco sobre o probl
 
 Já no finalzinho da tarde, conversei com o pessoal do RH, sobre benefícios da empresa e outras coisas mais burocráticas e então dei tchau para todos, com pelo menos a sensação de dever cumprido. Dali era só esperar a resposta, mas que já nem era a mais importante das coisas, já que eu estava feliz de ter participado de tudo.
 
-
 ## Contratação
 
-
 Deu uns 2-3 dias e me ligaram falando que eu havia passado! Fiquei mega feliz, mas sabia que agora seriam várias mudanças. Disse que aceitava sim, mas que primeiramente precisava me desvincular da empresa em que trabalhava e conversar com eles, para não causar nenhum problema para eles. Conversei com o pessoal da empresa, alguns ficaram chateados, mas como todos são legais, me desejaram boa sorte nesse meu novo rumo.
-
 
 ## Conhecendo meu novo time
 
@@ -86,7 +80,6 @@ Ao chegar na globo, já para trabalhar. Fui apresentado ao meu novo time, que se
 [Rômulo Jales](https://twitter.com/romulojales), é um cabra da peste arretado, lá de Pernambuco, é o cara do Backend. Parece que respira programação e sempre te dá uma solução para um problema. Profundo conhecedor de Python e também um grande conselheiro e amigo. Não tem nem muito tempo que o conheço, mas já me acolhe e me ajuda como se nos conhecessemos há anos.
 
 [André Cataldo](https://twitter.com/andrecataldo), o SM (Scrum Master) do time. Sempre preocupado com o time e o andamento dos projetos, atento para nos ajudar e nos atender em nossos problemas. Sabe como ser justo e comemorar uma conquista. Também um dos caras mais experientes da globo.com, com quase 14 anos só lá dentro, sendo que a globo.com fez 15 anos esse ano!
-
 
 ## Dia-a-dia no globoesporte
 

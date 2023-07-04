@@ -1,15 +1,7 @@
+import React from "react";
 import Link from "next/link";
 
-interface PostProps {
-  slug: string;
-  date: string;
-  timeToRead?: number;
-  title: string;
-  description: string;
-  main_class?: string;
-}
-
-const Post: React.FC<PostProps> = ({ slug, date, timeToRead, title, description, main_class }) => {
+const Post = ({ slug, date, timeToRead, title, description, main_class }) => {
   return (
     <Link href={slug} passHref>
       <div className="PostLink">

@@ -1,6 +1,6 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
-import Post from "components/Post";
+import Post from "../components/Post";
 import { NextSeo } from "next-seo";
 
 const BlogList = ({ posts }) => {

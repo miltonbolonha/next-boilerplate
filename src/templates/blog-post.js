@@ -1,37 +1,12 @@
+import React, { useEffect } from "react";
 import Prism from "prismjs";
-import { useEffect } from "react";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
-import { timeToRead } from "lib/utils";
-import RecommendedPosts from "components/RecommendedPosts";
-import Comments from "components/Comments";
+import { timeToRead } from "../lib/utils";
+import RecommendedPosts from "../components/RecommendedPosts";
+import Comments from "../components/Comments";
 
-
-interface BlogPostProps {
-  post: {
-    frontmatter: {
-      title: string;
-      description: string;
-      date: string;
-    };
-    content: string;
-    slug: string;
-    nextPost: {
-      slug: string;
-      frontmatter: {
-        title: string;
-      };
-    };
-    prevPost: {
-      slug: string;
-      frontmatter: {
-        title: string;
-      };
-    };
-  };
-}
-
-const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
+const BlogPost = ({ post }) => {
   useEffect(() => {
     Prism.highlightAll();
   }, [post]);
