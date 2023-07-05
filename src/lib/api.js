@@ -6,7 +6,7 @@ import { format } from "date-fns";
 import { pt } from "date-fns/locale";
 
 const postsDirectory = join(process.cwd(), "content/posts");
-const pagesDirectory = join(process.cwd(), "content/pages");
+// const pagesDirectory = join(process.cwd(), "content/pages");
 
 export function getPostBySlug(slug) {
   if (!slug) return null;
@@ -31,14 +31,14 @@ export function getPostBySlug(slug) {
 export function getAllPosts() {
   const slugs = fs.readdirSync(postsDirectory);
   const posts = slugs
-    .map(slug => getPostBySlug(slug))
+    .map((slug) => getPostBySlug(slug))
     .sort((post1, post2) =>
       new Date(post1.date) > new Date(post2.date) ? -1 : 1
     );
 
   return posts;
 }
-
+/*
 export function getPageBySlug(slug) {
   if (!slug) return null;
 
@@ -69,3 +69,4 @@ export function getAllPages() {
 
   return pages;
 }
+*/

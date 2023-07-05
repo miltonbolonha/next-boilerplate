@@ -3,8 +3,8 @@ import Prism from "prismjs";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
 import { timeToRead } from "../lib/utils";
-import RecommendedPosts from "../components/RecommendedPosts";
-import Comments from "../components/Comments";
+// import RecommendedPosts from "../components/RecommendedPosts";
+// import Comments from "../components/Comments";
 
 const BlogPost = ({ post }) => {
   useEffect(() => {
@@ -41,8 +41,8 @@ const BlogPost = ({ post }) => {
       <div className="MainContent">
         <div dangerouslySetInnerHTML={{ __html: post.content }} />
       </div>
-      <RecommendedPosts next={post.nextPost} previous={post.prevPost} />
-      <Comments title={post.frontmatter.title} />
+      {/* <RecommendedPosts next={post.nextPost} previous={post.prevPost} /> */}
+      {/* <Comments title={post.frontmatter.title} /> */}
     </>
   );
 };

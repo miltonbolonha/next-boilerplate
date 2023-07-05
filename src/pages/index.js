@@ -1,26 +1,26 @@
-import { useState, useEffect } from 'react'
-import Image from 'next/image'
-import styles from '../styles/page.module.css'
-import { useTheme } from 'next-themes'
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import styles from "../styles/page.module.css";
+import { useTheme } from "next-themes";
 
 export default function Home() {
-  const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
   if (!mounted) {
-    return null
+    return null;
   }
   return (
     <main className={styles.main}>
-       <h1>The current theme is: {theme}</h1>
-      
-      <button onClick={() => setTheme('light')}>Light Mode</button>
-      <button onClick={() => setTheme('dark')}>Dark Mode</button>
+      <h1>The current theme is: {theme}</h1>
+
+      <button onClick={() => setTheme("light")}>Light Mode</button>
+      <button onClick={() => setTheme("dark")}>Dark Mode</button>
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
@@ -32,7 +32,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
+            By{" "}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -108,5 +108,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
