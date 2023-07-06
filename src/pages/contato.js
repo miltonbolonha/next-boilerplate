@@ -23,6 +23,7 @@ export default function Contato() {
   const [token, setToken] = useState(null);
   const [honey, setHoney] = useState("");
   const [success, setSuccess] = useState(null);
+  const [chating, setChating] = useState(false);
   const { executeRecaptcha } = useReCaptcha();
   const { theme, setTheme } = useTheme();
 

@@ -7,7 +7,7 @@ export const BLOG_DESCRIPTION = [BLOG_TITLE, BLOG_SUBTITLE].join(" | ");
 
 export const BLOG_AUTHOR = "Milton Bolonha";
 
-export const BLOG_AUTHOR_LINK = "https://twitter.com/Willian_Justen";
+export const BLOG_AUTHOR_LINK = "https://twitter.com/miltonbolonha_";
 
 export const BLOG_URL = "https://bolonha.vercel.app";
 
