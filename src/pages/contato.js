@@ -1,6 +1,6 @@
 import React, { useCallback, useState, useEffect } from "react";
 import { ReCaptcha, useReCaptcha } from "next-recaptcha-v3";
-
+import { useRouter } from "next/navigation";
 import Cookies from "universal-cookie";
 
 import Image from "next/image";
@@ -26,6 +26,9 @@ export default function Contato() {
   const [chating, setChating] = useState(false);
   const { executeRecaptcha } = useReCaptcha();
   const { theme, setTheme } = useTheme();
+  const { push } = useRouter();
+
+  const siteUrlf = "https://bolonha.vercel.app";
 
   const cookies = new Cookies();
 
@@ -76,18 +79,17 @@ export default function Contato() {
     );
 
     const payload = {
-      from: brandPromoEmail,
-      to: email,
-      subject: `${peopleA}, confirme o seu e-mail - Bolonha Conversa`,
+      from: email,
+      to: "miltonbolonha@gmail.com",
+      cc: email,
+      subject: `${subject}, confirme o seu e-mail - Bolonha Conversa`,
       parameters: {
-        PROSPECT_NAME: peopleA,
+        PROSPECT_NAME: name,
         LANDING_URL: fullUrl,
       },
-      body: {
-        name: "Nomezim",
-        email: "emailizm",
-        message: "messagzim",
-      },
+      name: name,
+      email: email,
+      message: message,
     };
     cookies.remove("submitedValues");
     cookies.remove("successValue");
@@ -107,12 +109,15 @@ export default function Contato() {
         if (res.status >= 400) {
           throw new Error("Bad response from server");
         }
-        setLoadingForm(true);
+        setChating(true);
         cookies.set("successValue", true, {
           path: "/",
         });
-
-        return navigate(`?success=0&email=${email}`);
+        return res.json();
+        // return push(`?success=0&email=${email}`);
+      })
+      .then((data) => {
+        console.log(data);
       })
       .catch((err) => {
         console.error(err);
@@ -216,12 +221,12 @@ export default function Contato() {
                     method="POST"
                     onSubmit={(e) => handleSubmit(e)}
                   >
-                    <input
-                      name="landingUrl"
-                      defaultValue={location?.pathname}
-                    />
-                    <input name="searchUrl" defaultValue={location?.search} />
                     <p className="hidden">
+                      <input
+                        name="landingUrl"
+                        defaultValue={location?.pathname}
+                      />
+                      <input name="searchUrl" defaultValue={location?.search} />
                       <label>
                         Don’t fill this out if you’re human:{" "}
                         <input

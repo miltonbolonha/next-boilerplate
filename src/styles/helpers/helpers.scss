@@ -373,6 +373,7 @@ footer {
 			padding: 3px 7px;
 			border-radius: 10px;
 			margin: 0 10px;
+			text-shadow: 0 2px 1px $brand_black__color;
 			&:hover {
 				border: 2px solid $cta__colorLink;
 				// background: rgba($cta__colorLink, 0.5);
@@ -918,6 +919,10 @@ sup {
 		visibility: hidden;
 	}
 
+	.main-menu-visible {
+		height: 0;
+	}
+
 	.main-logo {
 		margin-top: 10px;
 		// height: 50px;
@@ -972,17 +977,16 @@ sup {
 .main-header-visible {
 	.main-ul {
 		position: fixed;
-		top: 65px;
+		bottom: 0;
 		left: 0;
 		display: flex;
 		flex-direction: column;
 		font-size: 16px;
 		background: #fff;
-		border-radius: 0;
 		max-width: 400px;
 		right: 0;
 		margin: 0 auto;
-		height: 300px;
+		min-height: 200px;
 		border-radius: 5px;
 		overflow: auto;
 		line-height: 40px;
@@ -990,7 +994,11 @@ sup {
 		justify-content: center;
 		box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.4);
 		a {
-			color: $grayscale_600__color;
+			color: $brand_black__color;
+			text-shadow: unset;
+			&:hover {
+				color: $hotDark__color;
+			}
 		}
 	}
 }
@@ -1535,6 +1543,10 @@ ul.contact-link-tree-wrapper {
 .hero-txt {
 	display: flex;
 	text-align: right;
+	@media (max-width: 767px) {
+		text-align: center;
+		padding: 0px 10px;
+	}
 	flex-direction: column;
 	align-self: center;
 	h2 {
@@ -1582,6 +1594,9 @@ ul.contact-link-tree-wrapper {
 	&.hero-btn {
 		display: flex;
 		align-self: flex-end;
+		@media (max-width: 767px) {
+			align-self: center;
+		}
 		padding: 12px 20px 10px;
 		font-size: 22px;
 	}
@@ -1599,6 +1614,9 @@ ul.contact-link-tree-wrapper {
 	font-family: $fourth__font;
 	font-weight: 900;
 	align-self: flex-end;
+	@media (max-width: 767px) {
+		align-self: center;
+	}
 	font-size: 18px;
 	line-height: 32px;
 	margin-top: 10px;
@@ -1794,6 +1812,11 @@ ul.contact-link-tree-wrapper {
 	.contact-info {
 		text-align: left;
 		margin-left: 20px;
+		@media (max-width: 767px) {
+			text-align: left;
+			margin-left: 0;
+			padding: 0 10px;
+		}
 	}
 }
 
@@ -2389,7 +2412,8 @@ blockquote {
 .main-wrapper {
 	background-attachment: fixed !important;
 }
-.main-wrapper.one-column {
+.main-wrapper.one-column,
+.main-wrapper.blog-list {
 	height: 100vh;
 }
 .cta-infos.boxed-column-child,

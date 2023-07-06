@@ -5,20 +5,20 @@
     "items": [
       {
         "item": {
-          "label": "Edu4Dev",
-          "to": "/#edu4Dev"
+          "label": "Início",
+          "to": "/"
         }
       },
       {
         "item": {
-          "label": "Programação",
-          "to": "/#programacao"
+          "label": "O Bolonha",
+          "to": "/milton-bolonha"
         }
       },
       {
         "item": {
-          "label": "Matrículas",
-          "to": "/#matriculas"
+          "label": "Contato",
+          "to": "/contato"
         }
       },
       {

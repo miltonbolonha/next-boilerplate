@@ -66,7 +66,7 @@ export default function MiltonBolonha() {
       ></ClerkProvider> */}
 
       <div
-        className={"main-wrapper one-column"}
+        className={"main-wrapper blog-list"}
         style={
           opt.bgImg && theme === "light"
             ? {
@@ -97,7 +97,7 @@ export default function MiltonBolonha() {
 
           <main className="main-container">
             <HeadingBlock classes="m30auto" importance={10} width={400}>
-              title
+              Milton Bolonha - Especialista em Tecnologia
             </HeadingBlock>
             <Row
               opt={{
