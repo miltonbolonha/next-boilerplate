@@ -1,0 +1,98 @@
+::selection {
+	color: $cta__color;
+	background: $hot__color;
+	text-shadow: none;
+}
+
+img::selection {
+	background: transparent;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	overflow-x: hidden;
+	position: relative;
+	z-index: 1;
+	// &:before {
+	// 	z-index: 0;
+	// 	content: "";
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	display: block;
+	// 	background-color: $cta__color;
+	// 	opacity: 0.1;
+	// }
+	// overflow-y: hidden;
+	cursor: default;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		font-family: $third__font, $alternative__font;
+		color: $primary_light;
+		font-weight: 700;
+		letter-spacing: normal;
+	}
+	h1 {
+		font-size: $h1__fontSize;
+	}
+	h2 {
+		font-size: $h2__fontSize;
+	}
+	h3 {
+		font-size: $h3__fontSize;
+	}
+	h4 {
+		font-size: $h4__fontSize;
+	}
+	h5 {
+		font-size: $h5__fontSize;
+	}
+	strong {
+		font-weight: 900;
+	}
+	p {
+		font-family: $second__font;
+		color: $primary_light;
+	}
+	thead,
+	tbody {
+		padding: $s__space;
+	}
+	thead {
+		background-color: $grayscale_600__color;
+	}
+	tbody {
+		background-color: $grayscale_300__color;
+	}
+}
+body.dark {
+	background-color: $brand_black__color;
+
+	h1,
+	h1 > a,
+	h2,
+	h2 > a,
+	h3,
+	h3 > a,
+	h4,
+	h4 > a,
+	h5,
+	h5 > a,
+	p,
+	footer {
+		color: black;
+	}
+}
+a {
+	color: $link__color;
+}
+p {
+	letter-spacing: normal;
+}

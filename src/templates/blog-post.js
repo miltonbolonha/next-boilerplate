@@ -17,7 +17,7 @@ const BlogPost = ({ post }) => {
         title={`${post.frontmatter.title} - Milton Bolonha`}
         description={post.frontmatter.description}
         openGraph={{
-          url: `https://eugenia3.com.br/${post.slug}`,
+          url: `https://bolonha.vercel.app/${post.slug}`,
           title: `${post.frontmatter.title} - Milton Bolonha`,
           description: post.frontmatter.description,
           images: [

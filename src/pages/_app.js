@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
+import { ReCaptchaProvider } from "next-recaptcha-v3";
 
 import Head from "next/head";
-import "../styles/main.scss";
+import "../styles/styles.scss";
 import { useRouter } from "next/router";
 import NextNProgress from "nextjs-progressbar";
 
@@ -13,12 +14,12 @@ import SEO from "../../next-seo.config";
 
 import Layout from "../components/Layout";
 
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
+
 function App({ Component, pageProps }) {
   const router = useRouter();
-  console.log("Component");
-  console.log(Component);
-  console.log("pageProps");
-  console.log(pageProps);
   useEffect(() => {
     const handleRouteChange = (url) => {
       gtag.pageview(url);
@@ -30,34 +31,38 @@ function App({ Component, pageProps }) {
   }, [router.events]);
 
   return (
-    <ThemeProvider>
-      <Head>
-        {/* <link
+    <ReCaptchaProvider
+      reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+    >
+      <ThemeProvider>
+        <Head>
+          {/* <link
           rel="shortcut icon"
           type="image/x-icon"
           href="../static/images/favicon.ico"
         /> */}
-        <meta name="theme-color" content="#06092B" />
-        <meta
-          name="description"
-          content="Um blog de um desenvolvedor Front End, fã de SVG, Javascript, React e novas tecnologias. Nômade Digital, instrutor na Udemy e viajando o mundo."
-        />
-      </Head>
-      <DefaultSeo {...SEO} />
+          <meta name="theme-color" content="#06092B" />
+          <meta
+            name="description"
+            content="Um blog de um desenvolvedor Front End, fã de SVG, Javascript, React e novas tecnologias. Nômade Digital, instrutor na Udemy e viajando o mundo."
+          />
+        </Head>
+        <DefaultSeo {...SEO} />
 
-      <h1>hello</h1>
-      <Layout>
-        <NextNProgress
-          color="#F231A5"
-          startPosition={0.3}
-          stopDelayMs={200}
-          height={5}
-          showSpinner={false}
-        />
-        <Component {...pageProps} />
-      </Layout>
-      <h1>bye</h1>
-    </ThemeProvider>
+        <div className={inter.className}>
+          <Layout>
+            <NextNProgress
+              color="#F231A5"
+              startPosition={0.3}
+              stopDelayMs={200}
+              height={5}
+              showSpinner={false}
+            />
+            <Component {...pageProps} />
+          </Layout>
+        </div>
+      </ThemeProvider>
+    </ReCaptchaProvider>
   );
 }
 

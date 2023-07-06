@@ -54,7 +54,7 @@ esclarecida pelos administradores do projeto.
 ## Aplicação
 
 Comportamento abusivo, de assédio ou de outros tipos pode ser
-comunicado contatando a equipe do projeto contato@eugenia3.com.br.
+comunicado contatando a equipe do projeto contato@bolonha.vercel.app.
 Todas as queixas serão revistas e investigadas e
 resultarão numa resposta necessária e apropriada à situação.
 A equipe é obrigada a manter a confidencialidade em relação

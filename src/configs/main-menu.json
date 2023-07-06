@@ -1,0 +1,38 @@
+{
+  "menu": {
+    "status": true,
+    "name": "MAIN_MENU",
+    "items": [
+      {
+        "item": {
+          "label": "Edu4Dev",
+          "to": "/#edu4Dev"
+        }
+      },
+      {
+        "item": {
+          "label": "Programação",
+          "to": "/#programacao"
+        }
+      },
+      {
+        "item": {
+          "label": "Matrículas",
+          "to": "/#matriculas"
+        }
+      },
+      {
+        "item": {
+          "icon": "bag"
+        }
+      },
+      {
+        "item": {
+          "search_widget": false,
+          "search_label": "Procure um curso",
+          "search_url_prefix": "/cursos?search="
+        }
+      }
+    ]
+  }
+}

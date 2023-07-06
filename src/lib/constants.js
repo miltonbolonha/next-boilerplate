@@ -9,7 +9,7 @@ export const BLOG_AUTHOR = "Milton Bolonha";
 
 export const BLOG_AUTHOR_LINK = "https://twitter.com/Willian_Justen";
 
-export const BLOG_URL = "https://eugenia3.com.br";
+export const BLOG_URL = "https://bolonha.vercel.app";
 
 export const BLOG_AUTHOR_POSITION = "Software Engineer";
 

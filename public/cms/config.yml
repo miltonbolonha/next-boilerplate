@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: miltonbolonha/next-boilerplate
-  base_url: https://eugenia3.com.br/
+  base_url: https://bolonha.vercel.app/
   auth_endpoint: api/auth/
 
 media_folder: public/assets/img

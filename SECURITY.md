@@ -1,6 +1,6 @@
 # Security Guidelines for this Project
 
-We take security seriously and do our best to keep our code secure. However, if you have found or think you may have found a security vulnerability, you should contact us at contato@eugenia3.com.br.
+We take security seriously and do our best to keep our code secure. However, if you have found or think you may have found a security vulnerability, you should contact us at contato@bolonha.vercel.app.
 
 Examples of things you should **not** do:
 
