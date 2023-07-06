@@ -3,6 +3,16 @@ import { Row } from "../components/InsertRow";
 import { useRouter } from "next/router";
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import {
+  ClerkProvider,
+  SignedIn,
+  useClerk,
+  UserButton,
+  SignedOut,
+  SignInButton,
+} from "@clerk/nextjs";
+import { ptBR } from "@clerk/localizations";
+
 // import { ClerkProvider } from "@clerk/clerk-react";
 // import { ptBR } from "@clerk/localizations";
 // import {
@@ -75,7 +85,7 @@ const Header = ({
           })
         }
       >
-        Diga Sim!
+        Restrito
       </button>
     );
   };
@@ -83,6 +93,8 @@ const Header = ({
   // if (isSignedIn) {
   //   return router.push(`/chat-one-column/`);
   // }
+  const clerk_pub_key = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
+
   return (
     <header>
       <Row
@@ -196,6 +208,28 @@ const Header = ({
         ) : null}
         {/* desktop menu */}
       </Row>
+      <div className="profile-wrapper">
+        <ClerkProvider
+          localization={ptBR}
+          publishableKey={clerk_pub_key}
+          navigate={(to) => navigate(to)}
+          appearance={{
+            variables: {
+              colorPrimary: "#ff5626",
+            },
+            layout: {
+              showOptionalFields: true,
+            },
+          }}
+        >
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
+          <SignedOut>
+            <SignInButton />
+          </SignedOut>
+        </ClerkProvider>
+      </div>
     </header>
   );
 };
