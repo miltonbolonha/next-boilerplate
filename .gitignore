@@ -10,8 +10,8 @@
 /coverage
 
 # next.js
-/next-theme-boilerplate/.next/
-/.next/
+next-theme-boilerplate/.next/
+.next/
 /out/
 
 # production
