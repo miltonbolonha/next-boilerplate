@@ -1,6 +1,6 @@
 {
   "name": "next-boilerplate",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,6 +12,7 @@
   "dependencies": {
     "@clerk/localizations": "^1.22.1",
     "@clerk/nextjs": "^4.21.14",
+    "@fontsource/varela-round": "^5.0.4",
     "@openlab/vercel-netlify-cms-github": "^1.1.1",
     "@sendgrid/mail": "^7.7.0",
     "@vercel/analytics": "^1.0.1",

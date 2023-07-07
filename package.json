@@ -1,6 +1,6 @@
 {
   "name": "next-theme-boilerplate-workspace",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "workspaces": [
     "next-theme-boilerplate"
   ],
@@ -38,8 +38,5 @@
   },
   "bugs": {
     "url": "https://github.com/miltonbolonha/next-boilerplate/issues"
-  },
-  "dependencies": {
-    "@fontsource/varela": "^5.0.4"
   }
 }
