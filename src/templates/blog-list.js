@@ -37,7 +37,7 @@ const BlogList = ({ posts }) => {
     <>
       <NextSeo
         title="Home | Milton Bolonha"
-        description="Um blog de um desenvolvedor Front End, fã de SVG, Javascript, React e novas tecnologias. Nômade Digital, instrutor na Udemy e viajando o mundo."
+        description="Um blog de um desenvolvedor FullStack (LINUX, PHP & NODEJS), fã de rock, política, gatos e inteligência artificial."
         openGraph={{
           images: [
             {

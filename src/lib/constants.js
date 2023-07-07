@@ -1,7 +1,7 @@
 export const BLOG_TITLE = "Milton Bolonha";
 
 export const BLOG_SUBTITLE =
-  "Um blog de um desenvolvedor Front End, fã de SVG, Javascript, React e novas tecnologias. Nômade Digital, instrutor na Udemy e viajando o mundo.";
+  "Um blog de um desenvolvedor FullStack (LINUX, PHP & NODEJS), fã de rock, política, gatos e inteligência artificial.";
 
 export const BLOG_DESCRIPTION = [BLOG_TITLE, BLOG_SUBTITLE].join(" | ");
 

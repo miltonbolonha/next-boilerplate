@@ -39,7 +39,7 @@ function App({ Component, pageProps }) {
           <meta name="theme-color" content="#06092B" />
           <meta
             name="description"
-            content="Um blog de um desenvolvedor Front End, fã de SVG, Javascript, React e novas tecnologias. Nômade Digital, instrutor na Udemy e viajando o mundo."
+            content="Um blog de um desenvolvedor FullStack (LINUX, PHP & NODEJS), fã de rock, política, gatos e inteligência artificial."
           />
         </Head>
         <DefaultSeo {...SEO} />
