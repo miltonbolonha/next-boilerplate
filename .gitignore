@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/src/node_modules
+/next-theme-boilerplate/node_modules
 /node_modules
 /.pnp
 .pnp.js
@@ -10,7 +10,7 @@
 /coverage
 
 # next.js
-/src/.next/
+/next-theme-boilerplate/.next/
 /.next/
 /out/
 

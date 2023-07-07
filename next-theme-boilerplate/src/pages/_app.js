@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { ReCaptchaProvider } from "next-recaptcha-v3";
 
 import Head from "next/head";
+import "@fontsource/varela";
 import "../styles/styles.scss";
 import { useRouter } from "next/router";
 import NextNProgress from "nextjs-progressbar";
@@ -21,7 +22,7 @@ const inter = Inter({ subsets: ["latin"] });
 function App({ Component, pageProps }) {
   const router = useRouter();
   useEffect(() => {
-    const handleRouteChange = (url) => {
+    const handleRouteChange = url => {
       gtag.pageview(url);
     };
     router.events.on("routeChangeComplete", handleRouteChange);
@@ -36,10 +37,10 @@ function App({ Component, pageProps }) {
     >
       <ThemeProvider>
         <Head>
-          <meta name="theme-color" content="#06092B" />
+          <meta name='theme-color' content='#06092B' />
           <meta
-            name="description"
-            content="Um blog de um desenvolvedor FullStack (LINUX, PHP & NODEJS), fã de rock, política, gatos e inteligência artificial."
+            name='description'
+            content='Um blog de um desenvolvedor FullStack (LINUX, PHP & NODEJS), fã de rock, política, gatos e inteligência artificial.'
           />
         </Head>
         <DefaultSeo {...SEO} />
@@ -47,7 +48,7 @@ function App({ Component, pageProps }) {
         <div className={inter.className}>
           <Layout>
             <NextNProgress
-              color="#F231A5"
+              color='#F231A5'
               startPosition={0.3}
               stopDelayMs={200}
               height={5}
