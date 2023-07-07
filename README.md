@@ -1,3 +1,25 @@
+Quality badges:
+
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate)
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate)
+
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate)
+
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate)
+
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate)
+
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate)
+
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=bugs)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate)
+
+\*[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate)
+
+- Everyday work
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
