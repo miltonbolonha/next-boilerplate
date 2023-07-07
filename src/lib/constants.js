@@ -14,4 +14,4 @@ export const BLOG_URL = "https://bolonha.vercel.app";
 export const BLOG_AUTHOR_POSITION = "Software Engineer";
 
 export const BLOG_AUTHOR_DESCRIPTION =
-  "Instrutor na Udemy, escrevo sobre o mundo front end, viagens, vida pessoal e mais.";
+  "Programador, autor, compositor, produtor musical, filósofo e pai do Miltinho.";
