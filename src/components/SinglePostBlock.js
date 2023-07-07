@@ -16,10 +16,6 @@ const SinglePostBlock = ({
   timeToRead,
   wordCount,
 }) => {
-  // console.log("highlightImage");
-  // console.log(highlightImage);
-  // const imageQuery = getImage(authorImg.childrenImageSharp[0]);
-  // const imageHighlightQuery = getImage(highlightImage.childrenImageSharp[0]);
   return (
     <article>
       <section>
@@ -45,15 +41,6 @@ const SinglePostBlock = ({
             <div className="post-author">
               <Row opt={{ numColumns: 2, classes: "post-author-infos" }}>
                 <div className="inner-post-author-infos">
-                  {/* <Image
-                    src={imageQuery}
-                    alt={"Imagem do Perfil do Autor"}
-                    placeholder={"NONE"}
-                    critical='true'
-                    className={"author-img"}
-                    width={74}
-                    height={74}
-                  /> */}
                   imagem de author
                   <div className="innerauthor-infos">
                     <p className="post-author-name" rel="author">
@@ -72,32 +59,8 @@ const SinglePostBlock = ({
                 </Row>
               </Row>
             </div>
-            {/* <div className='post-categories-wrapper'>
-              <p>Trends</p>
-              {categories.map((e, i) => {
-                return (
-                  <Link
-                    to={`/trends/${_.kebabCase(e)}/`}
-                    className='post-categories'
-                    key={i}
-                  >
-                    #{e}
-                  </Link>
-                );
-              })}
-            </div> */}
-            <div>
-              {/* <GatsbyImage
-                image={imageHighlightQuery}
-                alt={`Imagem em destaque da postagem: ${title}`}
-                placeholder={"NONE"}
-                critical="true"
-                className={"highlight-img"}
-                widht={925}
-                height={483}
-              /> */}
-              imageHighlightQuery
-            </div>
+
+            <div>imageHighlightQuery</div>
             <div
               className="post-article-content"
               dangerouslySetInnerHTML={{ __html: html }}

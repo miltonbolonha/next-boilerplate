@@ -1,9 +1,7 @@
 .boxed-column-child.main-container-wrapper {
 	padding: 0 15px;
 	.post-cards-wrapper {
-		// max-width: 1110px;
 		width: 100%;
-		// margin: 32px auto;
 
 		h1 {
 			color: black;
@@ -12,10 +10,6 @@
 			font-size: 32px;
 			font-weight: 700;
 			line-height: 36px;
-			// border-left: 5px solid $cta__color;
-			// padding-left: 10px;
-			// line-height: 46px;
-			// margin-bottom: 36px;
 		}
 		.full-width-row-child.post-cards-row {
 			gap: 60px 30px;
@@ -30,10 +24,6 @@
 				grid-template-rows: 1fr 0.5fr;
 				align-items: center;
 				justify-items: center;
-
-				// .gatsby-image-wrapper{
-				// 	height: 100%;
-				// }
 
 				&:hover {
 					border: 2px solid $cta__colorLink;
@@ -90,7 +80,6 @@
 						font-size: 20px;
 						font-family: $third__font;
 						line-height: 30px;
-						// margin-bottom: 0px;
 						padding: 10px;
 						font-weight: 400;
 						& a:hover {

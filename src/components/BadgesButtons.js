@@ -5,8 +5,6 @@ const BadgesButtons = ({ opt, questions }) => {
   if (!questions) {
     return null;
   }
-  // console.log("questions");
-  // console.log(questions);
   function handleQuestionBadgeClick(e) {
     e.preventDefault();
     setQuestionState(!questionState);

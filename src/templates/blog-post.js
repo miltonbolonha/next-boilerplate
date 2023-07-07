@@ -1,12 +1,9 @@
 import React, { useEffect } from "react";
 import Prism from "prismjs";
 import { useTheme } from "next-themes";
-import Link from "next/link";
 import { NextSeo } from "next-seo";
 import { timeToRead } from "../lib/utils";
 import SinglePostBlock from "../components/SinglePostBlock";
-// import RecommendedPosts from "../components/RecommendedPosts";
-// import Comments from "../components/Comments";
 import HeaderContainer from "../containers/HeaderContainer";
 import MainMenuData from "../configs/main-menu.json";
 
@@ -46,21 +43,6 @@ const BlogPost = ({ post }) => {
           ],
         }}
       />
-      {/* <header className="PostHeader">
-        <Link href="/" className="ButtonBack" passHref>
-          ← Voltar na listagem
-        </Link>
-        <p className="PostDate">
-          {post.frontmatter.date} • {timeToRead(post.content)}
-        </p>
-        <h1 className="PostTitle">{post.frontmatter.title}</h1>
-        <h2 className="PostDescription">{post.frontmatter.description}</h2>
-      </header>
-      <div className="MainContent">
-        <div dangerouslySetInnerHTML={{ __html: post.content }} />
-      </div> */}
-      {/* <RecommendedPosts next={post.nextPost} previous={post.prevPost} /> */}
-      {/* <Comments title={post.frontmatter.title} /> */}
 
       <div
         className={"main-wrapper blog-list"}
@@ -93,9 +75,6 @@ const BlogPost = ({ post }) => {
           ) : null}
 
           <main className="main-container">
-            {/* <HeadingBlock classes="m30auto" importance={10} width={400}>
-              title
-            </HeadingBlock> */}
             <SinglePostBlock
               highlightImage={"pageContext?.SEO.featuredImage"}
               authorImg={"imgHolder"}
@@ -108,8 +87,6 @@ const BlogPost = ({ post }) => {
               wordCount={10}
             />
           </main>
-
-          {/* <BadgesButtons opt={opt} questions={opt.pageQuestions} /> */}
         </div>
       </div>
     </>

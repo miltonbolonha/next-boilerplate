@@ -36,11 +36,6 @@ function App({ Component, pageProps }) {
     >
       <ThemeProvider>
         <Head>
-          {/* <link
-          rel="shortcut icon"
-          type="image/x-icon"
-          href="../static/images/favicon.ico"
-        /> */}
           <meta name="theme-color" content="#06092B" />
           <meta
             name="description"

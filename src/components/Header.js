@@ -9,19 +9,9 @@ import {
   useClerk,
   UserButton,
   SignedOut,
-  SignInButton,
 } from "@clerk/nextjs";
 import { ptBR } from "@clerk/localizations";
 
-// import { ClerkProvider } from "@clerk/clerk-react";
-// import { ptBR } from "@clerk/localizations";
-// import {
-//   SignedIn,
-//   SignedOut,
-//   UserButton,
-//   useUser,
-//   useClerk,
-// } from "@clerk/nextjs";
 import MainMenuContainer from "../containers/MainMenuContainer";
 
 const Header = ({
@@ -40,11 +30,8 @@ const Header = ({
   handleRefState,
   flags,
 }) => {
-  // const { isSignedIn, user, isLoaded } = useUser();
   const router = useRouter();
   const { theme, setTheme } = useTheme();
-
-  // console.log(isSignedIn);
   function getFlag(i18n) {
     switch (i18n) {
       case "pt-BR":
@@ -90,9 +77,6 @@ const Header = ({
     );
   };
 
-  // if (isSignedIn) {
-  //   return router.push(`/chat-one-column/`);
-  // }
   const clerk_pub_key = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
 
   return (
@@ -184,26 +168,6 @@ const Header = ({
                 mainMenuItems={mainMenu}
               />
             </div>
-            {/* <ClerkProvider
-              localization={localization}
-              publishableKey={clerk_pub_key}
-              navigate={(to) => navigate(to)}
-              appearance={{
-                variables: {
-                  colorPrimary: "#ff5626",
-                },
-                layout: {
-                  showOptionalFields: true,
-                },
-              }}
-            > */}
-            {/* <SignedIn>
-              <UserButton afterSignOutUrl="/" />
-            </SignedIn>
-            <SignedOut>
-              <SignInButton />
-            </SignedOut> */}
-            {/* </ClerkProvider> */}
           </>
         ) : null}
         {/* desktop menu */}

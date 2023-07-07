@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import Image from "next/image";
-// import styles from "../styles/page.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "next-themes";
@@ -8,7 +6,6 @@ import BadgesButtons from "../components/BadgesButtons";
 import { Row } from "../components/InsertRow";
 import MainMenuData from "../configs/main-menu.json";
 import HeaderContainer from "../containers/HeaderContainer";
-// import { ClerkProvider } from "@clerk/nextjs";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -46,24 +43,9 @@ export default function Home() {
       },
     },
   };
-  const clerk_pub_key = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
 
   return (
     <>
-      {/* <ClerkProvider
-        localization={localization}
-        publishableKey={clerk_pub_key}
-        navigate={(to) => navigate(to)}
-        appearance={{
-          variables: {
-            colorPrimary: "#ff5626",
-          },
-          layout: {
-            showOptionalFields: true,
-          },
-        }}
-      ></ClerkProvider> */}
-
       <div
         className={"main-wrapper"}
         style={
@@ -148,139 +130,8 @@ export default function Home() {
                 </p>
               </div>
             </Row>
-            {/* <Row
-            opt={{
-              classes: "second-row",
-              isBoxed: false,
-              bgImg: "alternativePattern",
-            }}
-          >
-            <Row
-              opt={{
-                classes: "inner-second-row",
-                isBoxed: true,
-                widthColumns: "0.6fr 0.38fr",
-              }}
-            >
-              <div id="prix">
-                <Row
-                  opt={{
-                    isBoxed: false,
-                    numColumns: 1,
-                    widthColumns: "0.5fr 1fr",
-                    classes: "flower-div",
-                  }}
-                >
-                  <div>
-                    <h1>notebook flower</h1>
-                  </div>
-                  <div>
-                    <h2 className="mt50">Fale com a Prix</h2>
-                    <p>
-                      Somos a primeira Mentoria de Ensino de tecnologia servindo
-                      aos nossos amados alunos a experiência de organizar seu
-                      ensino com um sistema pedagógico moderno e 04{" "}
-                      <strong>Inteligências Artificiais</strong>.
-                    </p>
-                    <Link href="/" className="secondary-btn light">
-                      Experimente Já!
-                    </Link>
-                  </div>
-                </Row>
-                <div className="absolute">
-                  <h1>notebook plugins</h1>
-                </div>
-              </div>
-              <div>
-                <h1>cellphone plugins</h1>
-              </div>
-            </Row>
-          </Row> */}
-            {/* <Row opt={{ isBoxed: true }}></Row>
-          <div id="preco" className="price-row hero-txt">
-            <h2>Preço</h2>
-            <div className="price-txt">
-              <p>
-                No passado aprender programação era um sonho e na prática nem
-                sempre a expectativa era empolgante.
-              </p>
-              <p>
-                A <strong>Bolonha Conversa</strong> democratizou o ensino de
-                programação <br />
-                com a melhor <strong>Inteligência Pedagógica</strong> e{" "}
-                <strong>Preços</strong> do mercado.
-              </p>
-            </div>
-            <div className="toggle-price">
-              <p className="active">Começe</p>
-              <p>Grátis</p>
-            </div>
-            <Row
-              opt={{
-                numColumns: 3,
-                isBoxed: true,
-                classes: "price-box-wrapper",
-              }}
-            >
-              <Link href="/" className="light price-box">
-                <h3>Grátis</h3>
-                <p>
-                  R$<span>00,00</span>
-                </p>
-                <p>Rota Free</p>
-                <strong>Experimente Grátis</strong>
-              </Link>
-              <Link href="/" className="price-box">
-                <h3>Mensal</h3>
-                <p>
-                  R$<span>45,90</span>
-                </p>
-                <p>Rota Classic</p>
-                <strong>Comece Já</strong>
-                <p>
-                  <small>*No débito automático</small>
-                </p>
-              </Link>
-              <Link href="/" className="price-box">
-                <h3>Mensal</h3>
-                <p>
-                  R$<span>59,90</span>
-                </p>
-                <p>Rota VIP</p>
-                <strong>Comece Já</strong>
-              </Link>
-              <Link href="/" className="price-box">
-                <h3>Semestral</h3>
-                <p>
-                  R$<span>249,90</span>
-                </p>
-                <p>Rota Premium</p>
-                <strong>Comece Já</strong>
-              </Link>
-              <Link href="/" className="price-box">
-                <h3>Anual</h3>
-                <p>
-                  R$<span>449,90</span>
-                </p>
-                <p>Rota Diamante</p>
-                <strong>Comece Já</strong>
-              </Link>
-              <Link href="/" className="light price-box">
-                <h3>Sob consulta</h3>
-                <p>Rota Celeste</p>
-                <strong>Fale com uma mentorx</strong>
-                <p>
-                  <small>*Mentoria empresarial.</small>
-                </p>
-              </Link>
-            </Row>
-          </div> */}
           </main>
-          {/*     
-    <main className={styles.main}>
-      
-      
-    </main> */}
+
           <BadgesButtons opt={opt} questions={opt.pageQuestions} />
         </div>
       </div>

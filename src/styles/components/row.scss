@@ -1,5 +1,4 @@
 .full-width-row {
-	// padding: $heading__top-padding 0;
 	.full-width-content {
 		max-width: $widescreen__size;
 		margin: 0 auto;
@@ -15,21 +14,21 @@
 		}
 	}
 }
-.boxed-column-child{
+.boxed-column-child {
 	max-width: $widescreen__size;
 	margin: 0 auto;
 }
-header{
-.boxed-column {
-	&:first-of-type {
-		padding: $heading__top-padding 0 $heading__bottom-padding;
-	}}
+header {
+	.boxed-column {
+		&:first-of-type {
+			padding: $heading__top-padding 0 $heading__bottom-padding;
+		}
+	}
 
 	.boxed-column-child,
 	& > h2.row-heading {
 		max-width: $widescreen__size;
 		margin: 0 auto;
-		// letter-spacing: 3.5px;
 	}
 	& > h2.row-heading {
 		font-size: 30px;

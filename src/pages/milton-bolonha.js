@@ -1,19 +1,14 @@
 import React, { useState, useEffect } from "react";
-// import Image from "next/image";
-// import styles from "../styles/page.module.css";
-import Image from "next/image";
-import Link from "next/link";
 import { useTheme } from "next-themes";
 import BadgesButtons from "../components/BadgesButtons";
 import { Row } from "../components/InsertRow";
 import MainMenuData from "../configs/main-menu.json";
 import HeaderContainer from "../containers/HeaderContainer";
-// import { ClerkProvider } from "@clerk/nextjs";
 import HeadingBlock from "../components/HeadingBlock";
 
 export default function MiltonBolonha() {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
 
   // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
@@ -35,36 +30,9 @@ export default function MiltonBolonha() {
     flags: null, // remove
     urlLocale: "",
   };
-  const localization = {
-    locale: "pt-BR",
-    socialButtonsBlockButton: "Logar com {{provider|titleize}}",
-    signUp: {
-      start: {
-        title: "Crie sua conta",
-        subtitle: "continuar para {{applicationName}}",
-        actionText: "Tem conta?",
-        actionLink: "Logar",
-      },
-    },
-  };
-  const clerk_pub_key = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
 
   return (
     <>
-      {/* <ClerkProvider
-        localization={localization}
-        publishableKey={clerk_pub_key}
-        navigate={(to) => navigate(to)}
-        appearance={{
-          variables: {
-            colorPrimary: "#ff5626",
-          },
-          layout: {
-            showOptionalFields: true,
-          },
-        }}
-      ></ClerkProvider> */}
-
       <div
         className={"main-wrapper blog-list"}
         style={

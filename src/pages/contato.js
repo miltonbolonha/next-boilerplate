@@ -3,8 +3,6 @@ import { ReCaptcha, useReCaptcha } from "next-recaptcha-v3";
 import { useRouter } from "next/navigation";
 import Cookies from "universal-cookie";
 
-import Image from "next/image";
-import Link from "next/link";
 import { useTheme } from "next-themes";
 import BadgesButtons from "../components/BadgesButtons";
 import { Row } from "../components/InsertRow";
@@ -156,24 +154,8 @@ export default function Contato() {
       },
     },
   };
-  const clerk_pub_key = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
-
   return (
     <>
-      {/* <ClerkProvider
-        localization={localization}
-        publishableKey={clerk_pub_key}
-        navigate={(to) => navigate(to)}
-        appearance={{
-          variables: {
-            colorPrimary: "#ff5626",
-          },
-          layout: {
-            showOptionalFields: true,
-          },
-        }}
-      ></ClerkProvider> */}
-
       <div
         className={"main-wrapper one-column"}
         style={
@@ -307,45 +289,6 @@ export default function Contato() {
                   </form>
                 </div>
               </div>
-
-              {/*               
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
-                neque doloribus quod sequi veritatis, fugit temporibus cum
-                aperiam assumenda at perspiciatis quaerat dolore totam beatae in
-                autem iste. Rerum, itaque!
-              </p>
-              <form action="">
-                <label htmlFor="name">
-                  Nome Completo:
-                  <input type="text" name="name" value="" />
-                </label>
-                <label htmlFor="name">
-                  Assunto:
-                  <input type="text" name="name" value="" />
-                </label>
-                <label htmlFor="name">
-                  Fala:
-                  <textarea
-                    id="content"
-                    name="content"
-                    rows="5"
-                    cols="33"
-                  ></textarea>
-                  <GoogleReCaptchaProvider
-      reCaptchaKey={process.env.NEXT_RECAPTCH_SITE_KEY}
-      scriptProps={{
-        async: false,
-        defer: false,
-        appendTo: "head",
-        nonce: undefined,
-      }}
-      >
-     
-      </GoogleReCaptchaProvider>
-                  <button>Submit</button>
-                </label>
-              </form> */}
             </Row>
           </main>
 

@@ -22,9 +22,6 @@ body [data-theme="dark"] {
 	}
 }
 
-// bootstrap
-// @import "~bootstrap/scss/bootstrap";
-
 /* Global styling for this template */
 
 .no-pdd-mrg-first-last-child {
@@ -83,9 +80,7 @@ body [data-theme="dark"] {
 }
 
 .header-logo.full-width-row-child {
-	// display: block !important;
 	margin: 0 auto;
-	// width: 100%;
 	text-align: center;
 
 	.logo-link {
@@ -140,7 +135,7 @@ footer {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	// margin: 50px 0;
+
 	span.ht-top {
 		&:before {
 			content: "";
@@ -221,10 +216,6 @@ footer {
 	text-align: center;
 }
 
-// {
-// 	filter: contrast(400%);
-
-// }
 .roundME {
 	border-radius: 50%;
 }
@@ -286,7 +277,7 @@ footer {
 	background-color: $cta__color;
 	mix-blend-mode: hue;
 	z-index: 5;
-	// 	filter: contrast(400%);
+
 	&:hover {
 		background-color: transparent;
 		mix-blend-mode: normal;
@@ -304,7 +295,7 @@ footer {
 }
 .colorME.banner.boxed-column-child {
 	position: relative;
-	// height: 85px;
+
 	width: 100%;
 	a {
 		align-self: center;
@@ -327,7 +318,6 @@ footer {
 	background-color: $cta__color;
 	mix-blend-mode: hue;
 	z-index: 5;
-	// 	filter: contrast(400%);
 }
 .colorME.boxed-column-child {
 	&:hover {
@@ -357,7 +347,7 @@ footer {
 	height: 29px;
 	font-size: 20px;
 	max-width: $widescreen__size;
-	// width: 100%;
+
 	margin: 0 auto;
 	font-weight: 600;
 	li {
@@ -376,7 +366,7 @@ footer {
 			text-shadow: 0 2px 1px $brand_black__color;
 			&:hover {
 				border: 2px solid $cta__colorLink;
-				// background: rgba($cta__colorLink, 0.5);
+
 				color: white;
 			}
 			&.active {
@@ -465,7 +455,6 @@ sup {
 			position: absolute !important;
 			img {
 				z-index: 0;
-				// width: 200px;
 			}
 		}
 	}
@@ -525,7 +514,7 @@ sup {
 	.home-profile-infos {
 		text-align: center;
 		align-self: center;
-		// right: 20px;
+
 		position: relative;
 		a.profile-btn {
 			background-color: white;
@@ -884,9 +873,6 @@ sup {
 		right: -70px;
 		font-family: $fourth__font;
 	}
-	// &:hover{
-	// 	color: white
-	// }
 }
 
 .full-width-row.main-header {
@@ -901,17 +887,9 @@ sup {
 	align-items: center;
 	z-index: 9;
 	margin: 0 auto;
-	// display: flex;
-	// grid-template-columns: 1fr 0.45fr !important;
+
 	justify-content: space-between;
 	width: 100%;
-	// max-width: 1240px;
-	// height: 0px;
-	// .main-menu {
-	// max-width: 959px;
-	// width: 100%;
-	// display: flex;
-	// }
 
 	.main-menu-not-visible {
 		display: none;
@@ -925,9 +903,9 @@ sup {
 
 	.main-logo {
 		margin-top: 10px;
-		// height: 50px;
+
 		justify-self: left;
-		// position: absolute !important;
+
 		z-index: 9;
 	}
 	.main-ul-ul {
@@ -947,7 +925,6 @@ sup {
 		border-radius: 0.25rem;
 		display: block;
 		height: 100%;
-		// .menu-locale-visible
 
 		li {
 			display: inline-block;
@@ -1267,7 +1244,6 @@ sup {
 						text-align: center;
 					}
 					button.landing-input-ok {
-						border: 2px solid gray;
 						background-color: $primary_light;
 						border: 0;
 						color: $primary_darkvar;
@@ -1780,7 +1756,7 @@ ul.contact-link-tree-wrapper {
 			strong {
 				color: #6200ff;
 				border-radius: 5px;
-				// text-shadow: 0px 0px #6200ff;
+
 				border: 2px solid #6200ff;
 				padding: 7px 15px;
 				margin: 15px 10px 0;
@@ -1830,14 +1806,8 @@ ul.contact-link-tree-wrapper {
 		top: 0;
 		left: 20px;
 	}
-	// height: 100vh;
 
-	// .full-width-row.header-logo {
-	// position: absolute;
-	// top: 0;
-	// }
 	.chat-bottom {
-		// background: $brand__color;
 		min-height: 50px;
 		display: block;
 		position: absolute;
@@ -1846,10 +1816,8 @@ ul.contact-link-tree-wrapper {
 		padding-bottom: 20px;
 	}
 	.goals-wrapper {
-		// position: absolute;
 		justify-content: center;
-		// bottom: 75px;
-		// background: linear-gradient(0deg, rgba(255, 242, 228, 1) 92%, rgba(255, 242, 228, 0) 100%);
+
 		padding-top: 0;
 		width: 100%;
 		display: flex;
@@ -1880,8 +1848,6 @@ ul.contact-link-tree-wrapper {
 		width: 100%;
 
 		.inner-container-chat-one-column.boxed-column {
-			// padding-top: 10px;
-			// margin: 0 10px 10px;
 			position: relative;
 			width: 100vw;
 			align-self: center;
@@ -1891,8 +1857,7 @@ ul.contact-link-tree-wrapper {
 					top: 6px;
 					margin-right: 5px;
 				}
-				// position: fixed;
-				// top: 30px;
+
 				z-index: 9;
 				max-width: 100%;
 				min-height: 23px;
@@ -1935,7 +1900,7 @@ ul.contact-link-tree-wrapper {
 				border: 2px solid #ffdab1;
 				box-shadow: 6px 10px 45px #fee9be;
 				background: #fff;
-				// padding: 10px 20px;
+
 				border-radius: 5px;
 				max-height: 600px;
 				max-width: 800px;
@@ -1949,13 +1914,11 @@ ul.contact-link-tree-wrapper {
 				justify-content: space-between;
 				align-items: stretch;
 				.wrapper-chat {
-					// padding: 10px 20px;
-					// position: relative;
 					flex-direction: column;
 					.answer-wrapper {
 						overflow-x: hidden;
 						width: 97%;
-						// margin: 0 auto;
+
 						padding: 0;
 					}
 				}
@@ -1963,11 +1926,6 @@ ul.contact-link-tree-wrapper {
 		}
 
 		.inner-container-chat.full-width-row-child {
-			// border: 2px solid #ffdab1;
-			// box-shadow: 6px 10px 45px #fee9be;
-			// background: #fff;
-			// padding: 10px 20px;
-			// margin-top: 10px;
 			margin-top: 10px;
 			> div:first-child {
 				background-color: $hot__color;
@@ -1985,19 +1943,14 @@ ul.contact-link-tree-wrapper {
 				}
 			}
 		}
-		// height: 100vh;
-		// display: flex;
-		// align-items: center;
-		// justify-content: center;
+
 		.wrapper-chat {
 			min-height: 450px;
 			border-radius: 5px;
-			// padding: 10px;
+
 			width: 100%;
 			max-width: 959px;
 			margin: 0;
-			// height: 100vh;
-			// overflow: hidden;
 
 			.answer-wrapper,
 			.prompt-wrapper {
@@ -2005,7 +1958,7 @@ ul.contact-link-tree-wrapper {
 				flex-direction: column;
 				width: 100%;
 				margin: 0 auto;
-				// height: 90vh;
+
 				max-height: 100%;
 				padding-right: 15px;
 				padding-bottom: 30px;
@@ -2017,12 +1970,6 @@ ul.contact-link-tree-wrapper {
 					margin-top: 10px;
 					.answer-img,
 					.prompt-img {
-						// background-color: #700000;
-						// overflow: hidden;
-
-						// border-radius: 50%;
-						// width: 70px;
-						// height: 70px;
 						margin: 0 5px 0 0;
 						display: flex;
 						.pumpikin-logo img {
@@ -2066,7 +2013,6 @@ ul.contact-link-tree-wrapper {
 					}
 				}
 				.full-width-row.prompt {
-					// grid-template-columns: repeat(1, 1fr 0.1fr);
 					.full-width-row-child.answer {
 						max-width: 740px;
 						margin: 10px auto;
@@ -2087,7 +2033,7 @@ ul.contact-link-tree-wrapper {
 				form {
 					text-align: center;
 					width: 100%;
-					// position: absolute;
+
 					margin: auto;
 					left: 0;
 					right: 0;
@@ -2139,7 +2085,7 @@ ul.contact-link-tree-wrapper {
 				}
 				.text-input {
 					width: 100%;
-					// position: absolute;
+
 					z-index: 1;
 					max-width: 580px;
 					height: 40px;
@@ -2173,7 +2119,6 @@ p {
 	line-height: 1.75;
 }
 
-// Capitalize everything
 *::first-letter {
 	text-transform: capitalize;
 }
@@ -2214,7 +2159,7 @@ blockquote {
 }
 
 /* Components */
-// Button Styles
+
 .btn-xl {
 	font-size: 18px;
 	padding: 20px 40px;
@@ -2423,8 +2368,8 @@ blockquote {
 		flex-direction: column;
 	}
 }
-.profile-wrapper{
+.profile-wrapper {
 	position: absolute;
-    top: 10px;
-    right: 10px;
+	top: 10px;
+	right: 10px;
 }

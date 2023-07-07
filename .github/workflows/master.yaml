@@ -29,4 +29,4 @@ jobs:
           key: ${{ runner.OS }}-build-${{ hashFiles('**/package.json') }}-${{ hashFiles('**/package-lock.json') }}
 
       - name: Install
-        run: npm i && GATSBY_CONCURRENT_DOWNLOAD=25 npm run build --workspace=gatsby-theme-v5-boilerplate
+        run: npm i && npm run build

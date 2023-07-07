@@ -24,7 +24,6 @@
 		}
 		h1 {
 			color: #fff;
-			// font-family: $second__font;
 			font-size: 36px;
 			font-weight: 500;
 			line-height: 40px;
@@ -44,9 +43,6 @@
 			height: 100%;
 			display: flex;
 			align-items: center;
-			// .boxed-column-child.post{
-			// margin-left: 0;
-			// }
 		}
 	}
 	.boxed-column.main-post {
@@ -194,7 +190,6 @@
 	padding: 0 10px;
 	.container {
 		.post-article-content {
-			// padding: 0 10px;
 			font-size: 19px;
 			line-height: 28px;
 			font-weight: 300;
@@ -205,7 +200,6 @@
 				font-family: $main__font;
 				font-weight: 300;
 				color: $primary;
-				// line-height: 28px;
 				margin-bottom: 16px;
 			}
 			a {
@@ -238,7 +232,6 @@
 			h6 {
 				margin: 35px 0;
 				font-family: $fourth__font;
-				// font-family: $second__font;
 				text-transform: capitalize;
 				font-weight: 700;
 				color: $primary;

@@ -44,9 +44,7 @@ const MainMenuList = ({
     return (
       <div className="header-columns toggle-menu">
         <p className="menu-shop-bag-mobile">{userIcon}</p>
-        <p className="menu-shop-bag-mobile" tabIndex="-1">
-          {/* <RiShoppingBag3Line /> */}
-        </p>
+        <p className="menu-shop-bag-mobile" tabIndex="-1"></p>
         <button
           type="button"
           id="check-toggle-icon"
