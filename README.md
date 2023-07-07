@@ -1,16 +1,45 @@
 # Next Boilerplate
 
-#### by Milton Bolonha
+/by Milton Bolonha
 
 This is my own boilerplate nextjs theme.
 
----
-
-Quality badges:
+## Quality badges:
 
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate) [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=bugs)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate) \*[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate)
 
 \*Everyday work
+
+## Prerequisites n Knowledges
+
+- Linux
+- Command Terminal
+- VSCode
+- Lint/Prettier
+- Http Protocol
+- HTML
+- Cookies
+- SEO
+- SchemaMarkup
+- Aria
+- CSS
+- Javascript/VanillaJS
+- NodeJS
+- NPM
+- ReactJS
+- NextJS
+- Typescript
+- Git
+- MD
+- Open Source Pattern
+- dotEnv
+- Remark MD
+- Sendgrid
+- Netlify
+- Algolia
+- Prism
+- MomentJS
+- Clerk User Admin
 
 ---
 

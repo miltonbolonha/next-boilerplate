@@ -5,6 +5,10 @@
       "path": "./content"
     },
     {
+      "name": "Arquivos",
+      "path": "./public"
+    },
+    {
       "name": "Páginas - Conteúdo",
       "path": "./content/pages"
     },
@@ -19,6 +23,26 @@
     {
       "name": "Raiz",
       "path": "./"
+    },
+    {
+      "name": "Componentes",
+      "path": "./src/components"
+    },
+    {
+      "name": "Containers",
+      "path": "./containers"
+    },
+    {
+      "name": "Estilos",
+      "path": "./src/styles"
+    },
+    {
+      "name": "Páginas",
+      "path": "./src/pages"
+    },
+    {
+      "name": "Configs",
+      "path": "./src/configs"
     }
   ],
   "settings": {
@@ -26,15 +50,9 @@
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
     "workbench.iconTheme": "material-icon-theme",
-    "editor.rulers": [
-      80,
-      120
-    ],
+    "editor.rulers": [80, 120],
     "editor.formatOnSave": true,
-    "eslint.validate": [
-      "javascript",
-      "javascriptreact"
-    ],
+    "eslint.validate": ["javascript", "javascriptreact"],
     "editor.renderLineHighlight": "gutter",
     "editor.tabSize": 2,
     "terminal.integrated.fontSize": 14,
@@ -65,7 +83,7 @@
     },
     "prettier.jsxSingleQuote": true,
     "prettier.arrowParens": "avoid",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
     "workbench.colorTheme": "Edu4Dev Dark"
   }
 }
