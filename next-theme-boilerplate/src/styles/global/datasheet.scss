@@ -1,0 +1,24 @@
+.round-corners {
+    border-radius: 70px;
+    max-height: 600px;
+}
+
+.table-heading {
+    margin-top: 30px;
+}
+
+table {
+    td {
+        width: 50%;
+    }
+}
+
+// When hovering over a row of the table
+tr:hover {
+    background-color: #4444 !important;
+
+    td,
+    th {
+        color: white !important;
+    }
+}

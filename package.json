@@ -1,7 +1,9 @@
 {
-  "name": "next-boilerplate-theme-workspace",
+  "name": "next-theme-boilerplate-workspace",
   "version": "0.1.0",
-  "workspaces": ["next-boilerplate-theme"],
+  "workspaces": [
+    "next-theme-boilerplate"
+  ],
   "private": false,
   "description": "Bolonha Conversa NextJS Theme",
   "author": "Bolonha Conversa <miltonbolonha@gmail.com>",
@@ -20,10 +22,10 @@
     "builder"
   ],
   "scripts": {
-    "build": "npm run build -w next-boilerplate-theme",
-    "serve": "npm run serve -w next-boilerplate-theme",
-    "clean": "npm run clean -w next-boilerplate-theme",
-    "develop": "npm run dev --workspace=next-boilerplate-theme"
+    "build": "npm run build -w next-theme-boilerplate",
+    "serve": "npm run serve -w next-theme-boilerplate",
+    "clean": "npm run clean -w next-theme-boilerplate",
+    "develop": "npm run dev --workspace=next-theme-boilerplate"
   },
   "repository": {
     "type": "git",
