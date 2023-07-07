@@ -2,13 +2,13 @@
 layout: post
 title: "O que é state machine (máquina de estados) ?"
 date: 2020-01-01 00:01:00
-image: "/assets/img/3-meses-globocom/main.png"
+image: "/posts/images/homem-computador.jpg"
 description: "State machine é um padrão de desenvolvimento web onde você constrói uma máquina e todos os seus dispositivos. Então, a partir dos estados a máquina é gerenciada"
 main-class: "dev"
-color: "#637a91"
+color: "#dd1199"
 tags:
-  - trabalho
-  - globo
+  - programacao
+  - estado
 categories:
 twitter_text: "State machine é um padrão de desenvolvimento web."
 introduction: "State machine é um padrão de desenvolvimento web, a partir dos estados a máquina é gerenciada."
