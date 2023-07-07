@@ -38,5 +38,8 @@
   },
   "bugs": {
     "url": "https://github.com/miltonbolonha/next-boilerplate/issues"
+  },
+  "dependencies": {
+    "@fontsource/varela": "^5.0.4"
   }
 }
