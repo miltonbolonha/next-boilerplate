@@ -31,7 +31,7 @@ export default function Contato() {
   const cookies = new Cookies();
 
   const handleSubmit = useCallback(
-    async (e) => {
+    async e => {
       e.preventDefault();
       setChating(true);
 
@@ -44,7 +44,7 @@ export default function Contato() {
     [executeRecaptcha, name, message, email, subject]
   );
 
-  const submitEnquiryForm = async (event) => {
+  const submitEnquiryForm = async event => {
     console.log("foiiii");
 
     const myForm = event.target;
@@ -103,7 +103,7 @@ export default function Contato() {
       method: "POST",
       body: JSON.stringify(payload),
     })
-      .then((res) => {
+      .then(res => {
         if (res.status >= 400) {
           throw new Error("Bad response from server");
         }
@@ -114,10 +114,10 @@ export default function Contato() {
         return res.json();
         // return push(`?success=0&email=${email}`);
       })
-      .then((data) => {
+      .then(data => {
         console.log(data);
       })
-      .catch((err) => {
+      .catch(err => {
         console.error(err);
       });
   };
@@ -168,7 +168,7 @@ export default function Contato() {
               }
         }
       >
-        <div className="main-wrapper-inner">
+        <div className='main-wrapper-inner'>
           {opt.hasHeader !== false ? (
             <HeaderContainer
               opt={{
@@ -186,8 +186,8 @@ export default function Contato() {
             />
           ) : null}
 
-          <main className="main-container">
-            <HeadingBlock classes="m30auto" importance={10} width={400}>
+          <main className='main-container'>
+            <HeadingBlock classes='m30auto' importance={10} width={260}>
               Contato
             </HeadingBlock>
             <Row
@@ -196,94 +196,94 @@ export default function Contato() {
                 classes: "main-container-wrapper page-container",
               }}
             >
-              <div className="section row pb-0">
-                <div className="col-12 md:col-6 lg:col-7">
+              <div className='section row pb-0'>
+                <div className='col-12 md:col-6 lg:col-7'>
                   <form
-                    className="contact-form"
-                    method="POST"
-                    onSubmit={(e) => handleSubmit(e)}
+                    className='contact-form'
+                    method='POST'
+                    onSubmit={e => handleSubmit(e)}
                   >
-                    <p className="hidden">
+                    <p className='hidden'>
                       <input
-                        name="landingUrl"
+                        name='landingUrl'
                         defaultValue={location?.pathname}
                       />
-                      <input name="searchUrl" defaultValue={location?.search} />
+                      <input name='searchUrl' defaultValue={location?.search} />
                       <label>
                         Don’t fill this out if you’re human:{" "}
                         <input
-                          name="botField"
-                          onChange={(e) => setHoney(e.target.value)}
+                          name='botField'
+                          onChange={e => setHoney(e.target.value)}
                           value={honey}
                         />
                         <input
-                          type="hidden"
-                          name="form-name"
-                          value="ac-subscribe-contact"
+                          type='hidden'
+                          name='form-name'
+                          value='ac-subscribe-contact'
                         />
                         <input
-                          name="landingUrl"
+                          name='landingUrl'
                           defaultValue={location?.pathname}
                         />
                         <input
-                          name="searchUrl"
+                          name='searchUrl'
                           defaultValue={location?.search}
                         />
                         <input
-                          name="siteUrl"
+                          name='siteUrl'
                           defaultValue={"https://bolonha.vercel.app"}
                         />
-                        <input name="nowDate" defaultValue={new Date()} />
+                        <input name='nowDate' defaultValue={new Date()} />
                       </label>
                     </p>
 
-                    <div className="mb-3">
+                    <div className='mb-3'>
                       <input
-                        className="form-input w-full rounded"
-                        name="name"
+                        className='form-input w-full rounded'
+                        name='name'
                         value={name}
-                        onChange={(e) => setName(e?.target?.value)}
-                        type="text"
-                        placeholder="Name"
+                        onChange={e => setName(e?.target?.value)}
+                        type='text'
+                        placeholder='Name'
                         required
                       />
                     </div>
-                    <div className="mb-3">
+                    <div className='mb-3'>
                       <input
-                        className="form-input w-full rounded"
-                        name="email"
+                        className='form-input w-full rounded'
+                        name='email'
                         value={email}
-                        onChange={(e) => setEmail(e?.target?.value)}
-                        type="email"
-                        placeholder="Your email"
+                        onChange={e => setEmail(e?.target?.value)}
+                        type='email'
+                        placeholder='Your email'
                         required
                       />
                     </div>
-                    <div className="mb-3">
+                    <div className='mb-3'>
                       <input
-                        className="form-input w-full rounded"
-                        name="subject"
+                        className='form-input w-full rounded'
+                        name='subject'
                         value={subject}
-                        onChange={(e) => setSubject(e?.target?.value)}
-                        type="text"
-                        placeholder="Subject"
+                        onChange={e => setSubject(e?.target?.value)}
+                        type='text'
+                        placeholder='Subject'
                         required
                       />
                     </div>
-                    <div className="mb-3">
+                    <div className='mb-3'>
                       <textarea
-                        className="form-textarea w-full rounded-md"
+                        className='form-textarea w-full rounded-md'
                         rows={12}
-                        name="message"
+                        name='message'
                         value={message}
-                        onChange={(e) => setMessage(e?.target?.value)}
-                        placeholder="Your message"
+                        onChange={e => setMessage(e?.target?.value)}
+                        placeholder='Your message'
                       />
                     </div>
 
-                    <ReCaptcha onValidate={setToken} action="page_view" />
+                    <ReCaptcha onValidate={setToken} action='page_view' />
 
-                    <button type="submit" className="btn btn-primary">
+                    <button type='submit' className='btn btn-primary'>
                       Send Now
                     </button>
                   </form>

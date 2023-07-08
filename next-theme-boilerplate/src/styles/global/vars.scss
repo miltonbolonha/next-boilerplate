@@ -53,19 +53,19 @@ $s__space: 16pt;
 // typograph
 $alternative__font: "Arial";
 
-$main__font: var(--font-jetbrains-mono), $alternative__font, sans-serif;
+$main__font: "JetBrains Mono Variable", $alternative__font, sans-serif;
 
-$second__font: var(--font--redressed), $alternative__font, sans-serif;
+$second__font: "Redressed", $alternative__font, sans-serif;
 
-$third__font: var(--font-josefin-sans), $alternative__font, sans-serif;
+$third__font: "Josefin Sans Variable", $alternative__font, sans-serif;
 
-$fourth__font: var(--font-quattrocento), $alternative__font, sans-serif;
+$fourth__font: "Quattrocento Sans", $alternative__font, sans-serif;
 
-$fifth__font: var(--font-playfair-display), $alternative__font, sans-serif;
+$fifth__font: "Playfair Display Variable", $alternative__font, sans-serif;
 
-$sixth__font: var(--font-roboto), $alternative__font, sans-serif;
+$sixth__font: "Roboto", $alternative__font, sans-serif;
 
-$seventh__font: var(--font-nova-flat), $alternative__font, sans-serif;
+$seventh__font: "Nova Flat", $alternative__font, sans-serif;
 
 $eighth__font: "Varela", $alternative__font, sans-serif;
 

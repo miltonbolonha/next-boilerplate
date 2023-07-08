@@ -40,6 +40,12 @@
     "url": "https://github.com/miltonbolonha/next-boilerplate/issues"
   },
   "dependencies": {
+    "@fontsource-variable/jetbrains-mono": "^5.0.5",
+    "@fontsource-variable/josefin-sans": "^5.0.5",
+    "@fontsource-variable/playfair-display": "^5.0.5",
+    "@fontsource/nova-flat": "^5.0.4",
+    "@fontsource/quattrocento-sans": "^5.0.4",
+    "@fontsource/roboto": "^5.0.4",
     "@fontsource/varela": "^5.0.4"
   }
 }
