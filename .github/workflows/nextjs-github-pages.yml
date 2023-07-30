@@ -3,7 +3,7 @@
 # To get started with Next.js see: https://nextjs.org/docs/getting-started
 #
 name: Deploy Next.js site to Pages
-
+# next-boilerplateprefix me please !!!!!!!!!!!!!!!!!!!!
 on:
   # Runs on pushes targeting the default branch
   push:
@@ -63,6 +63,9 @@ jobs:
           static_site_generator: next
       - name: Restore cache
         uses: actions/cache@v3
+        env:
+          GITHUB_REPOSITORY: ${{ github.GITHUB_REPOSITORY }}
+          GITHUB_PAGES_URL: ${{ steps.deployment.outputs.page_url }}
         with:
           path: |
             .next/cache

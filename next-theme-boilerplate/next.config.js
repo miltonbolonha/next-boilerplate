@@ -1,16 +1,12 @@
 /** @type {import('next').NextConfig} */
+const githubPages = process.env.GITHUB_PAGES || false;
 const nextConfig = {
   reactStrictMode: true,
   output: "export",
-  basePath: '/next-boilerplate',
-  /*
-  assetPrefix: '/next-boilerplate',*/
-  serverRuntimeConfig: {
-    basePath: "/next-boilerplate",
-  },
+  basePath: githubPages ? "/next-boilerplate" : undefined,
   images: {
-    loader: 'custom',
-    loaderFile: './src/components/loader.js',
+    loader: "custom",
+    loaderFile: "./src/components/loader.js",
   },
 };
 
