@@ -2,10 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   output: "export",
-  assetPrefix: '/website',
-  basePath: '/website',
+  assetPrefix: '/next-boilerplate',
+  basePath: '/next-boilerplate',
   publicRuntimeConfig: {
-    basePath: "/website",
+    basePath: "/next-boilerplate",
   },
   images: {
     loader: 'custom',
