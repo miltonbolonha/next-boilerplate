@@ -357,13 +357,12 @@ footer {
 		flex-basis: max-content;
 		a {
 			color: $cta__colorLink;
-			font-family: $third__font;
+			font-family: $second__font;
 			line-height: 33px;
 			border: 2px solid transparent;
 			padding: 3px 7px;
 			border-radius: 10px;
 			margin: 0 10px;
-			font-weight: 900;
 			text-shadow: 0 2px 1px $brand_black__color;
 			&:hover {
 				border: 2px solid $cta__colorLink;
@@ -849,14 +848,13 @@ sup {
 }
 
 .menu-bar-icon {
-	font-family: $fifth__font;
+	font-family: $main__font;
 	background-color: $brand_black__color;
 	margin: 15px 0;
 	color: $cta__colorLink;
 	border-radius: 50%;
 	width: 35px;
-	line-height: 14px;
-	text-indent: 1px;
+	line-height: 16px;
 	text-align: center;
 	height: 35px;
 	border: 0;
@@ -866,17 +864,14 @@ sup {
 	position: relative;
 	cursor: pointer;
 	left: -35px;
-	&.active {
-		color: $hot__color;
-	}
 	&::before {
 		content: "Menu";
 		display: block;
 		font-size: 24px;
 		position: absolute;
 		top: 10px;
-		right: -76px;
-		font-family: $seventh__font;
+		right: -70px;
+		font-family: $fourth__font;
 	}
 }
 
@@ -1531,14 +1526,14 @@ ul.contact-link-tree-wrapper {
 	flex-direction: column;
 	align-self: center;
 	h2 {
-		font-family: $main__font;
+		font-family: $eighth__font;
 		font-weight: 900;
 		color: $cta__color;
 		text-shadow: 2px 2px $brand_black__color;
 		margin-bottom: 15px;
 	}
 	p {
-		font-family: $main__font;
+		font-family: $third__font;
 		font-size: 22px;
 		margin-bottom: 15px;
 		color: $brand__color;
@@ -1557,13 +1552,13 @@ ul.contact-link-tree-wrapper {
 	text-align: center;
 	border-radius: 5px;
 	justify-self: flex-end;
-	font-family: $main__font;
+	font-family: $fourth__font;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-weight: 900;
-	font-size: 16px;
+	font-size: 18px;
 	white-space: nowrap;
-	line-height: 30px;
+	line-height: 40px;
 	border: 2px solid $cta__colorLink;
 	cursor: pointer;
 	&:hover {
@@ -1592,7 +1587,7 @@ ul.contact-link-tree-wrapper {
 	text-align: center;
 	border-radius: 5px;
 	justify-self: flex-end;
-	font-family: $seventh__font;
+	font-family: $fourth__font;
 	font-weight: 900;
 	align-self: flex-end;
 	@media (max-width: 767px) {
@@ -2330,12 +2325,6 @@ blockquote {
 	height: 30px;
 	width: 75px;
 	padding: 4px 10px;
-
-	position: absolute;
-	right: 0;
-	top: 110px;
-	transform: rotate(90deg);
-
 	button {
 		padding: 3px;
 		margin: 0 4px;

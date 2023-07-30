@@ -2,15 +2,7 @@ import React, { useEffect } from "react";
 import { ReCaptchaProvider } from "next-recaptcha-v3";
 
 import Head from "next/head";
-
 import "@fontsource/varela";
-import "@fontsource-variable/jetbrains-mono";
-import "@fontsource-variable/josefin-sans";
-import "@fontsource-variable/playfair-display";
-import "@fontsource/nova-flat";
-import "@fontsource/quattrocento-sans";
-import "@fontsource/roboto";
-
 import "../styles/styles.scss";
 import { useRouter } from "next/router";
 import NextNProgress from "nextjs-progressbar";
@@ -53,7 +45,7 @@ function App({ Component, pageProps }) {
         </Head>
         <DefaultSeo {...SEO} />
 
-        <div>
+        <div className={inter.className}>
           <Layout>
             <NextNProgress
               color='#F231A5'

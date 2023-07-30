@@ -4,14 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
     "preview": "next build && next start"
   },
   "dependencies": {
-    "@clerk/localizations": "^1.22.1",
-    "@clerk/nextjs": "^4.21.14",
     "@openlab/vercel-netlify-cms-github": "^1.1.1",
     "@sendgrid/mail": "^7.7.0",
     "@vercel/analytics": "^1.0.1",

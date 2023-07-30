@@ -11,8 +11,9 @@
 
 # next.js
 next-theme-boilerplate/.next/
+next-theme-boilerplate/out/
 .next/
-/out/
+
 
 # production
 /build

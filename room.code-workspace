@@ -2,23 +2,23 @@
   "folders": [
     {
       "name": "Conteúdo",
-      "path": "./next-theme-boilerplate/content"
+      "path": "./content"
     },
     {
       "name": "Arquivos",
-      "path": "./next-theme-boilerplate/public"
+      "path": "./public"
     },
     {
       "name": "Páginas - Conteúdo",
-      "path": "./next-theme-boilerplate/content/pages"
+      "path": "./content/pages"
     },
     {
       "name": "Postagens - Conteúdo",
-      "path": "./next-theme-boilerplate/content/posts"
+      "path": "./content/posts"
     },
     {
       "name": "Source",
-      "path": "./next-theme-boilerplate/src"
+      "path": "./src"
     },
     {
       "name": "Raiz",
@@ -26,23 +26,23 @@
     },
     {
       "name": "Componentes",
-      "path": "./next-theme-boilerplate/src/components"
+      "path": "./src/components"
     },
     {
       "name": "Containers",
-      "path": "./next-theme-boilerplate/containers"
+      "path": "./containers"
     },
     {
       "name": "Estilos",
-      "path": "./next-theme-boilerplate/src/styles"
+      "path": "./src/styles"
     },
     {
       "name": "Páginas",
-      "path": "./next-theme-boilerplate/src/pages"
+      "path": "./src/pages"
     },
     {
       "name": "Configs",
-      "path": "./next-theme-boilerplate/src/configs"
+      "path": "./src/configs"
     }
   ],
   "settings": {

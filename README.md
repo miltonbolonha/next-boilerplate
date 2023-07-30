@@ -39,7 +39,6 @@ This is my own boilerplate nextjs theme.
 - Algolia
 - Prism
 - MomentJS
-- Clerk User Admin
 
 ---
 

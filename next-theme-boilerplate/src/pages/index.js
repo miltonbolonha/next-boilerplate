@@ -58,7 +58,7 @@ export default function Home() {
               }
         }
       >
-        <div className='main-wrapper-inner'>
+        <div className="main-wrapper-inner">
           {opt.hasHeader !== false ? (
             <HeaderContainer
               opt={{
@@ -76,29 +76,30 @@ export default function Home() {
             />
           ) : null}
 
-          <main className='main-container' id='site-content'>
+          <main className="main-container" id="site-content">
             <Row opt={{ classes: "cta-infos", isBoxed: true, numColumns: 2 }}>
-              <div className='hero-txt'>
+              <div className="hero-txt">
                 <h2>Cadernos de estudo</h2>
                 <p>
-                  Crianças CTOs de todo o Brasil: <br />
-                  Chegou a <strong>Bolonha Conversa</strong>
-                  ! <br />A mentoria de ensino inteligente e disponível 24 horas
-                  por dia, 7 dias da semana para te ajudar.
+                  Crianças CTOs de todo o Brasil: Chegou a{" "}
+                  <strong>Bolonha Conversa</strong>
+                  ! <br />A mentoria de ensino inteligente e disponível
+                  <br />
+                  24 horas por dia, 7 dias da semana para te ajudar.
                 </p>
-                <Link href='/' className='cta-btn hero-btn'>
+                <Link href="/" className="cta-btn hero-btn">
                   Experimente Já!
                 </Link>
-                <Link href='/' className='secondary-btn'>
+                <Link href="/" className="secondary-btn">
                   Conheça a Bolonha Conversa
                 </Link>
               </div>
-              <div className='hero-img'>
+              <div className="hero-img">
                 <Image
                   src={"/brandimages/laptop-reading.png"}
                   alt={"Maskot Reading"}
                   placeholder={"NONE"}
-                  critical='true'
+                  critical="true"
                   className={""}
                   width={300}
                   height={300}
@@ -116,12 +117,12 @@ export default function Home() {
                 src={"/brandimages/envelope-greeting.png"}
                 alt={"Maskot Contact"}
                 placeholder={"NONE"}
-                critical='true'
+                critical="true"
                 className={""}
                 width={300}
                 height={300}
               />
-              <div id='contato' className='contact-info'>
+              <div id="contato" className="contact-info">
                 <h2>Contato</h2>
                 <p>
                   Fale com a gente por meio do e-mail:{" "}

@@ -3,14 +3,6 @@ import { Row } from "../components/InsertRow";
 import { useRouter } from "next/router";
 import { useTheme } from "next-themes";
 import Image from "next/image";
-import {
-  ClerkProvider,
-  SignedIn,
-  useClerk,
-  UserButton,
-  SignedOut,
-} from "@clerk/nextjs";
-import { ptBR } from "@clerk/localizations";
 
 import MainMenuContainer from "../containers/MainMenuContainer";
 
@@ -55,30 +47,6 @@ const Header = ({
     }
   }
 
-  const SignInButton = () => {
-    const { openSignIn } = useClerk();
-    const appearance = {
-      variables: {
-        colorPrimary: "#ff5626",
-      },
-    };
-
-    return (
-      <button
-        className="cta-btn ml-10"
-        onClick={() =>
-          openSignIn({
-            appearance,
-          })
-        }
-      >
-        Restrito
-      </button>
-    );
-  };
-
-  const clerk_pub_key = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
-
   return (
     <header>
       <Row
@@ -91,7 +59,7 @@ const Header = ({
       >
         <Row opt={{ isBoxed: false, classes: "header-logo" }}>{logotype}</Row>
         {/* mobile menu */}
-        <div className="toggle-dark-mode">
+        <div className='toggle-dark-mode'>
           <button
             onClick={() => setTheme("light")}
             className={theme === "light" ? "active" : ""}
@@ -100,7 +68,7 @@ const Header = ({
               src={"/brandimages/light-mode.svg"}
               alt={"Light Mode"}
               placeholder={"NONE"}
-              critical="true"
+              critical='true'
               className={""}
               width={30}
               height={30}
@@ -115,7 +83,7 @@ const Header = ({
               src={"/brandimages/dark-mode.svg"}
               alt={"Dark Mode"}
               placeholder={"NONE"}
-              critical="true"
+              critical='true'
               width={30}
               height={30}
             />
@@ -123,7 +91,7 @@ const Header = ({
         </div>
         {hasMenu && mainMenuStatus === true ? (
           <>
-            <div className="desktop-only">
+            <div className='desktop-only'>
               <MainMenuContainer
                 wrapperRef={wrapperRef}
                 refState={refState}
@@ -138,15 +106,15 @@ const Header = ({
                 !refState ? "visible" : "not-visible"
               }`}
             >
-              <div className="header-columns toggle-menu">
+              <div className='header-columns toggle-menu'>
                 <button
-                  type="button"
-                  id="check-toggle-icon"
+                  type='button'
+                  id='check-toggle-icon'
                   onClick={handleRefState}
-                  aria-haspopup="true"
-                  aria-controls="mainmenu"
+                  aria-haspopup='true'
+                  aria-controls='mainmenu'
                   aria-expanded={refState}
-                  aria-label="Alternar visibilidade do menu"
+                  aria-label='Alternar visibilidade do menu'
                   className={`menu-wrapper menu-bar-icon  ${
                     !refState ? "active opened" : "not-active"
                   }`}
@@ -172,28 +140,6 @@ const Header = ({
         ) : null}
         {/* desktop menu */}
       </Row>
-      <div className="profile-wrapper">
-        <ClerkProvider
-          localization={ptBR}
-          publishableKey={clerk_pub_key}
-          navigate={(to) => navigate(to)}
-          appearance={{
-            variables: {
-              colorPrimary: "#ff5626",
-            },
-            layout: {
-              showOptionalFields: true,
-            },
-          }}
-        >
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
-          <SignedOut>
-            <SignInButton />
-          </SignedOut>
-        </ClerkProvider>
-      </div>
     </header>
   );
 };
