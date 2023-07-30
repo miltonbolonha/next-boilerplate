@@ -1,0 +1,5 @@
+{
+  "buildCommand": "npm run build --workspace=next-theme-boilerplate",
+  "outputDirectory": "next-theme-boilerplate/.next",
+  "installCommand": "npm install"
+}
