@@ -94,17 +94,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-  pre-release:
-      name: "Pre Release"
-      runs-on: "ubuntu-latest"
-      steps:
-        - name: "Pre Release Test"
-          run: |
-            echo "pre-release test begin!"
-
-        - uses: "marvinpinto/action-automatic-releases@latest"
-          with:
-            repo_token: "${{ secrets.GITHUB_TOKEN }}"
-            prerelease: false
-            files: |
-              LICENSE.txt
