@@ -75,8 +75,6 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} npm run build --workspace=next-theme-boilerplate
-        env:
-          GITHUB_REPOSITORY: ${{ github.event.repository.name }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
