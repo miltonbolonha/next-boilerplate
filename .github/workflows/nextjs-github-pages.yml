@@ -64,8 +64,7 @@ jobs:
       - name: Restore cache
         uses: actions/cache@v3
         env:
-          GITHUB_REPOSITORY: ${{ github.GITHUB_REPOSITORY }}
-          GITHUB_PAGES_URL: ${{ steps.deployment.outputs.page_url }}
+          GITHUB_REPOSITORY: ${{ github.event.repository.name }}
         with:
           path: |
             .next/cache
