@@ -1,6 +1,4 @@
-import { DefaultSeoProps } from 'next-seo';
-
-const config: DefaultSeoProps = {
+const config = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
