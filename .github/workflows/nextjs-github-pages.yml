@@ -61,12 +61,6 @@ jobs:
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
-      - name: Make envfile
-        uses: SpicyPizza/create-envfile@v1
-        with:
-          GITHUB_REPOSITORY: ${{ github.event.repository.name }}
-          file_name: .env.local
-          directory: ./next-boilerplate/
       - name: Restore cache
         uses: actions/cache@v3
         with:
@@ -81,6 +75,8 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} npm run build --workspace=next-theme-boilerplate
+        env:
+          GITHUB_REPOSITORY: ${{ github.event.repository.name }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
