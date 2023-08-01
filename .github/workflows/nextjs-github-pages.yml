@@ -61,10 +61,14 @@ jobs:
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
+      - name: Make envfile
+        uses: SpicyPizza/create-envfile@v1
+        with:
+          GITHUB_REPOSITORY: ${{ github.event.repository.name }}
+          file_name: .env.local
+          directory: ./next-boilerplate/
       - name: Restore cache
         uses: actions/cache@v3
-        env:
-          GITHUB_REPOSITORY: ${{ github.event.repository.name }}
         with:
           path: |
             .next/cache
