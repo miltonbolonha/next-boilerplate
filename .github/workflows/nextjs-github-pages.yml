@@ -94,7 +94,7 @@ jobs:
       - name: "Create env file"
         run: |
           touch .env
-          echo GITHUB_REPO="${{ github.event.repository.name }}" >> .env
+          echo NEXT_GITHUB_REPO="${{ github.event.repository.name }}" >> .env
           cat .env
   pre-release:
     permissions: write-all
