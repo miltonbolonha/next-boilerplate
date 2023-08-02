@@ -8,7 +8,7 @@ import HeaderContainer from "../containers/HeaderContainer";
 import MainMenuData from "../configs/main-menu.json";
 
 const BlogPost = ({ post }) => {
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
 
   useEffect(() => {
     Prism.highlightAll();
@@ -56,7 +56,7 @@ const BlogPost = ({ post }) => {
               }
         }
       >
-        <div className="main-wrapper-inner">
+        <div className='main-wrapper-inner'>
           {opt.hasHeader !== false ? (
             <HeaderContainer
               opt={{
@@ -74,7 +74,7 @@ const BlogPost = ({ post }) => {
             />
           ) : null}
 
-          <main className="main-container">
+          <main className='main-container'>
             <SinglePostBlock
               highlightImage={"pageContext?.SEO.featuredImage"}
               authorImg={"imgHolder"}

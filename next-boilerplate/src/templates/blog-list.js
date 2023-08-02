@@ -12,10 +12,11 @@ const BlogList = ({ posts }) => {
     prev: 0,
     next: 10,
   });
-  const [hasMore, setHasMore] = useState(true);
   const [current, setCurrent] = useState(
     sortedPosts.slice(count.prev, count.next)
   );
+  /*
+  const [hasMore, setHasMore] = useState(true);
 
   const getMoreData = () => {
     if (current.length === sortedPosts.length) {
@@ -32,12 +33,12 @@ const BlogList = ({ posts }) => {
       next: prevState.next + 10,
     }));
   };
-
+*/
   return (
     <>
       <NextSeo
-        title="Home | Milton Bolonha"
-        description="Um blog de um desenvolvedor FullStack (LINUX, PHP & NODEJS), fã de rock, política, gatos e inteligência artificial."
+        title='Home | Milton Bolonha'
+        description='Um blog de um desenvolvedor FullStack (LINUX, PHP & NODEJS), fã de rock, política, gatos e inteligência artificial.'
         openGraph={{
           images: [
             {

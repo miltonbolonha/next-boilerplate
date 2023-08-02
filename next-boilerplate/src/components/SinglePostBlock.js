@@ -1,7 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import _ from "lodash";
-import Image from "next/image";
 
 import { Row } from "./InsertRow";
 
@@ -26,43 +24,43 @@ const SinglePostBlock = ({
             bgColor: "#111e24",
           }}
         >
-          <div className="header-post">
+          <div className='header-post'>
             <Row opt={{ isBoxed: true, classes: "post", alignTo: "center" }}>
               <h1>{title}</h1>
             </Row>
           </div>
         </Row>
         <Row opt={{ isBoxed: true, classes: "main-post" }}>
-          <div className="close-btn-single-post">
-            <Link href="/">X</Link>
+          <div className='close-btn-single-post'>
+            <Link href='/'>X</Link>
             <span>Fechar</span>
           </div>
-          <div className="container">
-            <div className="post-author">
+          <div className='container'>
+            <div className='post-author'>
               <Row opt={{ numColumns: 2, classes: "post-author-infos" }}>
-                <div className="inner-post-author-infos">
+                <div className='inner-post-author-infos'>
                   imagem de author
-                  <div className="innerauthor-infos">
-                    <p className="post-author-name" rel="author">
+                  <div className='innerauthor-infos'>
+                    <p className='post-author-name' rel='author'>
                       {author}
                     </p>
-                    <time className="post-author-date" dateTime={date}>
+                    <time className='post-author-date' dateTime={date}>
                       {date}
                     </time>
                   </div>
                 </div>
                 <Row opt={{ classes: "editorial-infos", numColumns: 2 }}>
-                  <p className="timeToread">{timeToRead} min. (leitura)</p>
-                  <p className="wordCount">{wordCount.paragraphs} parágrafos</p>
-                  <p className="wordCount">{wordCount.sentences} sentenças</p>
-                  <p className="wordCount">{wordCount.words} palavras</p>
+                  <p className='timeToread'>{timeToRead} min. (leitura)</p>
+                  <p className='wordCount'>{wordCount.paragraphs} parágrafos</p>
+                  <p className='wordCount'>{wordCount.sentences} sentenças</p>
+                  <p className='wordCount'>{wordCount.words} palavras</p>
                 </Row>
               </Row>
             </div>
 
             <div>imageHighlightQuery</div>
             <div
-              className="post-article-content"
+              className='post-article-content'
               dangerouslySetInnerHTML={{ __html: html }}
             ></div>
           </div>

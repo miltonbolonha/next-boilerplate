@@ -1060,12 +1060,10 @@ sup {
 	.gatsby-resp-image-wrapper {
 		max-width: 520px;
 		max-height: 400px;
+		overflow: hidden;
 		img {
 			object-fit: contain;
 		}
-	}
-	.gatsby-resp-image-wrapper {
-		overflow: hidden;
 	}
 }
 
@@ -2180,24 +2178,6 @@ blockquote {
 	&:active,
 	&:focus {
 		box-shadow: 0 0 0 0.2rem lightgrey !important;
-	}
-}
-
-.btn-secondary {
-	background-color: #663399;
-	border-color: #663399;
-
-	&:active,
-	&:focus,
-	&:hover {
-		background-color: darken(#663399, 7.5%) !important;
-		border-color: darken(#663399, 7.5%) !important;
-		color: white;
-	}
-
-	&:active,
-	&:focus {
-		box-shadow: 0 0 0 0.2rem white !important;
 	}
 }
 

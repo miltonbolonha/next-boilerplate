@@ -22,31 +22,7 @@ const Header = ({
   handleRefState,
   flags,
 }) => {
-  const router = useRouter();
   const { theme, setTheme } = useTheme();
-  function getFlag(i18n) {
-    switch (i18n) {
-      case "pt-BR":
-        return "BR";
-      case "en-US":
-        return "US";
-      case "de-DE":
-        return "DE";
-      case "jp-JP":
-        return "JP";
-      case "ru-RU":
-        return "RU";
-      case "fr-FR":
-        return "FR";
-      case "nl-NL":
-        return "NL";
-      case "es-ES":
-        return "ES";
-      default:
-        return "BR";
-    }
-  }
-
   return (
     <header>
       <Row
