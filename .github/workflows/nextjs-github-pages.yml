@@ -75,11 +75,12 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} npm run build --workspace=next-theme-boilerplate
-      - name: "Create env file"
-        run: |
-          touch ./next-theme-boilerplate/out/.env.local
-          echo NEXT_REPO="${{ github.event.repository.name }}" >> ./next-theme-boilerplate/out/.env.local
-          cat ./next-theme-boilerplate/out/.env.local
+      - name: env file creation
+        uses: SpicyPizza/create-envfile@v1.3
+        with:
+          envkey_NEXT_REPO: ${{ github.event.repository.name }}
+          file_name: .env.local
+          directory: "./next-theme-boilerplate/out/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
