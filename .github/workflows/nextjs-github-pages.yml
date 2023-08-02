@@ -74,11 +74,11 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} npm run build --workspace=next-theme-boilerplate
+        run: ${{ steps.detect-package-manager.outputs.runner }} npm run build --workspace=next-boilerplate
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./next-theme-boilerplate/out
+          path: ./next-boilerplate/out
 
   # Deployment job
   deploy:

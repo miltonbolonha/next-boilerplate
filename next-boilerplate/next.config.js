@@ -12,6 +12,10 @@ const nextConfig = {
       ? "./src/components/loader-github-pages.js"
       : "./src/components/loader.js",
   },
+  env: {
+    IS_GITHUB_PAGE: isGithubPages ? true : false,
+    THEME_FOLDER: "next-boilerplate",
+  },
 };
 
 module.exports = nextConfig;
