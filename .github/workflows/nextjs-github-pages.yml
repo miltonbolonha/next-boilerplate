@@ -25,11 +25,6 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  jobs:
-    create-envfile:
-      runs-on: ubuntu-latest
-
-      steps:
   # Build job
   build:
     runs-on: ubuntu-latest
