@@ -84,6 +84,8 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./next-theme-boilerplate/out
+        env:
+          NEXT_GITHUB_REPO: next-theme-boilerplate
 
   # Deployment job
   deploy:
