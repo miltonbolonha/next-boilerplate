@@ -13,7 +13,7 @@ const nextConfig = {
       : "./src/components/loader.js",
   },
   env: {
-    IS_GITHUB_PAGE: isGithubPages ? true : false,
+    IS_GITHUB_PAGE: isGithubPages,
     THEME_FOLDER: "next-boilerplate",
   },
 };
