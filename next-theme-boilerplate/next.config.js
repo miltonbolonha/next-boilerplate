@@ -1,14 +1,16 @@
 /** @type {import('next').NextConfig} */
-const isGithubActions = process.env.GITHUB_ACTIONS || false;
+const isGithubPages = process.env.GITHUB_PAGES || false;
 
 const nextConfig = {
   reactStrictMode: true,
   output: "export",
   trailingSlash: true,
-  basePath: isGithubActions ? "/next-boilerplate" : undefined,
+  basePath: isGithubPages ? "/next-boilerplate" : undefined,
   images: {
     loader: "custom",
-    loaderFile: "./src/components/loader.js",
+    loaderFile: isGithubPages
+      ? "./src/components/loader-github-pages.js"
+      : "./src/components/loader.js",
   },
 };
 
