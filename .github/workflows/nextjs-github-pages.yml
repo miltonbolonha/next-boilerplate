@@ -75,6 +75,11 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} npm run build --workspace=next-theme-boilerplate
+      - name: "Create env file"
+        run: |
+          touch ./next-theme-boilerplate/.env.local
+          echo NEXT_GITHUB_REPO="${{ github.event.repository.name }}" >> ./next-theme-boilerplate/.env.local
+          cat ./next-theme-boilerplate/.env.local
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
@@ -91,11 +96,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-      - name: "Create env file"
-        run: |
-          touch .env
-          echo NEXT_GITHUB_REPO="${{ github.event.repository.name }}" >> .env
-          cat .env
   pre-release:
     permissions: write-all
     name: "Pre Release"
