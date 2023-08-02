@@ -77,9 +77,9 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} npm run build --workspace=next-theme-boilerplate
       - name: "Create env file"
         run: |
-          touch ./next-theme-boilerplate/.env.local
-          echo NEXT_GITHUB_REPO="${{ github.event.repository.name }}" >> ./next-theme-boilerplate/.env.local
-          cat ./next-theme-boilerplate/.env.local
+          touch ./next-theme-boilerplate/out/.env.local
+          echo NEXT_GITHUB_REPO="${{ github.event.repository.name }}" >> ./next-theme-boilerplate/out/.env.local
+          cat ./next-theme-boilerplate/out/.env.local
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
