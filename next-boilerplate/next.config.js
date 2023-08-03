@@ -8,9 +8,7 @@ const nextConfig = {
   basePath: isGithubPages ? "/next-boilerplate" : undefined,
   images: {
     loader: "custom",
-    loaderFile: isGithubPages
-      ? "./src/components/loader-github-pages.js"
-      : "./src/components/loader.js",
+    loaderFile: "./src/components/imgLoaderContainer.js",
   },
   env: {
     IS_GITHUB_PAGE: isGithubPages,

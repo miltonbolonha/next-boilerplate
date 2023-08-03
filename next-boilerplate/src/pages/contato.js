@@ -4,10 +4,10 @@ import Cookies from "universal-cookie";
 
 import { useTheme } from "next-themes";
 import BadgesButtons from "../components/BadgesButtons";
-import { Row } from "../components/InsertRow";
+import { Row } from "../containers/RowContainer";
 import MainMenuData from "../configs/main-menu.json";
 import HeaderContainer from "../containers/HeaderContainer";
-import HeadingBlock from "../components/HeadingBlock";
+import HeadingContainer from "../containers/HeadingContainer";
 
 export default function Contato() {
   const [mounted, setMounted] = useState(false);
@@ -172,9 +172,9 @@ export default function Contato() {
           ) : null}
 
           <main className='main-container'>
-            <HeadingBlock classes='m30auto' importance={10} width={400}>
+            <HeadingContainer classes='m30auto' importance={10} width={400}>
               Contato
-            </HeadingBlock>
+            </HeadingContainer>
             <Row
               opt={{
                 isBoxed: true,

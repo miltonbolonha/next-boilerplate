@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import BadgesButtons from "../components/BadgesButtons";
-import { Row } from "../components/InsertRow";
+import { Row } from "../containers/RowContainer";
 import MainMenuData from "../configs/main-menu.json";
 import HeaderContainer from "../containers/HeaderContainer";
 

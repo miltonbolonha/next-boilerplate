@@ -24,10 +24,14 @@ Ambiente de desenvolvimento otimizado para uma experiência agradável e produti
 Como Usar
 Para começar a utilizar o Boilerplate Next.js, siga os passos abaixo:
 
-Faça um fork deste repositório para sua conta do GitHub.
-Clone o repositório para sua máquina local.
-Instale as dependências do projeto com o comando: npm install ou yarn install.
-Inicie o servidor de desenvolvimento com o comando: npm run dev ou yarn dev.
+Use o Github Template.
+
+Inicie o servidor de desenvolvimento com o comando:
+
+```bash
+npm i && npm run dev --workspace=next-boilerplate
+```
+
 Acesse a aplicação em seu navegador através do endereço: http://localhost:3000.
 A partir desse ponto, você estará pronto(a) para começar a desenvolver suas próprias funcionalidades sobre essa base sólida.
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Row } from "../components/InsertRow";
+import { Row } from "../containers/RowContainer";
 import { useRouter } from "next/router";
 import { useTheme } from "next-themes";
 import Image from "next/image";

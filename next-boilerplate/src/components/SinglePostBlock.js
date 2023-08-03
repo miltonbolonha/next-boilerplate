@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-import { Row } from "./InsertRow";
+import { Row } from "../containers/RowContainer";
 
 const SinglePostBlock = ({
   highlightImage,
