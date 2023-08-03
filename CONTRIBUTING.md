@@ -1,3 +1,23 @@
+# Contribuindo para o Boilerplate Next.js
+
+Antes de começar a contribuir com este projeto, obrigado pelo seu interesse em torná-lo ainda melhor! Aqui estão algumas diretrizes para ajudar você a colaborar de forma efetiva:
+
+Verifique se já há alguma Issue ou Pull Request aberta relacionada ao que você deseja contribuir. Isso pode evitar duplicações e ajudar a economizar tempo.
+
+Caso encontre algo que queira melhorar ou corrigir, abra uma nova Issue explicando claramente o problema e, se possível, forneça informações adicionais para ajudar na reprodução.
+
+Se estiver adicionando ou alterando documentação, certifique-se de adicionar as informações no diretório adequado e seguindo o formato existente.
+
+Se deseja adicionar novos recursos, crie um Pull Request com uma descrição clara das mudanças propostas e explique como elas melhoram o projeto.
+
+Antes de enviar seu Pull Request, verifique se todos os testes passam e que a cobertura do código continua alta.
+
+Se for sua primeira contribuição, seja paciente e esteja aberto a feedback e sugestões.
+
+Agradecemos a sua colaboração em tornar este boilerplate Next.js um recurso valioso para o ensino de tecnologia! Juntos, podemos criar uma comunidade aberta e acolhedora.
+
+---
+
 # Contributing to Next.js
 
 [Watch the 40-minute walkthrough video on how to contribute to Next.js.](https://www.youtube.com/watch?v=cuoNzXFLitc)

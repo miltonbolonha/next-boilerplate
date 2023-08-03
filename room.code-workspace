@@ -2,23 +2,23 @@
   "folders": [
     {
       "name": "Conteúdo",
-      "path": "./content"
+      "path": "./next-boilerplate/content"
     },
     {
       "name": "Arquivos",
-      "path": "./public"
+      "path": "./next-boilerplate/public"
     },
     {
       "name": "Páginas - Conteúdo",
-      "path": "./content/pages"
+      "path": "./next-boilerplate/content/pages"
     },
     {
       "name": "Postagens - Conteúdo",
-      "path": "./content/posts"
+      "path": "./next-boilerplate/content/posts"
     },
     {
       "name": "Source",
-      "path": "./src"
+      "path": "./next-boilerplate/src"
     },
     {
       "name": "Raiz",
@@ -26,23 +26,19 @@
     },
     {
       "name": "Componentes",
-      "path": "./src/components"
-    },
-    {
-      "name": "Containers",
-      "path": "./containers"
+      "path": "./next-boilerplate/src/components"
     },
     {
       "name": "Estilos",
-      "path": "./src/styles"
+      "path": "./next-boilerplate/src/styles"
     },
     {
       "name": "Páginas",
-      "path": "./src/pages"
+      "path": "./next-boilerplate/src/pages"
     },
     {
       "name": "Configs",
-      "path": "./src/configs"
+      "path": "./next-boilerplate/src/configs"
     }
   ],
   "settings": {

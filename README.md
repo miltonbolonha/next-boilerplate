@@ -1,3 +1,50 @@
+Boilerplate (Pré-Moldado) Next.js - Projeto de Ensino de Tecnologia
+
+- Logo do Projeto
+
+Eu sou o Milton Bolonha, um programador e versionador de códigos e estou aqui para te ensinar tecnologia de ponta.
+
+Bem-vindo ao projeto Boilerplate Next.js - uma base sólida para iniciarmos nossas aventuras no mundo da tecnologia, utilizando a poderosa biblioteca Next.js!
+
+# Sobre o Projeto
+
+Este repositório contém um boilerplate (ou pré-moldado) desenvolvido por mim, com o objetivo de servir como ponto de partida para nossas atividades pedagógicas no campo da tecnologia, com foco no desenvolvimento de aplicações web modernas.
+
+# O que é um Boilerplate?
+
+Um boilerplate é uma estrutura inicial, um esqueleto, que fornece as bases e funcionalidades essenciais para o desenvolvimento de um tipo específico de projeto. Com o Boilerplate Next.js, temos um ponto de partida com recursos fundamentais já configurados, permitindo que possamos focar nas nossas ideias e funcionalidades sem nos preocuparmos com a configuração inicial.
+
+# Principais Recursos
+
+Integração com o framework Next.js, permitindo desenvolvimento rápido e eficiente.
+Configuração pronta para trabalhar com React e TypeScript.
+Estilos pré-configurados com CSS Modules para facilitar a estilização dos componentes.
+Roteamento simples e intuitivo com suporte a páginas estáticas e dinâmicas.
+Ambiente de desenvolvimento otimizado para uma experiência agradável e produtiva.
+Como Usar
+Para começar a utilizar o Boilerplate Next.js, siga os passos abaixo:
+
+Faça um fork deste repositório para sua conta do GitHub.
+Clone o repositório para sua máquina local.
+Instale as dependências do projeto com o comando: npm install ou yarn install.
+Inicie o servidor de desenvolvimento com o comando: npm run dev ou yarn dev.
+Acesse a aplicação em seu navegador através do endereço: http://localhost:3000.
+A partir desse ponto, você estará pronto(a) para começar a desenvolver suas próprias funcionalidades sobre essa base sólida.
+
+# Contribuições
+
+Contribuições são sempre bem-vindas! Se você encontrar bugs, tiver sugestões ou quiser adicionar novas funcionalidades, sinta-se à vontade para abrir uma issue ou enviar um pull request. Juntos, podemos tornar esse boilerplate cada vez melhor!
+
+# Licença
+
+Este projeto é licenciado sob a licença MIT - veja o arquivo LICENSE para mais detalhes.
+
+# Contato
+
+Em caso de dúvidas ou sugestões, você pode entrar em contato através do e-mail: seu-email@example.com
+
+Vamos explorar o mundo da tecnologia juntos e criar projetos incríveis! 🚀
+
 # Next Boilerplate
 
 /by Milton Bolonha
