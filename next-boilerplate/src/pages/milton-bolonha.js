@@ -19,8 +19,8 @@ export default function MiltonBolonha() {
     return null;
   }
   const opt = {
-    bgImg: "/brandimages/gray-bg.jpg",
-    darkBgImg: "/brandimages/dark-bg.png",
+    bgImg: "brandimages/gray-bg.jpg",
+    darkBgImg: "brandimages/dark-bg.png",
     hasHeader: true,
     hasMenu: true,
     pageQuestions: [],
@@ -45,7 +45,7 @@ export default function MiltonBolonha() {
               }
         }
       >
-        <div className="main-wrapper-inner">
+        <div className='main-wrapper-inner'>
           {opt.hasHeader !== false ? (
             <HeaderContainer
               opt={{
@@ -63,8 +63,8 @@ export default function MiltonBolonha() {
             />
           ) : null}
 
-          <main className="main-container">
-            <HeadingBlock classes="m30auto" importance={10} width={400}>
+          <main className='main-container'>
+            <HeadingBlock classes='m30auto' importance={10} width={400}>
               Milton Bolonha - Especialista em Tecnologia
             </HeadingBlock>
             <Row

@@ -126,8 +126,8 @@ export default function Contato() {
     return null;
   }
   const opt = {
-    bgImg: "/brandimages/gray-bg.jpg",
-    darkBgImg: "/brandimages/dark-bg.png",
+    bgImg: "brandimages/gray-bg.jpg",
+    darkBgImg: "brandimages/dark-bg.png",
     hasHeader: true,
     hasMenu: true,
     pageQuestions: [],

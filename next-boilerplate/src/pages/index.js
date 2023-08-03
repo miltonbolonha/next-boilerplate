@@ -19,11 +19,9 @@ export default function Home() {
   if (!mounted) {
     return null;
   }
-  const isGithubPages = process.env.IS_GITHUB_PAGE || false;
-  const THEME_FOLDER = isGithubPages ? process.env.THEME_FOLDER : "";
   const opt = {
-    bgImg: THEME_FOLDER + "/brandimages/gray-bg.jpg",
-    darkBgImg: THEME_FOLDER + "/brandimages/dark-bg.png",
+    bgImg: "brandimages/gray-bg.jpg",
+    darkBgImg: "brandimages/dark-bg.png",
     hasHeader: true,
     hasMenu: true,
     pageQuestions: [],
