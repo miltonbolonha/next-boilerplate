@@ -42,8 +42,16 @@
 	}
 }
 
-
 .menu-state-not-visible {
 	opacity: 0;
 	visibility: hidden;
+}
+
+.hide-me,
+.hidden {
+	display: none;
+}
+
+.full-width {
+	width: 100%;
 }

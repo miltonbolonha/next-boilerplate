@@ -142,7 +142,7 @@ export default function Contato() {
   return (
     <>
       <div
-        className={"main-wrapper one-column"}
+        className={"main-wrapper"}
         style={
           opt.bgImg && theme === "light"
             ? {

@@ -1,0 +1,45 @@
+.page-container {
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    margin: 10px auto;
+    font-family: $third__font;
+    font-weight: 300;
+    font-size: 20px;
+    width: 100%;
+    text-align: justify;
+    text-align-last: left;
+  }
+  p.contact-info {
+    text-align: center;
+    text-align-last: center;
+    margin-bottom: 30px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 15px 0;
+  }
+  em {
+    font-style: italic;
+  }
+}
+
+.main-page-wrapper {
+  .page-container {
+    max-width: $page__size;
+    margin: 10px auto;
+  }
+}
+.page {
+  padding: 2% 10%;
+}
+
+@page {
+  margin: 0mm;
+}

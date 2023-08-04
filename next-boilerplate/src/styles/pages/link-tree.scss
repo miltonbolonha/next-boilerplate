@@ -1,0 +1,50 @@
+ul.contact-link-tree-wrapper {
+  max-width: 750px;
+  margin: 20px auto;
+  li {
+    list-style-type: none;
+    text-align-last: center;
+    a {
+      padding: 12px 25px 10px;
+      text-align-last: center;
+      border-radius: 25px;
+      border: 2px solid $hotDark__color;
+      box-shadow: 2px 6px 0 0 rgb(0 0 0 / 60%);
+      line-height: 22px;
+      max-width: 550px;
+      width: 240px;
+      @media (min-width: 768px) {
+        width: 100%;
+      }
+      margin: 10px auto;
+      background-color: $cta__color;
+      color: $cta__colorLink;
+      font-weight: 900;
+      display: inline-block;
+      text-align: center;
+      &:hover {
+        background: $cta__colorLink;
+        border: 2px dashed $hotDark__color;
+        color: $cta__color;
+      }
+    }
+  }
+}
+
+.btn-primary {
+  background-color: #4444;
+  border-color: #4444;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken($primary, 7.5%) !important;
+    border-color: darken($primary, 7.5%) !important;
+    color: white;
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem lightgrey !important;
+  }
+}

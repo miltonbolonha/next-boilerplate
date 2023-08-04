@@ -1,5 +1,21 @@
+:root {
+	/* Your default theme */
+	--background: white;
+	--foreground: black;
+}
+
+[data-theme="dark"] {
+	--background: black;
+	--foreground: white;
+}
+body [data-theme="dark"] {
+	main {
+		background-color: hotpink !important;
+	}
+}
+
 ::selection {
-	color: $cta__color;
+	color: $brand__color;
 	background: $hot__color;
 	text-shadow: none;
 }
@@ -8,6 +24,68 @@ img::selection {
 	background: transparent;
 }
 
+/* width */
+::-webkit-scrollbar {
+	width: 15px;
+	max-height: 50px;
+	margin: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: $brand__color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	border-radius: 30px;
+	border: 3px solid $brand__color;
+	background: $hot__color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.non-layout {
+	z-index: 100;
+	position: absolute;
+	top: 1em;
+	left: -9999px;
+	padding: 0.5em 1em;
+	background: black;
+	color: #fff;
+}
+
+.no-pdd-mrg-first-last-child {
+	& > :first-of-type {
+		padding-left: 0 !important;
+		margin-left: 0 !important;
+	}
+	& > :last-of-type {
+		padding-right: 0 !important;
+		margin-right: 0 !important;
+	}
+}
+
+.align-to-right {
+	text-align: right;
+}
+
+.align-center {
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+#___gatsby {
+	z-index: 1;
+	position: relative;
+}
+.main-wrapper {
+	background-attachment: fixed !important;
+}
 html {
 	scroll-behavior: smooth;
 }
@@ -58,6 +136,10 @@ body {
 	}
 	tbody {
 		background-color: $grayscale_300__color;
+	}
+
+	@media (max-width: 959px) {
+		font-size: 14px;
 	}
 }
 body.dark {

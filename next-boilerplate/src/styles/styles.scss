@@ -1,10 +1,11 @@
 /*
-Theme Name: Boilerplate
-Theme URI: https://
-Description: Blog feito em NextJS.
-Author: Bolonha Conversa
-Template: NÜktpls Boilerplate
-Version: 0.2.1
+Theme Name: Bolonha Conversas - Next Boilerplate
+Theme URI: https://miltonbolonha.com.br
+Design System: TE[i]As
+Description: Website feito em NextJS.
+Author: Milton Bolonha - Bolonha Conversa
+Template: Next Boilerplate
+Version: 0.5.0
 */
 
 /*--------------------------------------------------------------
@@ -25,18 +26,31 @@ Version: 0.2.1
 @import "global/base";
 
 /*--------------------------------------------------------------
+2.0 Pages
+--------------------------------------------------------------*/
+
+@import "pages/index";
+@import "pages/link-tree";
+
+/*--------------------------------------------------------------
 3.1 Components
 --------------------------------------------------------------*/
 
 @import "components/row";
-@import "components/popup";
+@import "components/buttons";
+@import "components/badges";
+@import "components/header";
+@import "components/footer";
 
 /*--------------------------------------------------------------
 3.1 Modules / Block Builder
 --------------------------------------------------------------*/
 
-@import "modules/block-builder/single-post";
-@import "modules/block-builder/main-container-blog";
+@import "modules/landings";
+@import "modules/menus";
+@import "modules/pages";
+@import "modules/posts";
+@import "modules/single-post";
 
 /*--------------------------------------------------------------
 4.0 Helpers & Fixes

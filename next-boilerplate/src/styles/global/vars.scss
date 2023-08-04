@@ -12,15 +12,11 @@ $heading__top-padding: 0;
 $heading__bottom-padding: 0px;
 
 $primary: $cta__color;
-$primary_background__color: #eb226a;
 $primary_background: mix(white, $cta__color, 90%);
-$primary_bg_dark: mix(white, $cta__color, 35%);
-$primary_ultralight: mix(white, $cta__color, 80%);
 $primary_light: mix(white, $cta__colorLink, 25%);
 $primary_darklight: mix(black, $cta__colorLink, 25%);
 $primary_lightVar: mix(black, $hot__color, 25%);
 $primary_dark: mix(black, $cta__color, 35%);
-$primary_ultradark: mix(black, $cta__color, 80%);
 $primary_darkvar: #252210;
 
 $brand_black__color: #262833;
@@ -28,8 +24,7 @@ $paragrahp_black__color: #212529;
 $grayscale_300__color: #e3e3e3;
 $grayscale_600__color: #a3a3a3;
 $color__light-grey: #999999;
-$selection_bg__color: #2e2e2e;
-$selection_txt__color: #fff;
+
 // Breakpoints n screen vars
 $logo__max-width: 450px;
 $post_page__size: 1020px;
@@ -40,11 +35,9 @@ $tablet__size: 768px;
 $tabletHack__size: 959px;
 $tabletHackMinimal__size: 425px;
 $boxed__tabletHackMaxWidth: 730px;
-$small__size: 375px;
 $desktopIndexButtons__maxWidth: 520px;
 $mobileIndexButtons__maxWidth: 280px;
 $tabletIndexButtons__maxWidth: 350px;
-$boxed__maxWidth: 375px;
 $boxedDesktop__maxWidth: 960px;
 $boxedMobile__maxWidth: 375px;
 //Spaces
@@ -61,7 +54,7 @@ $third__font: var(--font-josefin-sans), $alternative__font, sans-serif;
 
 $fourth__font: var(--font-quattrocento), $alternative__font, sans-serif;
 
-$fifth__font: var(--font-playfair-display), $alternative__font, sans-serif;
+// $fifth__font: var(--font-playfair-display), $alternative__font, sans-serif;
 
 $sixth__font: var(--font-roboto), $alternative__font, sans-serif;
 
@@ -69,7 +62,6 @@ $seventh__font: var(--font-nova-flat), $alternative__font, sans-serif;
 
 $eighth__font: "Varela", $alternative__font, sans-serif;
 
-$m__fontSize: 17px;
 $h1__fontSize: 30pt;
 $h2__fontSize: 24pt;
 $h3__fontSize: 22pt;
