@@ -6,8 +6,10 @@ import BadgesButtons from "../components/BadgesButtons";
 import Row from "../containers/RowContainer";
 import MainMenuData from "../configs/main-menu.json";
 import HeaderContainer from "../containers/HeaderContainer";
+import BlogList from "../templates/blog-list";
+import { getAllPosts } from "../lib/api";
 
-export default function Home() {
+export default function Home({ posts }) {
   const [mounted, setMounted] = useState(false);
   const { theme } = useTheme();
 
@@ -121,10 +123,22 @@ export default function Home() {
               </div>
             </Row>
           </main>
-
+          <div className='posts-major-spam'>
+            <BlogList posts={posts} />
+          </div>
           <BadgesButtons opt={opt} questions={opt.pageQuestions} />
         </div>
       </div>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const posts = getAllPosts();
+
+  return {
+    props: {
+      posts,
+    },
+  };
 }

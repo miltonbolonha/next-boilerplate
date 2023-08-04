@@ -16,6 +16,5 @@ export default async function markdownToHtml(markdown) {
       },
     })
     .process(markdown);
-  console.log("indo beemmmmmmmmmmmmmm 2");
   return result?.toString() || markdown;
 }

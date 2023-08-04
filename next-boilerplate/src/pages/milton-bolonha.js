@@ -75,7 +75,13 @@ export default function MiltonBolonha() {
                 classes: "main-container-wrapper page-container",
               }}
               content={"content"}
-            ></Row>
+            >
+              <h1>
+                Milton Bolonha - Desenvolvedor Web, Professor de Programação e
+                Tecnologia
+              </h1>
+              <p>desc</p>
+            </Row>
           </main>
 
           <BadgesButtons opt={opt} questions={opt.pageQuestions} />

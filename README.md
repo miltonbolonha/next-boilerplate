@@ -87,7 +87,6 @@ This is my own boilerplate nextjs theme.
 - Remark MD
 - Sendgrid
 - Netlify
-- Algolia
 - Prism
 - MomentJS
 
