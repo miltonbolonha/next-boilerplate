@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import BadgesButtons from "../components/BadgesButtons";
-import { Row } from "../containers/RowContainer";
+import Row from "../containers/RowContainer";
 import MainMenuData from "../configs/main-menu.json";
 import HeaderContainer from "../containers/HeaderContainer";
 import HeadingContainer from "../containers/HeadingContainer";
@@ -66,9 +66,9 @@ export default function MiltonBolonha() {
           ) : null}
 
           <main className='main-container'>
-            <HeadingContainer classes='m30auto' importance={10} width={400}>
+            {/* <HeadingContainer classes='m30auto' importance={10} width={400}>
               Milton Bolonha - Especialista em Tecnologia
-            </HeadingContainer>
+            </HeadingContainer> */}
             <Row
               opt={{
                 isBoxed: true,

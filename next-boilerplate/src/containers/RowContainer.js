@@ -1,6 +1,6 @@
 import React from "react";
 import InsertRow from "../components/InsertRow";
-export const Row = ({ opt, children, content }) => {
+const Row = ({ opt, children, content }) => {
   const rowWidth = opt.isBoxed ? "boxed-column" : "full-width-row";
   const alignTo = opt.alignTo ? `align-to-${opt.alignTo}` : "";
   const templateColumns = `repeat(${opt.numColumns || "1"}, ${
@@ -28,3 +28,5 @@ export const Row = ({ opt, children, content }) => {
     </InsertRow>
   );
 };
+
+export default Row;

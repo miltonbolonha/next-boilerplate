@@ -1,6 +1,6 @@
 import React from "react";
 
-export const InsertRow = ({
+const InsertRow = ({
   children,
   content,
   rowWidth,
@@ -34,3 +34,5 @@ export const InsertRow = ({
     )}
   </div>
 );
+
+export default InsertRow;
