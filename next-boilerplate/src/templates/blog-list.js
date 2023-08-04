@@ -8,32 +8,12 @@ const BlogList = ({ posts }) => {
     new Date(post1.date) > new Date(post2.date) ? -1 : 1
   );
 
-  // const [count, setCount] = useState({
   const [count] = useState({
     prev: 0,
     next: 10,
   });
-  // const [current, setCurrent] = useState(
   const [current] = useState(sortedPosts.slice(count.prev, count.next));
-  /*
-  const [hasMore, setHasMore] = useState(true);
 
-  const getMoreData = () => {
-    if (current.length === sortedPosts.length) {
-      setHasMore(false);
-      return;
-    }
-
-    setCurrent(
-      current.concat(sortedPosts.slice(count.prev + 10, count.next + 10))
-    );
-
-    setCount((prevState) => ({
-      prev: prevState.prev + 10,
-      next: prevState.next + 10,
-    }));
-  };
-*/
   return (
     <>
       <NextSeo
