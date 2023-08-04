@@ -85,12 +85,14 @@ img::selection {
 }
 .main-wrapper {
 	background-attachment: fixed !important;
+	min-height: 100vh;
 }
 html {
 	scroll-behavior: smooth;
 }
 body {
 	overflow-x: hidden;
+	overflow-y: auto;
 	position: relative;
 	z-index: 1;
 

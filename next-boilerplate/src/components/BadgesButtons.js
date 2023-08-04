@@ -11,7 +11,9 @@ const BadgesButtons = ({
 }) => (
   <>
     <div
-      className={`chat-questions-wrapper badgeClass question-hide-${questionState} question-move-${questionState}`}
+      className={`chat-questions-wrapper badgeClass question-hide-${
+        questionState || false
+      } question-move-${questionState || false}`}
     >
       <div className='question-box-wrapper'>
         {questionsArray?.map((question, indx) => {
