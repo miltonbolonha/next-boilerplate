@@ -7,7 +7,6 @@ import BadgesButtons from "../components/BadgesButtons";
 import Row from "../containers/RowContainer";
 import MainMenuData from "../configs/main-menu.json";
 import HeaderContainer from "../containers/HeaderContainer";
-// import HeadingContainer from "../containers/HeadingContainer";
 
 export default function Contato() {
   const [mounted, setMounted] = useState(false);
@@ -15,12 +14,12 @@ export default function Contato() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [subject, setSubject] = useState("");
-  const [token, setToken] = useState(null);
+  const [setToken] = useState(null);
   const [honey, setHoney] = useState("");
 
-  const [chating, setChating] = useState(false);
+  const [setChating] = useState(false);
   const { executeRecaptcha } = useReCaptcha();
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
 
   const siteUrlf = "https://bolonha.vercel.app";
 
