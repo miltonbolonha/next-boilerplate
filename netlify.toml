@@ -1,0 +1,18 @@
+[build]
+command = "npm run build --workspace=next-boilerplate"
+publish = "next-boilerplate/out"
+
+[build.environment]
+NODE_VERSION = "18.12.1"
+
+[[plugins]]
+package = "@netlify/plugin-nextjs"
+
+[[plugins]]
+package = "@netlify/plugin-local-install-core"
+
+[[plugins]]
+package = "@netlify/plugin-emails"
+
+[functions]
+directory = "next-boilerplate/src/pages/api"
