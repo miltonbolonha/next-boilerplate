@@ -7,6 +7,3 @@ NODE_VERSION = "18.12.1"
 
 [[plugins]]
 package = "@netlify/plugin-local-install-core"
-
-[[plugins]]
-package = "@netlify/plugin-emails"
