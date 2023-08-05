@@ -6,31 +6,27 @@ const HeadingContainer = ({
   classes = "",
   width,
 }) => {
-  let Heading = null;
-
-  // if (importance === 6) {
-  //   Heading = `<h5 className="boilerplate-heading " + ${classes}>${children}</h5>`;
-  // }
-
-  // if (importance === 7) {
-  //   Heading = `<h4 className="boilerplate-heading " + ${classes}>${children}</h4>`;
-  // }
-  // if (importance === 8) {
-  //   Heading = `<h3 className="boilerplate-heading " + ${classes}>${children}</h3>`;
-  // }
-  // if (importance === 9) {
-  //   Heading = `<h2 className="boilerplate-heading " + ${classes}>${children}</h2>`;
-  // }
-
-  // if (importance === 10) {
-  //   Heading = `<h1 className="boilerplate-heading " + ${classes}>${children}</h1>`;
-  // }
-
+  function Heading(classes, children) {
+    if (importance === 6) {
+      return `<h5 className="boilerplate-heading " + ${classes} dangerouslySetInnerHTML=${children} />`;
+    }
+    if (importance === 7) {
+      return `<h4 className="boilerplate-heading " + ${classes} dangerouslySetInnerHTML=${children} />`;
+    }
+    if (importance === 8) {
+      return `<h3 className="boilerplate-heading " + ${classes} dangerouslySetInnerHTML=${children} />`;
+    }
+    if (importance === 9) {
+      return `<h2 className="boilerplate-heading " + ${classes} dangerouslySetInnerHTML=${children} />`;
+    }
+    if (importance === 10) {
+      return `<h1 className="boilerplate-heading " + ${classes} dangerouslySetInnerHTML=${children} />`;
+    }
+  }
   return (
-    <h1
-      className={`boilerplate-heading  + ${classes}`}
-      dangerouslySetInnerHTML={children}
-    />
+    <HeadingBlock>
+      <Heading classes={classes} children={children} width={width} />
+    </HeadingBlock>
   );
 };
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-const HeadingBlock = ({ width, Heading }) => {
+const HeadingBlock = ({ children, width }) => {
   return (
     <div className='wrapper-hr'>
       <div
@@ -11,7 +11,7 @@ const HeadingBlock = ({ width, Heading }) => {
       >
         <span className='ht-top'></span>
       </div>
-      <Heading />
+      {children}
       <div
         className='inner-hr right-hr'
         style={{

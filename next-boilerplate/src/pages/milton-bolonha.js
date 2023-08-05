@@ -4,7 +4,7 @@ import BadgesButtons from "../components/BadgesButtons";
 import Row from "../containers/RowContainer";
 import MainMenuData from "../configs/main-menu.json";
 import HeaderContainer from "../containers/HeaderContainer";
-import HeadingContainer from "../containers/HeadingContainer";
+// import HeadingContainer from "../containers/HeadingContainer";
 
 export default function MiltonBolonha() {
   const [mounted, setMounted] = useState(false);
