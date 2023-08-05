@@ -6,9 +6,6 @@ publish = "next-boilerplate/out"
 NODE_VERSION = "18.12.1"
 
 [[plugins]]
-package = "@netlify/plugin-nextjs"
-
-[[plugins]]
 package = "@netlify/plugin-local-install-core"
 
 [[plugins]]
