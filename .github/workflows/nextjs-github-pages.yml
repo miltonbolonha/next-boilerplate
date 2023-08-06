@@ -1,4 +1,4 @@
-name: Deploy Next to GH Pages
+name: Deploy NextJS to GH Pages
 on:
   push:
     branches: ["master"]
