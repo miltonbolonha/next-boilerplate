@@ -3,7 +3,7 @@ layout: post
 title: "O que é state machine (máquina de estados) ?"
 date: 2020-01-01 00:01:00
 image: "/posts/images/homem-computador.jpg"
-description: "State machine é um padrão de desenvolvimento web onde você constrói uma máquina e todos os seus dispositivos. Então, a partir dos estados a máquina é gerenciada"
+description: "State machine é o padrão de desenvolvimento web onde você constrói uma máquina e todos os seus dispositivos. Então, a partir dos estados a máquina é gerenciada"
 main-class: "dev"
 color: "#dd1199"
 tags:
@@ -14,7 +14,7 @@ twitter_text: "State machine é um padrão de desenvolvimento web."
 introduction: "State machine é um padrão de desenvolvimento web, a partir dos estados a máquina é gerenciada."
 ---
 
-_State machine_ é um padrão de desenvolvimento web onde você constrói uma máquina e todos os seus dispositivos. Então, a partir dos estados a máquina é gerenciada.
+_State machine_ é o padrão de desenvolvimento web onde você constrói uma máquina e todos os seus dispositivos. Então, a partir dos estados a máquina é gerenciada.
 
 O som dos carros quando estão no **MODO RÁDIO** fazem com que o botão _next_ funcione para ir para a próxima estação. Já quando está no **MODO CD** ou **USB** o _next_ funciona para trocar a música.
 
