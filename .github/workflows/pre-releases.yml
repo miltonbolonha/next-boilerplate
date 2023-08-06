@@ -1,0 +1,24 @@
+name: Latest Release
+on:
+  push:
+    branches: ["master"]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+jobs:
+  # Build job
+  pre-release:
+    permissions: write-all
+    name: "Pre Release"
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "Automatic release"
+        run: |
+          echo "Started!"
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Development Build"
+          files: |
+            LICENSE
