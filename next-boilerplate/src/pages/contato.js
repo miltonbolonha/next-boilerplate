@@ -5,8 +5,11 @@ import Row from "../containers/RowContainer";
 import MainMenuData from "../configs/main-menu.json";
 import HeaderContainer from "../containers/HeaderContainer";
 import HeadingContainer from "../containers/HeadingContainer";
+import { useTheme } from "next-themes";
 
 export default function Contato() {
+  const { theme } = useTheme();
+
   const isGithubPages = process.env.IS_GITHUB_PAGE || false;
   const THEME_FOLDER = isGithubPages ? "/" + process.env.THEME_FOLDER : "";
   const opt = {
