@@ -29,8 +29,7 @@
     "remark-oembed": "^1.2.2",
     "remark-slug": "^7.0.1",
     "slugify": "^1.6.6",
-    "typescript": "5.1.6",
-    "universal-cookie": "^4.0.4"
+    "typescript": "5.1.6"
   },
   "devDependencies": {
     "eslint": "8.44.0",
