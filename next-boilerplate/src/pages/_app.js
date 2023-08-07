@@ -1,14 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { ReCaptchaProvider } from "next-recaptcha-v3";
 
 import Head from "next/head";
 import "@fontsource/varela";
 import "../styles/styles.scss";
-import { useRouter } from "next/router";
 import NextNProgress from "nextjs-progressbar";
 
 import { ThemeProvider } from "next-themes";
-import * as gtag from "../lib/gtag";
 
 import { DefaultSeo } from "next-seo";
 import SEO from "../../next-seo.config";
@@ -20,17 +18,6 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 function App({ Component, pageProps }) {
-  const router = useRouter();
-  useEffect(() => {
-    const handleRouteChange = url => {
-      gtag.pageview(url);
-    };
-    router.events.on("routeChangeComplete", handleRouteChange);
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
-
   return (
     <ReCaptchaProvider
       reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
