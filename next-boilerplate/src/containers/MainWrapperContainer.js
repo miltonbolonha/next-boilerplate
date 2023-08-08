@@ -1,6 +1,8 @@
 import React from "react";
 import MainWrapper from "../components/MainWrapper";
 import mainConfigs from "../configs/main-infos.json";
+import { useTheme } from "next-themes";
+
 const MainWrapperContainer = ({ children }) => {
   const { theme } = useTheme();
   const isGithubPages = process.env.IS_GITHUB_PAGE || false;

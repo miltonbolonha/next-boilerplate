@@ -4,7 +4,7 @@ import Link from "next/link";
 import Row from "../containers/RowContainer";
 import BlogList from "../templates/blog-list";
 import { getAllPosts } from "../lib/api";
-
+import MainWrapperContainer from "../containers/MainWrapperContainer";
 const Home = ({ posts }) => (
   <MainWrapperContainer>
     <Row opt={{ classes: "cta-infos", isBoxed: true, numColumns: 2 }}>
