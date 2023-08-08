@@ -1,0 +1,9 @@
+{
+  "globals": {
+    "isDarkLogo": false
+  },
+  "index": {
+    "hasHeader": true,
+    "hasMenu": true
+  }
+}

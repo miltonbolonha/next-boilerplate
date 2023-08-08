@@ -18,23 +18,16 @@ const HeaderContainer = ({ mainMenu, opt }) => {
   const logoLightImage = "/brandimages/logo.png";
   const logoImage = "/brandimages/logo.png";
   const logotype = opt.logoUrl ? (
-    <a href={opt.logoUrl} className="logo-link">
+    <a href={opt.logoUrl} className='logo-link'>
       {opt.logoSvg}
     </a>
   ) : (
-    <Link
-      href={
-        opt.urlLocale === undefined || !opt.urlLocale || opt.urlLocale === ""
-          ? "/"
-          : "/" + opt.urlLocale + "/"
-      }
-      className="logo-link"
-    >
+    <Link href={"/"} className='logo-link'>
       <Image
         src={opt.isDarkLogo ? logoImage : logoLightImage}
-        alt={"Edu4Dev - E"}
+        alt={"Bolonha Conversas"}
         placeholder={"NONE"}
-        critical="true"
+        critical='true'
         className={"main-logo"}
         width={222}
         height={120}
@@ -58,7 +51,6 @@ const HeaderContainer = ({ mainMenu, opt }) => {
       bgOne={opt.bgOne || "#e9e9ed"}
       bgTwo={opt.bgTwo || "#f6f7fa"}
       mainMenuStatus={opt.mainMenuStatus}
-      flags={opt.flags}
     />
   );
 };

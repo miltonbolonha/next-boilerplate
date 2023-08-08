@@ -19,7 +19,6 @@ const Header = ({
   logotype,
   logoImage,
   handleRefState,
-  flags,
 }) => {
   const { theme, setTheme } = useTheme();
   return (
