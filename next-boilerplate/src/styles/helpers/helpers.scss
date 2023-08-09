@@ -106,3 +106,16 @@ blockquote {
 	border-left: 5px solid #000;
 	padding-left: 5px;
 }
+.align-to-center {
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+
+	& div,
+	& h2,
+	& p {
+		text-align: center;
+		justify-content: center;
+		align-content: center;
+	}
+}

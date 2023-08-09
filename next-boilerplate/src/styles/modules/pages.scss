@@ -29,17 +29,3 @@
     font-style: italic;
   }
 }
-
-.main-page-wrapper {
-  .page-container {
-    max-width: $page__size;
-    margin: 10px auto;
-  }
-}
-.page {
-  padding: 2% 10%;
-}
-
-@page {
-  margin: 0mm;
-}

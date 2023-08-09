@@ -52,11 +52,8 @@
   }
 
   .main-logo {
-    margin-top: 10px;
-
-    justify-self: left;
-
     z-index: 9;
+    object-fit: contain;
   }
   .main-ul-ul {
     width: 200px;
