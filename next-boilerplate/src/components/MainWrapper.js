@@ -1,6 +1,7 @@
 import MainMenuData from "../configs/main-menu.json";
 
 import HeaderContainer from "../containers/HeaderContainer";
+import RowContainer from "../containers/RowContainer";
 
 const MainWrapper = ({
   children,
@@ -10,20 +11,24 @@ const MainWrapper = ({
   hasMenu,
   isDarkLogo,
   theme,
+  rowWidth,
 }) => (
   <div
     className={"main-wrapper"}
-    style={
-      bgImg && theme === "light"
-        ? {
-            background: `url(${bgImg}) no-repeat`,
-          }
-        : {
-            background: `url(${darkBgImg}) repeat`,
-          }
-    }
+    style={{
+      backgroundImage: `url(${theme !== "dark" ? bgImg : darkBgImg})`,
+      backgroundRepeat: "repeat",
+      backgroundSize: "500px 500px",
+    }}
   >
-    <div className='main-wrapper-inner'>
+    <RowContainer
+      opt={{
+        classes: "main-wrapper-inner",
+        isBoxed: true,
+        bgColor: "#fff",
+        rowWidth: rowWidth,
+      }}
+    >
       {hasHeader !== false ? (
         <HeaderContainer
           opt={{
@@ -40,7 +45,7 @@ const MainWrapper = ({
       ) : null}
 
       <main className='main-container'>{children}</main>
-    </div>
+    </RowContainer>
   </div>
 );
 

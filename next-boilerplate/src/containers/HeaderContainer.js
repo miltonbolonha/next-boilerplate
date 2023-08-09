@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { useTheme } from "next-themes";
 import Link from "next/link";
 import Header from "../components/Header";
 import Image from "next/image";
@@ -6,6 +7,7 @@ import Image from "next/image";
 const HeaderContainer = ({ mainMenu, opt }) => {
   const [refState, setRefState] = useState(true);
   const wrapperRef = useRef(null);
+  const { theme, setTheme } = useTheme();
 
   function handleRefState() {
     setRefState(!refState);
@@ -29,8 +31,8 @@ const HeaderContainer = ({ mainMenu, opt }) => {
         placeholder={"NONE"}
         critical='true'
         className={"main-logo"}
-        width={222}
-        height={120}
+        width={120}
+        height={43}
       />
     </Link>
   );
@@ -51,6 +53,8 @@ const HeaderContainer = ({ mainMenu, opt }) => {
       bgOne={opt.bgOne || "#e9e9ed"}
       bgTwo={opt.bgTwo || "#f6f7fa"}
       mainMenuStatus={opt.mainMenuStatus}
+      theme={theme}
+      setTheme={setTheme}
     />
   );
 };

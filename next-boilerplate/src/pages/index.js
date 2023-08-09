@@ -6,7 +6,7 @@ import BlogList from "../templates/blog-list";
 import { getAllPosts } from "../lib/api";
 import MainWrapperContainer from "../containers/MainWrapperContainer";
 const Home = ({ posts }) => (
-  <MainWrapperContainer>
+  <MainWrapperContainer rowWidth={500}>
     <Row opt={{ classes: "cta-infos", isBoxed: true, numColumns: 2 }}>
       <div className='hero-txt'>
         <h2>Cadernos de estudo</h2>

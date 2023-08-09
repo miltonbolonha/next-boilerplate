@@ -18,7 +18,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 function App({ Component, pageProps }) {
   return (
-    <ThemeProvider>
+    <ThemeProvider enableSystem={false}>
       <Head>
         <meta name='theme-color' content='#06092B' />
         <meta

@@ -1,6 +1,5 @@
 import React from "react";
 import Row from "../containers/RowContainer";
-import { useTheme } from "next-themes";
 import Image from "next/image";
 
 import MainMenuContainer from "../containers/MainMenuContainer";
@@ -19,8 +18,9 @@ const Header = ({
   logotype,
   logoImage,
   handleRefState,
+  setTheme,
+  theme,
 }) => {
-  const { theme, setTheme } = useTheme();
   return (
     <header>
       <Row

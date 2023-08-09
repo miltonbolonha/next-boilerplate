@@ -9,23 +9,26 @@ const InsertRow = ({
   styleHelper,
   bgParent,
   alignTo,
+  rowClass,
 }) => (
   <div
-    className={`${rowWidth} ${classes} ${alignTo} responsive-padding`}
+    className={`${rowClass} ${classes} ${alignTo} responsive-padding`}
     style={{
-      backgroundColor: bgParent,
+      backgroundImage: bgParent,
+      backgroundRepeat: "repeat",
+      maxWidth: rowWidth || "100%",
     }}
   >
     {content ? (
       <div
-        className={rowWidth + "-child " + classes}
+        className={rowClass + "-child " + classes}
         role={role || null}
         style={styleHelper}
         dangerouslySetInnerHTML={{ __html: content }}
       ></div>
     ) : (
       <div
-        className={rowWidth + "-child " + classes}
+        className={rowClass + "-child " + classes}
         role={role || null}
         style={styleHelper}
       >
