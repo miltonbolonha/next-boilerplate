@@ -14,7 +14,7 @@ const MainWrapperContainer = ({ children, rowWidth }) => {
     darkBgImg: THEME_FOLDER + "/brandimages/dark-bg.jpg",
   };
 
-  // useEffect only runs on the client, so now we can safely show the UI
+  // useEffect  only runs on the client, so now we can safely show the UI
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -31,6 +31,7 @@ const MainWrapperContainer = ({ children, rowWidth }) => {
       isDarkLogo={opt.globals.isDarkLogo}
       theme={theme}
       rowWidth={rowWidth}
+      killSeo={true}
     >
       {children}
     </MainWrapper>

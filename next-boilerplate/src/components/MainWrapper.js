@@ -13,40 +13,42 @@ const MainWrapper = ({
   theme,
   rowWidth,
 }) => (
-  <div
-    className={"main-wrapper"}
-    style={{
-      backgroundImage: `url(${theme !== "dark" ? bgImg : darkBgImg})`,
-      backgroundRepeat: "repeat",
-      backgroundSize: "500px 500px",
-    }}
-  >
-    <RowContainer
-      opt={{
-        classes: "main-wrapper-inner",
-        isBoxed: true,
-        bgColor: "#fff",
-        rowWidth: rowWidth,
+  <>
+    <div
+      className={"main-wrapper"}
+      style={{
+        backgroundImage: `url(${theme !== "dark" ? bgImg : darkBgImg})`,
+        backgroundRepeat: "repeat",
+        backgroundSize: "500px 500px",
       }}
     >
-      {hasHeader !== false ? (
-        <HeaderContainer
-          opt={{
-            mainMenuStatus: MainMenuData.menu.status,
-            logoSvg: "logotipoSvg",
-            bgOne: "transparent",
-            bgTwo: "transparent",
-            classes: "header-block",
-            hasMenu: hasMenu,
-            isDarkLogo: isDarkLogo,
-          }}
-          mainMenu={MainMenuData.menu.items}
-        />
-      ) : null}
+      <RowContainer
+        opt={{
+          classes: "main-wrapper-inner",
+          isBoxed: true,
+          bgColor: "#fff",
+          rowWidth: rowWidth,
+        }}
+      >
+        {hasHeader !== false ? (
+          <HeaderContainer
+            opt={{
+              mainMenuStatus: MainMenuData.menu.status,
+              logoSvg: "logotipoSvg",
+              bgOne: "transparent",
+              bgTwo: "transparent",
+              classes: "header-block",
+              hasMenu: hasMenu,
+              isDarkLogo: isDarkLogo,
+            }}
+            mainMenu={MainMenuData.menu.items}
+          />
+        ) : null}
 
-      <main className='main-container'>{children}</main>
-    </RowContainer>
-  </div>
+        <main className='main-container'>{children}</main>
+      </RowContainer>
+    </div>
+  </>
 );
 
 export default MainWrapper;

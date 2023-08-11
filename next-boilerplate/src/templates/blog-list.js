@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import Post from "../components/Post";
-import { NextSeo } from "next-seo";
+// import { NextSeo } from "next-seo";
 
 const BlogList = ({ posts }) => {
   const sortedPosts = posts.sort((post1, post2) =>
@@ -16,7 +16,7 @@ const BlogList = ({ posts }) => {
 
   return (
     <>
-      <NextSeo
+      {/* <NextSeo
         title='Home | Milton Bolonha'
         description='Um blog de um desenvolvedor FullStack (LINUX, PHP & NODEJS), fã de rock, política, gatos e inteligência artificial.'
         openGraph={{
@@ -29,7 +29,7 @@ const BlogList = ({ posts }) => {
             },
           ],
         }}
-      />
+      /> */}
 
       {current.map((post, i) => {
         const x = i + 1;

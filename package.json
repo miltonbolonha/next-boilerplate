@@ -5,8 +5,8 @@
     "next-boilerplate"
   ],
   "private": false,
-  "description": "Bolonha Conversa NextJS Theme",
-  "author": "Bolonha Conversa <miltonbolonha@gmail.com>",
+  "description": "Bolonha Conversas NextJS Theme",
+  "author": "Bolonha Conversas <miltonbolonha@gmail.com>",
   "keywords": [
     "nextjs workspace",
     "workspace engine",
@@ -16,7 +16,7 @@
     "nextjs layout",
     "nextjs builder",
     "nextjs theme boilerplate",
-    "nextjs theme Bolonha Conversa",
+    "nextjs theme Bolonha Conversas",
     "layout builder",
     "seo",
     "builder"
