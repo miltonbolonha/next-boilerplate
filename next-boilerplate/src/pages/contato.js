@@ -1,80 +1,31 @@
 import React from "react";
 
-import BadgesButtons from "../components/BadgesButtons";
 import Row from "../containers/RowContainer";
-import MainMenuData from "../configs/main-menu.json";
-import HeaderContainer from "../containers/HeaderContainer";
-import HeadingContainer from "../containers/HeadingContainer";
-import { useTheme } from "next-themes";
+import MainWrapperContainer from "../containers/MainWrapperContainer";
 
-export default function Contato() {
-  const { theme } = useTheme();
-
-  const isGithubPages = process.env.IS_GITHUB_PAGE || false;
-  const THEME_FOLDER = isGithubPages ? "/" + process.env.THEME_FOLDER : "";
-  const opt = {
-    bgImg: THEME_FOLDER + "/brandimages/gray-bg.jpg",
-    darkBgImg: THEME_FOLDER + "/brandimages/dark-bg.png",
-    hasHeader: true,
-    hasMenu: true,
-    pageQuestions: [],
-    badgesWhats: false,
-    badgesQuestion: false,
-    isDarkLogo: false,
-    flags: null, // remove
-    urlLocale: "",
-  };
-  return (
-    <>
-      <div
-        className={"main-wrapper"}
-        style={
-          opt.bgImg && theme === "light"
-            ? {
-                background: `url(${opt.bgImg}) no-repeat`,
-              }
-            : {
-                background: `url(${opt.darkBgImg}) repeat`,
-              }
-        }
-      >
-        <div className='main-wrapper-inner'>
-          {opt.hasHeader !== false ? (
-            <HeaderContainer
-              opt={{
-                mainMenuStatus: MainMenuData.menu.status,
-                logoSvg: "logotipoSvg",
-                bgOne: "transparent",
-                bgTwo: "transparent",
-                classes: "header-block",
-                flags: opt.flags,
-                urlLocale: opt.urlLocale,
-                hasMenu: opt.hasMenu,
-                isDarkLogo: opt.isDarkLogo,
-              }}
-              mainMenu={MainMenuData.menu.items}
-            />
-          ) : null}
-
-          <main className='main-container'>
-            <HeadingContainer classes='m30auto' importance={10} width={400}>
-              Contato
-            </HeadingContainer>
-            <Row
-              opt={{
-                isBoxed: true,
-                classes: "main-container-wrapper page-container",
-              }}
-            >
-              <div className='section row pb-0'>
-                <div className='col-12 md:col-6 lg:col-7'>LinkTree</div>
-              </div>
-            </Row>
-          </main>
-
-          <BadgesButtons opt={opt} questions={opt.pageQuestions} />
+const Contato = () => (
+  <MainWrapperContainer rowWidth={960}>
+    <h2>Início: Contato</h2>
+    <div className='wrapper-box'>
+      <Row opt={{ isBoxed: true }}>
+        <div className='hero-txt'>
+          <h1>Fale com a gente</h1>
+          <h2>Especialista em Tecnologia e Marketing</h2>
+          <p>Milton Bolonha desenvolve sites desde 1998.</p>
+          <p>
+            Como especialista faz a curadoria e implementação sustentável de
+            códigos e de tecnologias.
+          </p>
         </div>
-      </div>
-    </>
-  );
-}
+        <ul>
+          <li>um</li>
+          <li>dois</li>
+          <li>tres</li>
+          <li>quatro</li>
+          <li>cinco</li>
+        </ul>
+      </Row>
+    </div>
+  </MainWrapperContainer>
+);
+export default Contato;
