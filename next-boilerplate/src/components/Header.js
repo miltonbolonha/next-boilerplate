@@ -23,6 +23,36 @@ const Header = ({
 }) => {
   return (
     <header>
+      <div className='toggle-dark-mode'>
+        <button
+          onClick={() => setTheme("light")}
+          className={theme === "light" ? "active" : ""}
+        >
+          <Image
+            src={"/brandimages/light-mode.svg"}
+            alt={"Light Mode"}
+            placeholder={"NONE"}
+            critical='true'
+            className={""}
+            width={30}
+            height={30}
+          />
+        </button>
+        <button
+          onClick={() => setTheme("dark")}
+          className={theme === "dark" ? "active" : ""}
+        >
+          {" "}
+          <Image
+            src={"/brandimages/dark-mode.svg"}
+            alt={"Dark Mode"}
+            placeholder={"NONE"}
+            critical='true'
+            width={30}
+            height={30}
+          />
+        </button>
+      </div>
       <Row
         opt={{
           isBoxed: false,
@@ -31,41 +61,11 @@ const Header = ({
           numColumns: 3,
         }}
       >
+        <span className='left-gray-circle' />
         <Row opt={{ isBoxed: false, classes: "header-logo" }}>{logotype}</Row>
-        {/* mobile menu */}
-        <div className='toggle-dark-mode'>
-          <button
-            onClick={() => setTheme("light")}
-            className={theme === "light" ? "active" : ""}
-          >
-            <Image
-              src={"/brandimages/light-mode.svg"}
-              alt={"Light Mode"}
-              placeholder={"NONE"}
-              critical='true'
-              className={""}
-              width={30}
-              height={30}
-            />
-          </button>
-          <button
-            onClick={() => setTheme("dark")}
-            className={theme === "dark" ? "active" : ""}
-          >
-            {" "}
-            <Image
-              src={"/brandimages/dark-mode.svg"}
-              alt={"Dark Mode"}
-              placeholder={"NONE"}
-              critical='true'
-              width={30}
-              height={30}
-            />
-          </button>
-        </div>
         {hasMenu && mainMenuStatus === true ? (
           <>
-            <div className='desktop-only'>
+            {/* <div className='desktop-only'>
               <MainMenuContainer
                 wrapperRef={wrapperRef}
                 refState={refState}
@@ -73,12 +73,10 @@ const Header = ({
                 isMobile={false}
                 mainMenuItems={mainMenu}
               />
-            </div>
+            </div> */}
 
             <div
-              className={` mobile-only main-header-${
-                !refState ? "visible" : "not-visible"
-              }`}
+              className={`main-header-${!refState ? "visible" : "not-visible"}`}
             >
               <div className='header-columns toggle-menu'>
                 <button
@@ -89,11 +87,19 @@ const Header = ({
                   aria-controls='mainmenu'
                   aria-expanded={refState}
                   aria-label='Alternar visibilidade do menu'
-                  className={`menu-wrapper menu-bar-icon  ${
+                  className={`resetButton  ${
                     !refState ? "active opened" : "not-active"
                   }`}
                 >
-                  ...
+                  <Image
+                    src={"/brandimages/door.png"}
+                    alt={"Open Menu"}
+                    placeholder={"NONE"}
+                    critical='true'
+                    width={15}
+                    height={30}
+                    className='door'
+                  />
                 </button>
               </div>
             </div>
@@ -112,7 +118,6 @@ const Header = ({
             </div>
           </>
         ) : null}
-        {/* desktop menu */}
       </Row>
     </header>
   );

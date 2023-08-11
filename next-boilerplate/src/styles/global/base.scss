@@ -8,11 +8,6 @@
 	--background: black;
 	--foreground: white;
 }
-body [data-theme="dark"] {
-	main {
-		background-color: hotpink !important;
-	}
-}
 
 ::selection {
 	color: $brand__color;
@@ -33,13 +28,13 @@ img::selection {
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background: $brand__color;
+	background: #c4c4c4;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
 	border-radius: 30px;
-	border: 3px solid $brand__color;
+	border: 3px solid #c4c4c4;
 	background: $hot__color;
 }
 
@@ -79,15 +74,6 @@ img::selection {
 	align-items: center;
 }
 
-#___gatsby {
-	z-index: 1;
-	position: relative;
-}
-.main-wrapper {
-	background-attachment: fixed !important;
-	min-height: 100vh;
-	background-size: 500px 500px;
-}
 html {
 	scroll-behavior: smooth;
 }

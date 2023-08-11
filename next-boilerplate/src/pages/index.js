@@ -1,67 +1,30 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import Row from "../containers/RowContainer";
 import BlogList from "../templates/blog-list";
 import { getAllPosts } from "../lib/api";
 import MainWrapperContainer from "../containers/MainWrapperContainer";
 const Home = ({ posts }) => (
-  <MainWrapperContainer rowWidth={500}>
-    <Row opt={{ classes: "cta-infos", isBoxed: true, numColumns: 2 }}>
-      <div className='hero-txt'>
-        <h2>Cadernos de estudo</h2>
-        <p>
-          Crianças CTOs de todo o Brasil: Chegou a{" "}
-          <strong>Bolonha Conversa</strong>
-          ! <br />A mentoria de ensino inteligente e disponível
-          <br />
-          24 horas por dia, 7 dias da semana para te ajudar.
-        </p>
-        <Link href='/' className='cta-btn hero-btn'>
-          Experimente Já!
-        </Link>
-        <Link href='/' className='secondary-btn'>
-          Conheça a Bolonha Conversa
-        </Link>
+  <MainWrapperContainer rowWidth={960}>
+    <h2>Início: Sumário</h2>
+    <div className='wrapper-box'>
+      <Row opt={{ isBoxed: true }}>
+        <div className='hero-txt'>
+          <h1>Início: Sumário</h1>
+          <ul>
+            <li>Ação de Posicionamento de Marketing </li>
+            <li>Organização de Dados Estruturados</li>
+            <li>Gerenciamento de Comunidades</li>
+            <li>Aquisição de Tecnologia de Ponta</li>
+            <li>Modelagem de Inteligência Artificial</li>
+            <li>Obtenção de Resultados</li>
+          </ul>
+        </div>
+      </Row>
+
+      <div className='posts-major-spam'>
+        <BlogList posts={posts} />
       </div>
-      <div className='hero-img'>
-        <Image
-          src={"/brandimages/laptop-reading.png"}
-          alt={"Maskot Reading"}
-          placeholder={"NONE"}
-          critical='true'
-          className={""}
-          width={300}
-          height={300}
-        />
-      </div>
-    </Row>
-    <Row
-      opt={{
-        numColumns: 2,
-        isBoxed: true,
-        classes: "hero-txt contact-wrapper",
-      }}
-    >
-      <Image
-        src={"/brandimages/envelope-greeting.png"}
-        alt={"Maskot Contact"}
-        placeholder={"NONE"}
-        critical='true'
-        className={""}
-        width={300}
-        height={300}
-      />
-      <div id='contato' className='contact-info'>
-        <h2>Contato</h2>
-        <p>
-          Fale com a gente por meio do e-mail:{" "}
-          <strong>contato@bolonha.dev</strong>
-        </p>
-      </div>
-    </Row>
-    <div className='posts-major-spam'>
-      <BlogList posts={posts} />
     </div>
   </MainWrapperContainer>
 );

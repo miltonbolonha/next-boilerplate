@@ -18,6 +18,7 @@
 .boxed-column {
 	&:first-of-type {
 		padding: $heading__top-padding 0 $heading__bottom-padding;
+		margin: 0 auto;
 	}
 	.boxed-column-child {
 		max-width: $widescreen__size;

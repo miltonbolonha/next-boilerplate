@@ -2,6 +2,8 @@ import React from "react";
 
 import Head from "next/head";
 import "@fontsource/varela";
+import "@fontsource-variable/dosis";
+import "@fontsource-variable/josefin-sans";
 import "../styles/styles.scss";
 import NextNProgress from "nextjs-progressbar";
 
@@ -18,7 +20,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 function App({ Component, pageProps }) {
   return (
-    <ThemeProvider enableSystem={false}>
+    <ThemeProvider>
       <Head>
         <meta name='theme-color' content='#06092B' />
         <meta

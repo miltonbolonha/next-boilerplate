@@ -1,14 +1,14 @@
 // Colors
-$brand__color: #fff2e4;
+$brand__color: #151515;
 $cta__color: #fff2e4;
 $cta__colorLink: #ffd219;
-$hot__color: #eb226a;
+$hot__color: #1f1f1f;
 $hotDark__color: #6200ff;
 $cta__contrast_color: #ffd219;
 $error_color: #ffd219;
 $link__color: #fff;
 
-$heading__top-padding: 50px;
+$heading__top-padding: 30px;
 $heading__bottom-padding: 0px;
 
 $primary: $cta__color;
@@ -48,9 +48,9 @@ $alternative__font: "Arial";
 
 $main__font: var(--font-jetbrains-mono), $alternative__font, sans-serif;
 
-$second__font: var(--font--redressed), $alternative__font, sans-serif;
+$second__font: "Dosis Variable", $alternative__font, sans-serif;
 
-$third__font: var(--font-josefin-sans), $alternative__font, sans-serif;
+$third__font: "Josefin Sans Variable", $alternative__font, sans-serif;
 
 $fourth__font: var(--font-quattrocento), $alternative__font, sans-serif;
 

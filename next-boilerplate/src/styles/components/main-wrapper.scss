@@ -1,0 +1,46 @@
+.main-wrapper {
+  background-attachment: fixed !important;
+  min-height: 100vh;
+  background-size: 500px 500px;
+  p {
+    margin: 10px auto;
+    font-weight: 400;
+    font-size: 20px;
+    width: 100%;
+    text-align-last: center;
+    font-family: $second__font;
+    color: $brand__color;
+    text-align: center;
+  }
+  h1,
+  h2 {
+    color: black;
+    text-align: center;
+    font-size: 26px;
+    font-family: $third__font;
+    margin: 15px 0;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .main-wrapper-inner {
+    &.boxed-column-child {
+      border-radius: 5px;
+      border: 2px solid black;
+      .main-container {
+        border-radius: 10px;
+        border: 2px solid black;
+        margin: 10px 20px;
+      }
+    }
+    &.boxed-column {
+      padding-bottom: 40px;
+    }
+  }
+}
+.wrapper-box {
+  border-radius: 10px;
+  border: 2px solid black;
+  margin: 10px 20px;
+  padding: 10px 20px;
+}

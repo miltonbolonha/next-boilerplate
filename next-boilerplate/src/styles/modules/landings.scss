@@ -248,13 +248,6 @@
     .main-image {
       height: 100vh;
       overflow: hidden;
-      .gatsby-image-wrapper-constrained {
-        height: 100vh;
-        background: #3387be;
-        img {
-          object-fit: contain !important;
-        }
-      }
     }
   }
 }
