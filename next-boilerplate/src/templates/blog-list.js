@@ -16,21 +16,6 @@ const BlogList = ({ posts }) => {
 
   return (
     <>
-      {/* <NextSeo
-        title='Home | Milton Bolonha'
-        description='Um blog de um desenvolvedor FullStack (LINUX, PHP & NODEJS), fã de rock, política, gatos e inteligência artificial.'
-        openGraph={{
-          images: [
-            {
-              url: "https://bolonha.vercel.app/assets/img/blog-cover.png",
-              width: 1200,
-              height: 630,
-              alt: "Milton Bolonha Blog",
-            },
-          ],
-        }}
-      /> */}
-
       {current.map((post, i) => {
         const x = i + 1;
         return (

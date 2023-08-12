@@ -30,22 +30,6 @@ const BlogPost = ({ post }) => {
   };
   return (
     <>
-      <NextSeo
-        title={`${post.frontmatter.title} - Milton Bolonha`}
-        description={post.frontmatter.description}
-        openGraph={{
-          url: `https://bolonha.vercel.app/${post.slug}`,
-          title: `${post.frontmatter.title} - Milton Bolonha`,
-          description: post.frontmatter.description,
-          images: [
-            {
-              url: `some.png`,
-              alt: `${post.frontmatter.title}`,
-            },
-          ],
-        }}
-      />
-
       <div
         className={"main-wrapper blog-list"}
         style={

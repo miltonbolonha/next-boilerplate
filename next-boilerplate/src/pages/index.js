@@ -18,7 +18,7 @@ const Home = ({ posts }) => (
         brandEmail: "miltonbolonha@gmail.com",
         brandLogo: `https://miltonbolonha.com.br${slugPrefix}/favicon-32x32.png`,
         brandPhone: "+5512981062959",
-        title: "Homezinha - Bolonha Conversas",
+        title: "Home - Bolonha Conversas",
         brandDescription: "Aqui nóis conversa e nóis é Bolonha.",
         dateCreated: "dateCreated",
         dateNow: "dateNow",
