@@ -5,7 +5,7 @@ import { NextSeo } from "next-seo";
 import { timeToRead } from "../lib/utils";
 import SinglePostBlock from "../components/SinglePostBlock";
 import HeaderContainer from "../containers/HeaderContainer";
-import MainMenuData from "../configs/main-menu.json";
+import mainConfigs from "../configs/main-menu.json";
 
 const BlogPost = ({ post }) => {
   const { theme } = useTheme();
@@ -62,7 +62,7 @@ const BlogPost = ({ post }) => {
           {opt.hasHeader !== false ? (
             <HeaderContainer
               opt={{
-                mainMenuStatus: MainMenuData.menu.status,
+                mainMenuStatus: mainConfigs.menu.status,
                 logoSvg: "logotipoSvg",
                 bgOne: "transparent",
                 bgTwo: "transparent",
@@ -72,7 +72,7 @@ const BlogPost = ({ post }) => {
                 hasMenu: opt.hasMenu,
                 isDarkLogo: opt.isDarkLogo,
               }}
-              mainMenu={MainMenuData.menu.items}
+              mainMenu={mainConfigs.menu.items}
             />
           ) : null}
 

@@ -17,7 +17,11 @@ const SeoContainer = ({ data, killSeo = true }) => {
   const authorType =
     data.author === "Equipe As Casamenteiras" ? "Organization" : "Person";
   let socialValues = [];
-  Object.values(data.sameAs).forEach(social => socialValues.push(social));
+  for (const key in data.sameAs) {
+    if (Object.hasOwnProperty.call(data.sameAs, key)) {
+      socialValues.push(data.sameAs[key]);
+    }
+  }
   const orgSchema = [
     {
       "@type": ["Organization"],
@@ -134,7 +138,7 @@ const SeoContainer = ({ data, killSeo = true }) => {
         themeColor: data.themeColor,
         slug: data.slug,
         fbAppID: data.fbAppID,
-        social: data.social,
+        twitter: data.twitter,
         articleSchema: articleSchema,
         webSiteSchema: webSiteSchema,
         orgSchema: orgSchema,

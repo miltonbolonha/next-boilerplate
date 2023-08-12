@@ -1,4 +1,4 @@
-import MainMenuData from "../configs/main-menu.json";
+import mainConfigs from "../configs/main-menu.json";
 
 import HeaderContainer from "../containers/HeaderContainer";
 import RowContainer from "../containers/RowContainer";
@@ -33,7 +33,7 @@ const MainWrapper = ({
         {hasHeader !== false ? (
           <HeaderContainer
             opt={{
-              mainMenuStatus: MainMenuData.menu.status,
+              mainMenuStatus: mainConfigs.menu.status,
               logoSvg: "logotipoSvg",
               bgOne: "transparent",
               bgTwo: "transparent",
@@ -41,7 +41,7 @@ const MainWrapper = ({
               hasMenu: hasMenu,
               isDarkLogo: isDarkLogo,
             }}
-            mainMenu={MainMenuData.menu.items}
+            mainMenu={mainConfigs.menu.items}
           />
         ) : null}
 

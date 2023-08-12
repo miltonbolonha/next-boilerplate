@@ -48,25 +48,21 @@ const Seo = ({ children, data = null }) => {
       {data.fbAppID ? (
         <meta property='fb:app_id' content={data.social.fbAppID} />
       ) : null}
-      {data.social.twitter ? (
+      {data.twitter ? (
         <meta name='twitter:card' content='summary_large_image' />
       ) : (
         ""
       )}
-      {data.social.twitter ? (
-        <meta name='twitter:creator' content={data.social.twitter} />
+      {data.twitter ? (
+        <meta name='twitter:creator' content={data.twitter} />
       ) : null}
-      {data.social.twitter ? (
-        <meta name='twitter:title' content={data.title} />
-      ) : (
-        ""
-      )}
-      {data.social.twitter ? (
+      {data.twitter ? <meta name='twitter:title' content={data.title} /> : ""}
+      {data.twitter ? (
         <meta name='twitter:description' content={data.description} />
       ) : (
         ""
       )}
-      {data.social.twitter ? (
+      {data.twitter ? (
         <meta
           name='twitter:image:src'
           content={data.brandCardImage || data.featuredImage}
@@ -74,8 +70,8 @@ const Seo = ({ children, data = null }) => {
       ) : (
         ""
       )}
-      {data.social.twitter ? (
-        <meta name='twitter:site' content={`@` + data.social.twitter} />
+      {data.twitter ? (
+        <meta name='twitter:site' content={`@` + data.twitter} />
       ) : (
         ""
       )}

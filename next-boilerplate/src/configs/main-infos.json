@@ -2,6 +2,28 @@
   "globals": {
     "isDarkLogo": false
   },
+  "website": {},
+  "business": {
+    "brandName": "Bolonha Conversas",
+    "brandEmail": "miltonbolonha@gmail.com",
+    "brandLogo": "favicon-32x32.png",
+    "brandPhone": "+5512981062959",
+    "brandDescription": "Aqui nóis conversa e nóis é Bolonha.",
+    "brandCardImage": "favicon-32x32.png",
+    "sameAs": {
+      "twitter": "https://twitter.com/miltonbolonha",
+      "facebook": "https://facebook.com/miltonbolonhaoficial",
+      "instagram": "https://instagram.com/miltonbolonha_"
+    },
+    "twitterCard": {
+      "card": "card",
+      "creator": "creator",
+      "title": "title",
+      "description": "description",
+      "image": "image",
+      "site": "site"
+    }
+  },
   "index": {
     "hasHeader": true,
     "hasMenu": true

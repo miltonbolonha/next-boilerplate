@@ -12,7 +12,7 @@ const Home = ({ posts }) => (
       killSeo={false}
       data={{
         slug: "/home",
-        author: "author",
+        author: "Milton Bolonha",
         siteUrl: "https://miltonbolonha.com.br",
         brandName: "Bolonha Conversas",
         brandEmail: "miltonbolonha@gmail.com",
