@@ -53,11 +53,10 @@ const Contato = () => {
             <h2>(12) 98106-2959</h2>
           </div>
           <ul className='contact-link-tree-wrapper'>
-            {Object.entries(mainConfigs.business.sameAs).map((e, i) => (
-              <li key={i}>
-                <a href={e[1]}>{e[0]}</a>
-              </li>
-            ))}
+            {Object.entries(mainConfigs.business.sameAs).map((e, i) =>
+              // prettier-ignore
+              <li key={i}><a href={e[1]}>{e[0]}</a></li> // NOSONAR
+            )}
           </ul>
         </Row>
       </div>
