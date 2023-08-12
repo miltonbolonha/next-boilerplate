@@ -1,12 +1,13 @@
 ul.contact-link-tree-wrapper {
-  max-width: 750px;
+  max-width: 550px;
+  // width: 100%;
   margin: 20px auto;
   li {
     list-style-type: none;
     text-align-last: center;
     a {
       font-family: $second__font;
-      padding: 12px 25px 10px;
+      padding: 12px 0 10px;
       text-align-last: center;
       border-radius: 25px;
       border: 2px solid $cta__color;

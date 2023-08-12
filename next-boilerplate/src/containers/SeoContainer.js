@@ -18,7 +18,7 @@ const SeoContainer = ({ data, killSeo = true }) => {
     data.author === "Equipe As Casamenteiras" ? "Organization" : "Person";
   let socialValues = [];
   for (const key in data.sameAs) {
-    if (Object.hasOwnProperty.call(data.sameAs, key)) {
+    if (Object.hasOwn(data.sameAs, key)) {
       socialValues.push(data.sameAs[key]);
     }
   }
