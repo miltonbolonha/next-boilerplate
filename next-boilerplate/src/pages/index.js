@@ -67,7 +67,7 @@ const Home = ({ posts }) => (
           </ul>
         </div>
       </Row>
-      <div className='posts-major-spam'>
+      <div className='post'>
         <BlogList posts={posts} />
       </div>
     </div>

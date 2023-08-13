@@ -26,8 +26,8 @@ const MainWrapperContainer = ({ children, rowWidth }) => {
     <MainWrapper
       bgImg={opt.bgImg}
       darkBgImg={opt.darkBgImg}
-      hasHeader={opt.index.hasHeader}
-      hasMenu={opt.index.hasMenu}
+      hasHeader={opt.pages.hasHeader}
+      hasMenu={opt.pages.hasMenu}
       isDarkLogo={opt.globals.isDarkLogo}
       theme={theme}
       rowWidth={rowWidth}

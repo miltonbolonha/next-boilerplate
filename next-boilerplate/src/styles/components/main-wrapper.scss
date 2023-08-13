@@ -19,6 +19,7 @@
     font-size: 26px;
     font-family: $third__font;
     margin: 15px 0;
+    padding-top: 3px;
   }
   h2 {
     font-size: 18px;
@@ -43,4 +44,11 @@
   border: 2px solid black;
   margin: 10px 20px;
   padding: 10px 20px;
+}
+
+.wrapper-box.post {
+  padding: 0;
+  .post-container.boxed-column {
+    padding: 0;
+  }
 }
