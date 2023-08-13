@@ -87,7 +87,7 @@ const Header = ({
                   aria-controls='mainmenu'
                   aria-expanded={refState}
                   aria-label='Alternar visibilidade do menu'
-                  className={`resetButton  ${
+                  className={`door resetButton  ${
                     !refState ? "active opened" : "not-active"
                   }`}
                 >
@@ -98,7 +98,6 @@ const Header = ({
                     critical='true'
                     width={15}
                     height={30}
-                    className='door'
                   />
                 </button>
               </div>
