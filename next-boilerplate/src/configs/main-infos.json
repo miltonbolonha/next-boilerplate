@@ -2,8 +2,14 @@
   "globals": {
     "isDarkLogo": false
   },
-  "website": {},
+  "website": {
+    "siteUrl": "https://miltonbolonha.com.br",
+    "author": "Milton Bolonha",
+    "i18n": "pt-BR",
+    "themeColor": "#d2d"
+  },
   "business": {
+    "brandPerson": "Milton Bolonha",
     "brandName": "Bolonha Conversas",
     "brandEmail": "miltonbolonha@gmail.com",
     "brandLogo": "favicon-32x32.png",
@@ -24,8 +30,16 @@
       "site": "site"
     }
   },
-  "index": {
+  "pages": {
     "hasHeader": true,
-    "hasMenu": true
+    "hasMenu": true,
+    "index": {
+      "title": ""
+    },
+    "contact": {
+      "title": "Contato",
+      "slug": "contato",
+      "description": "Fale com Milton por meio do what's (12) 98106-2959, ou e-mail: miltonbolonha@gmail.com."
+    }
   }
 }
