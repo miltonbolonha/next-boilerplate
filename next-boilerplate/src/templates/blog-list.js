@@ -12,11 +12,13 @@ const BlogList = ({ posts }) => {
     next: 10,
   });
   const [current] = useState(sortedPosts.slice(count.prev, count.next));
-
+  console.log("current");
+  console.log(current);
   return (
     <>
       {current.map((post, i) => {
         const x = i + 1;
+        console.log("hello");
         return (
           <Post
             key={x}
@@ -25,7 +27,6 @@ const BlogList = ({ posts }) => {
             timeToRead={post.timeToRead}
             date={post.frontmatter.date}
             description={post.frontmatter.description}
-            main_class={post.frontmatter["main-class"]}
           />
         );
       })}

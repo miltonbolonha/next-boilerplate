@@ -42,3 +42,27 @@
     }
   }
 }
+.post {
+  display: flex;
+  place-content: center;
+  .post-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    width: 200px;
+    height: 180px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 7px;
+    h1 {
+      font-size: 20px;
+    }
+    &:hover {
+      background-color: black;
+      h1 {
+        color: white;
+      }
+    }
+  }
+}

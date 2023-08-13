@@ -16,7 +16,7 @@
 }
 
 .boxed-column {
-	&:first-of-type {
+	&.main-wrapper-inner:first-of-type {
 		padding: $heading__top-padding 0 $heading__bottom-padding;
 		margin: 0 auto;
 	}

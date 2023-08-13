@@ -38,8 +38,6 @@ const BlogPost = ({ post }) => (
       }}
     />
     <h2>Post: {post.frontmatter.title}</h2>
-    {console.log("post.frontmatter.")}
-    {console.log(post.frontmatter)}
     <div className='wrapper-box post'>
       <Row opt={{ isBoxed: true, classes: "post-container" }}>
         <SinglePostBlock

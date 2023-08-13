@@ -1,6 +1,7 @@
 import React from "react";
 import Row from "../containers/RowContainer";
 import Image from "next/image";
+import Link from "next/link";
 
 import MainMenuContainer from "../containers/MainMenuContainer";
 
@@ -61,7 +62,10 @@ const Header = ({
           numColumns: 3,
         }}
       >
-        <span className='left-gray-circle' />
+        {" "}
+        <Link href='/' passHref>
+          <span className='left-gray-circle' />{" "}
+        </Link>
         <Row opt={{ isBoxed: false, classes: "header-logo" }}>{logotype}</Row>
         {hasMenu && mainMenuStatus === true ? (
           <>

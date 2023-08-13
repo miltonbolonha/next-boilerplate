@@ -56,7 +56,6 @@ const Home = ({ posts }) => (
     <div className='wrapper-box'>
       <Row opt={{ isBoxed: true }}>
         <div className='hero-txt'>
-          <h1>Início: Sumário</h1>
           <ul>
             <li>Ação de Posicionamento de Marketing </li>
             <li>Organização de Dados Estruturados</li>
@@ -67,6 +66,9 @@ const Home = ({ posts }) => (
           </ul>
         </div>
       </Row>
+    </div>
+    <h2>Blog: Lista</h2>
+    <div className='wrapper-box'>
       <div className='post'>
         <BlogList posts={posts} />
       </div>

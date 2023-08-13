@@ -14,8 +14,7 @@ const SeoContainer = ({ data, killSeo = true }) => {
       </SEO>
     );
   }
-  const authorType =
-    data.author === "Equipe As Casamenteiras" ? "Organization" : "Person";
+  const authorType = data.author === data.brandName ? "Organization" : "Person";
   let socialValues = [];
   for (const key in data.sameAs) {
     if (Object.hasOwn(data.sameAs, key)) {
@@ -26,7 +25,7 @@ const SeoContainer = ({ data, killSeo = true }) => {
     {
       "@type": ["Organization"],
       "@context": "https://schema.org",
-      name: "As Casamenteiras",
+      name: data.brandName,
       url: data.siteUrl,
       email: data.brandEmail,
       description: data.brandDescription,
