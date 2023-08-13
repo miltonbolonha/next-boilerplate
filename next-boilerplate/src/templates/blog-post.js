@@ -1,82 +1,61 @@
-import React, { useEffect } from "react";
-import Prism from "prismjs";
-import { useTheme } from "next-themes";
-import { NextSeo } from "next-seo";
-import { timeToRead } from "../lib/utils";
+import React from "react";
+import Row from "../containers/RowContainer";
+import { timeToRead, slugPrefix } from "../lib/utils";
+import SeoContainer from "../containers/SeoContainer";
 import SinglePostBlock from "../components/SinglePostBlock";
-import HeaderContainer from "../containers/HeaderContainer";
-import mainConfigs from "../configs/main-menu.json";
-
-const BlogPost = ({ post }) => {
-  const { theme } = useTheme();
-
-  useEffect(() => {
-    Prism.highlightAll();
-  }, [post]);
-  const isGithubPages = process.env.IS_GITHUB_PAGE || false;
-  const THEME_FOLDER = isGithubPages ? "/" + process.env.THEME_FOLDER : "";
-
-  const opt = {
-    bgImg: THEME_FOLDER + "/brandimages/gray-bg.jpg",
-    darkBgImg: THEME_FOLDER + "/brandimages/dark-bg.png",
-    hasHeader: true,
-    hasMenu: true,
-    pageQuestions: [],
-    badgesWhats: false,
-    badgesQuestion: false,
-    isDarkLogo: false,
-    flags: null, // remove
-    urlLocale: "",
-  };
-  return (
-    <>
-      <div
-        className={"main-wrapper blog-list"}
-        style={
-          opt.bgImg && theme === "light"
-            ? {
-                background: `url(${opt.bgImg}) no-repeat`,
-              }
-            : {
-                background: `url(${opt.darkBgImg}) repeat`,
-              }
-        }
-      >
-        <div className='main-wrapper-inner'>
-          {opt.hasHeader !== false ? (
-            <HeaderContainer
-              opt={{
-                mainMenuStatus: mainConfigs.menu.status,
-                logoSvg: "logotipoSvg",
-                bgOne: "transparent",
-                bgTwo: "transparent",
-                classes: "header-block",
-                flags: opt.flags,
-                urlLocale: opt.urlLocale,
-                hasMenu: opt.hasMenu,
-                isDarkLogo: opt.isDarkLogo,
-              }}
-              mainMenu={mainConfigs.menu.items}
-            />
-          ) : null}
-
-          <main className='main-container'>
-            <SinglePostBlock
-              highlightImage={"pageContext?.SEO.featuredImage"}
-              authorImg={"imgHolder"}
-              date={post.frontmatter.date}
-              author={"pageContext.brandName"}
-              html={post.content}
-              title={post.frontmatter.title}
-              categories={["pageContext.categories"]}
-              timeToRead={timeToRead(post.content)}
-              wordCount={10}
-            />
-          </main>
-        </div>
-      </div>
-    </>
-  );
-};
+import mainConfigs from "../configs/main-infos.json";
+import MainWrapperContainer from "../containers/MainWrapperContainer";
+const BlogPost = ({ post }) => (
+  <MainWrapperContainer rowWidth={960}>
+    <SeoContainer
+      killSeo={false}
+      data={{
+        slug: post.slug,
+        title: `${post.frontmatter.title} - ${mainConfigs.business.brandName}`,
+        author: mainConfigs.website.author,
+        siteUrl: mainConfigs.website.siteUrl,
+        brandName: mainConfigs.business.brandName,
+        brandEmail: mainConfigs.business.brandEmail,
+        brandLogo: mainConfigs.business.brandLogo,
+        brandPhone: mainConfigs.business.brandPhone,
+        brandDescription: mainConfigs.business.brandDescription,
+        brandCardImage: mainConfigs.business.brandCardImage,
+        featuredImage: `${mainConfigs.website.siteUrl}${slugPrefix}/favicon-32x32.png`,
+        dateCreated: "dateCreated",
+        dateNow: "dateNow",
+        articleBody: "articleBody",
+        datePublished: "04/02/2022",
+        i18n: "pt-BR",
+        keywords: ["keywords"],
+        questions: ["questions:answer"],
+        topology: "pages",
+        articleUrl: "https://miltonbolonha.com.br/contato",
+        description: post.frontmatter.description,
+        themeColor: mainConfigs.website.themeColor,
+        fbAppID: null,
+        sameAs: mainConfigs.business.sameAs,
+        twitter: mainConfigs.business.twitterCard,
+      }}
+    />
+    <h2>Post: {post.frontmatter.title}</h2>
+    {console.log("post.frontmatter.")}
+    {console.log(post.frontmatter)}
+    <div className='wrapper-box post'>
+      <Row opt={{ isBoxed: true, classes: "post-container" }}>
+        <SinglePostBlock
+          highlightImage={post.frontmatter.image}
+          authorImg={"imgHolder"}
+          date={post.frontmatter.date}
+          author={mainConfigs.business.brandName}
+          html={post.content}
+          title={post.frontmatter.title}
+          categories={post.frontmatter.categories}
+          timeToRead={timeToRead(post.content)}
+          wordCount={10}
+        />
+      </Row>
+    </div>
+  </MainWrapperContainer>
+);
 
 export default BlogPost;

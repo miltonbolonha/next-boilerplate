@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import Row from "../containers/RowContainer";
 
@@ -57,8 +58,15 @@ const SinglePostBlock = ({
                 </Row>
               </Row>
             </div>
-
-            <div>imageHighlightQuery</div>
+            <Image
+              src={`/postsimages/${highlightImage}`}
+              alt={"Maskot Reading"}
+              placeholder={"NONE"}
+              critical='true'
+              className={""}
+              width={824}
+              height={450}
+            />
             <div
               className='post-article-content'
               dangerouslySetInnerHTML={{ __html: html }}

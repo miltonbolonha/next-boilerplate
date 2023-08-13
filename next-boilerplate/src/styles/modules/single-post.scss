@@ -1,4 +1,21 @@
-.single-post {
+.post-container {
+	p {
+		text-align: left;
+		text-align-last: left;
+	}
+	blockquote {
+		p {
+			text-align: center;
+			text-align-last: center;
+		}
+		&:nth-of-type(2n) {
+			border-right: 0;
+		}
+		&:nth-of-type(1n) {
+			border-left: 0;
+		}
+	}
+
 	.header-logo-wrapper {
 		margin-bottom: 0;
 		padding: 0 20px;
@@ -13,10 +30,11 @@
 			margin-bottom: 50px;
 		}
 		.header-post {
-			background-color: #111e24;
+			border-radius: 7px 7px 0 0;
+			background-color: $brand__color;
 			min-height: 270px;
 			width: 100%;
-			max-width: $post_page__size;
+
 			margin: 0 auto;
 			.post.boxed-column {
 				padding: 0 10px;
@@ -37,7 +55,7 @@
 		h3,
 		h4,
 		h5 {
-			font-family: $fourth__font;
+			font-family: $second__font;
 		}
 		.boxed-column.post {
 			height: 100%;
@@ -46,8 +64,6 @@
 		}
 	}
 	.boxed-column.main-post {
-		width: 70%;
-		max-width: $post_page__size;
 		margin: 0 auto 30px;
 		padding: 20px;
 		background: white;
@@ -59,12 +75,12 @@
 
 		.close-btn-single-post {
 			position: absolute;
-			top: -20px;
+			top: -240px;
 			right: -20px;
 			width: 30px;
 			height: 30px;
 			font-size: 16px;
-			font-family: $fourth__font;
+			font-family: $second__font;
 			background-color: #fff;
 			border: 2px solid $primary;
 			border-radius: 50%;
@@ -81,13 +97,13 @@
 				color: $primary;
 				padding: 5px 10px;
 				&:hover {
-					color: $primary_background;
+					color: $cta__colorLink;
 				}
 			}
 			&:hover {
 				background-color: $primary;
 				span {
-					color: $primary_background;
+					color: $cta__colorLink;
 					font-size: 12px;
 					line-height: 22px;
 					position: absolute;
@@ -107,7 +123,10 @@
 		}
 	}
 }
-
+[data-theme="dark"] .close-btn-single-post span,
+[data-theme="dark"] .close-btn-single-post a:hover {
+	color: #fff !important;
+}
 .post-categories-wrapper {
 	line-height: 15px;
 	border: 1px solid $primary;
