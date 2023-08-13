@@ -24,14 +24,17 @@
       text-align: center;
       flex-basis: max-content;
       a {
+        font-size: 20px;
+        font-weight: 600;
         font-family: $second__font;
         line-height: 33px;
         border: 2px solid transparent;
         padding: 3px 7px;
-        border-radius: 10px;
+        border-radius: 3px;
         margin: 0 10px;
         &:hover {
-          border: 2px solid $cta__colorLink;
+          border-bottom: 3px solid $link__color;
+          background: $cta__colorLink;
           color: $cta__color;
         }
         &.active {
@@ -45,4 +48,8 @@
       }
     }
   }
+}
+
+.main-nav {
+  position: relative;
 }

@@ -117,6 +117,7 @@ const Header = ({
                 mainMenuStatus={mainMenuStatus}
                 isMobile={false}
                 mainMenuItems={mainMenu}
+                handleRefState={handleRefState}
               />
             </div>
           </>
