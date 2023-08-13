@@ -12,7 +12,7 @@ const Contato = () => (
       killSeo={false}
       data={{
         slug: mainConfigs.pages.contact.slug,
-        title: `${mainConfigs.pages.index.title} - ${mainConfigs.business.brandName}`,
+        title: `${mainConfigs.pages.contact.title} - ${mainConfigs.business.brandName}`,
         description: mainConfigs.pages.contact.description,
         author: mainConfigs.website.author,
         siteUrl: mainConfigs.website.siteUrl,
@@ -38,7 +38,7 @@ const Contato = () => (
         twitter: mainConfigs.business.twitterCard,
       }}
     />
-    <h2>Início: Contato</h2>
+    <h2>Página: Contato</h2>
     <div className='wrapper-box'>
       <Row opt={{ isBoxed: true }}>
         <div className='hero-txt'>

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import Post from "../components/Post";
-// import { NextSeo } from "next-seo";
 
 const BlogList = ({ posts }) => {
   const sortedPosts = posts.sort((post1, post2) =>

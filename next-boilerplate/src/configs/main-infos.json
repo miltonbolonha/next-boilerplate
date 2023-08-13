@@ -34,7 +34,9 @@
     "hasHeader": true,
     "hasMenu": true,
     "index": {
-      "title": ""
+      "title": "Home",
+      "slug": "",
+      "description": "Milton Bolonha desenvolve sites desde 1998. Como especialista faz a curadoria e implementação sustentável de códigos e de tecnologias."
     },
     "contact": {
       "title": "Contato",

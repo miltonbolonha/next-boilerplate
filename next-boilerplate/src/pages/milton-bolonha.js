@@ -5,7 +5,7 @@ import MainWrapperContainer from "../containers/MainWrapperContainer";
 
 const MiltonBolonha = () => (
   <MainWrapperContainer rowWidth={960}>
-    <h2>Início: Sumário</h2>
+    <h2>Página: Milton Bolonha</h2>
     <div className='wrapper-box'>
       <Row opt={{ isBoxed: true }}>
         <div className='hero-txt'>
