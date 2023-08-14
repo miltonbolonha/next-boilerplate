@@ -45,6 +45,7 @@
 .post {
   display: flex;
   place-content: center;
+  flex-wrap: wrap;
   .post-link {
     display: flex;
     align-items: center;

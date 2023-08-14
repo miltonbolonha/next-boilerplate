@@ -7,14 +7,16 @@ description: "State machine é o padrão de desenvolvimento web onde você const
 main-class: "dev"
 color: "#dd1199"
 tags:
-  - programacao
+  - programação
   - estado
 categories:
-  - programacao
+  - programação
   - estado
 ---
 
 _State machine_ é o padrão de desenvolvimento web onde você constrói uma máquina e todos os seus dispositivos. Então, a partir dos estados a máquina é gerenciada.
+
+## Dispositivo Acionador
 
 O som dos carros quando estão no **MODO RÁDIO** fazem com que o botão _next_ funcione para ir para a próxima estação. Já quando está no **MODO CD** ou **USB** o _next_ funciona para trocar a música.
 

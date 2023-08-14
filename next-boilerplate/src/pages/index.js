@@ -67,7 +67,7 @@ const Home = ({ posts }) => (
         </div>
       </Row>
     </div>
-    <h2>Blog: Lista</h2>
+    <h2>Lista: DEVaneios</h2>
     <div className='wrapper-box'>
       <div className='post'>
         <BlogList posts={posts} />
@@ -78,6 +78,15 @@ const Home = ({ posts }) => (
 export default Home;
 export async function getStaticProps() {
   const posts = getAllPosts();
+
+  // if (process.env.NODE_ENV !== 'development') {
+  //   await generateSitemap(posts)
+
+  //   const rss = await generateRss(posts)
+  //   fs.writeFileSync('./public/feed.xml', rss)
+
+  // }
+
   return {
     props: {
       posts,

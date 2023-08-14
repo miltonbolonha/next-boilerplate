@@ -7,11 +7,11 @@ description: "Algumas dicas."
 main-class: "dev"
 color: "#00aaaa"
 tags:
-  - dev
-  - dicas
+  - programação
+  - estado
 categories:
-twitter_text: "Algumas dicas."
-introduction: "Algumas dicas."
+  - programação
+  - estado
 ---
 
 ## Introdução

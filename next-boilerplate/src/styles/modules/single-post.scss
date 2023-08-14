@@ -161,6 +161,9 @@
 .post-author {
 	margin-bottom: 20px;
 	.post-author-infos {
+		.profile-image {
+			border-radius: 25px;
+		}
 		@media (max-width: 420px) {
 			grid-template-columns: repeat(1, 1fr) !important;
 			.editorial-infos {
@@ -186,7 +189,7 @@
 	}
 	.inner-post-author-infos {
 		display: grid;
-		grid-template-columns: 0.3fr 1fr;
+		grid-template-columns: 0.2fr 1fr;
 		align-items: center;
 		@media (max-width: 590px) {
 			grid-template-columns: 0.27fr 1fr;
@@ -223,7 +226,7 @@
 			}
 			a {
 				color: $cta__color;
-				text-decoration: underline;
+				text-decoration: none;
 			}
 			strong {
 				font-weight: 600;
@@ -250,9 +253,9 @@
 			h5,
 			h6 {
 				margin: 35px 0;
-				font-family: $fourth__font;
+				font-family: $eighth__font;
 				text-transform: capitalize;
-				font-weight: 700;
+				font-weight: 600;
 				color: $primary;
 				& strong {
 					font-weight: 900;
@@ -322,6 +325,8 @@
 			font-weight: 500;
 			font-size: 23px;
 			font-family: $third__font;
+			margin: 0;
+			line-height: 23px;
 		}
 	}
 }

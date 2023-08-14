@@ -40,7 +40,15 @@ const SinglePostBlock = ({
             <div className='post-author'>
               <Row opt={{ numColumns: 2, classes: "post-author-infos" }}>
                 <div className='inner-post-author-infos'>
-                  imagem de author
+                  <Image
+                    src={"/brandimages/profile-image.png"}
+                    alt={"Profile Image"}
+                    placeholder={"NONE"}
+                    critical='true'
+                    width={50}
+                    height={50}
+                    className='profile-image'
+                  />
                   <div className='innerauthor-infos'>
                     <p className='post-author-name' rel='author'>
                       {author}
