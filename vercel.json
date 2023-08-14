@@ -1,5 +1,0 @@
-{
-  "buildCommand": "npm run build --workspace=next-boilerplate",
-  "outputDirectory": "next-boilerplate/.next",
-  "installCommand": "npm install"
-}
