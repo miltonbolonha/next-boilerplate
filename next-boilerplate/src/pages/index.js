@@ -5,51 +5,34 @@ import { getAllPosts } from "../lib/api";
 import MainWrapperContainer from "../containers/MainWrapperContainer";
 import SeoContainer from "../containers/SeoContainer";
 import { slugPrefix } from "../lib/utils";
+import mainConfigs from "../configs/main-infos.json";
 
 const Home = ({ posts }) => (
   <MainWrapperContainer rowWidth={960}>
     <SeoContainer
       killSeo={false}
       data={{
-        slug: "/home",
-        author: "Milton Bolonha",
-        siteUrl: "https://miltonbolonha.com.br",
-        brandName: "Bolonha Conversas",
-        brandEmail: "miltonbolonha@gmail.com",
-        brandLogo: `https://miltonbolonha.com.br${slugPrefix}/favicon-32x32.png`,
-        brandPhone: "+5512981062959",
-        title: "Home - Bolonha Conversas",
-        brandDescription: "Aqui nóis conversa e nóis é Bolonha.",
-        dateCreated: "dateCreated",
-        dateNow: "dateNow",
-        articleBody: "articleBody",
-        datePublished: "04/02/2022",
-        i18n: "pt-BR",
-        keywords: ["keywords"],
-        questions: ["questions:answer"],
+        slug: mainConfigs.pages.index.slug,
+        title: `${mainConfigs.pages.index.title} - ${mainConfigs.business.brandName}`,
+        description: mainConfigs.pages.index.description,
+        author: mainConfigs.website.author,
+        siteUrl: mainConfigs.website.siteUrl,
+        brandName: mainConfigs.business.brandName,
+        brandEmail: mainConfigs.business.brandEmail,
+        brandLogo: mainConfigs.business.brandLogo,
+        brandPhone: mainConfigs.business.brandPhone,
+        brandDescription: mainConfigs.business.brandDescription,
+        brandCardImage: mainConfigs.business.brandCardImage,
+        featuredImage: `${mainConfigs.website.siteUrl}${slugPrefix}/favicon-32x32.png`,
+        datePublished: mainConfigs.website.datePublished,
+        i18n: mainConfigs.website.i18n,
+        keywords: mainConfigs.website.keywords,
+        questions: mainConfigs.website.questions,
         topology: "pages",
-        articleUrl: "https://miltonbolonha.com.br",
-        description:
-          "Nessa página. Aqui nóis também conversa e nóis é Bolonha.",
-        brandCardImage: `https://miltonbolonha.com.br${slugPrefix}/favicon-32x32.png`,
-        featuredImage: `https://miltonbolonha.com.br${slugPrefix}/favicon-32x32.png`,
+        articleUrl: `${mainConfigs.website.siteUrl}/${mainConfigs.pages.index.slug}`,
         themeColor: "#d3d3d3",
-        fbAppID: null,
-        sameAs: [
-          "https://twitter.com/miltonbolonha",
-          "https://facebook.com/miltonbolonhaoficial",
-          "https://instagram.com/miltonbolonha_",
-        ],
-        social: {
-          twitter: {
-            card: "card",
-            creator: "creator",
-            title: "title",
-            description: "description",
-            image: "image",
-            site: "site",
-          },
-        },
+        sameAs: mainConfigs.business.sameAs,
+        twitter: mainConfigs.business.twitterCard,
       }}
     />
     <h2>Início: Sumário</h2>
@@ -78,15 +61,6 @@ const Home = ({ posts }) => (
 export default Home;
 export async function getStaticProps() {
   const posts = getAllPosts();
-
-  // if (process.env.NODE_ENV !== 'development') {
-  //   await generateSitemap(posts)
-
-  //   const rss = await generateRss(posts)
-  //   fs.writeFileSync('./public/feed.xml', rss)
-
-  // }
-
   return {
     props: {
       posts,

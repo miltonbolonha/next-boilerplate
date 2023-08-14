@@ -6,7 +6,12 @@
     "siteUrl": "https://miltonbolonha.com.br",
     "author": "Milton Bolonha",
     "i18n": "pt-BR",
-    "themeColor": "#d2d"
+    "themeColor": "#d2d",
+    "keywords": ["rÖÖm", "boilerplate", "nextjs"],
+    "questions": [
+      "O que é um boilerplate?:Assim são chamados os pré-moldados para fácil início da programação de tecnologia."
+    ],
+    "datePublished": "01/01/2023"
   },
   "business": {
     "brandPerson": "Milton Bolonha",
@@ -17,9 +22,10 @@
     "brandDescription": "Aqui nóis conversa e nóis é Bolonha.",
     "brandCardImage": "favicon-32x32.png",
     "sameAs": {
-      "twitter": "https://twitter.com/miltonbolonha",
+      "whatsapp": "https://web.whatsapp.com/send?phone=5512981062959&text=Ol%C3%A1%2C%20Milton.",
+      "instagram": "https://instagram.com/miltonbolonha_",
       "facebook": "https://facebook.com/BolonhaMilton",
-      "instagram": "https://instagram.com/miltonbolonha_"
+      "twitter": "https://twitter.com/miltonbolonha"
     },
     "twitterCard": {
       "card": "card",
@@ -36,6 +42,11 @@
     "index": {
       "title": "Home",
       "slug": "",
+      "description": "Milton Bolonha desenvolve sites desde 1998. Como especialista faz a curadoria e implementação sustentável de códigos e de tecnologias."
+    },
+    "about": {
+      "title": "Sobre",
+      "slug": "about",
       "description": "Milton Bolonha desenvolve sites desde 1998. Como especialista faz a curadoria e implementação sustentável de códigos e de tecnologias."
     },
     "contact": {

@@ -11,8 +11,8 @@
       },
       {
         "item": {
-          "label": "O Bolonha",
-          "to": "/milton-bolonha"
+          "label": "Sobre",
+          "to": "/about"
         }
       },
       {

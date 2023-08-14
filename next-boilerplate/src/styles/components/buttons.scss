@@ -72,3 +72,28 @@
   background: none;
   border: 0;
 }
+.hot-color-rounded-btn {
+  font-family: $second__font;
+  padding: 12px 0 10px;
+  text-align-last: center;
+  border-radius: 25px;
+  border: 2px solid $cta__color;
+  box-shadow: 2px 6px 0 0 rgb(0 0 0 / 60%);
+  line-height: 22px;
+  max-width: 550px;
+  width: 240px;
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+  margin: 10px auto;
+  background-color: $cta__colorLink;
+  color: $cta__color;
+  font-weight: 900;
+  display: inline-block;
+  text-align: center;
+  &:hover {
+    background: $cta__colorLink;
+    border: 2px dashed $cta__color;
+    color: $cta__color;
+  }
+}

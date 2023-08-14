@@ -3,8 +3,8 @@ import BlogPost from "../templates/blog-post";
 import { getPostBySlug, getAllPosts } from "../lib/api";
 import markdownToHtml from "../lib/markdownToHtml";
 
-const Post = post => {
-  return <BlogPost post={post} />;
+const Post = mdFile => {
+  return <BlogPost post={mdFile} />;
 };
 
 export default Post;
@@ -32,7 +32,10 @@ export const getStaticProps = async context => {
   if (!allPosts) {
     throw new Error("Não tem !allPosts!");
   }
-  const currentPostIndex = allPosts.findIndex(p => p?.slug === slug);
+  const currentAllPostIndex = allPosts.filter(
+    p => p?.frontmatter.layout === "post"
+  );
+  const currentPostIndex = currentAllPostIndex.findIndex(p => p?.slug === slug);
   const nextPost = allPosts[currentPostIndex - 1] ?? null;
   const prevPost = allPosts[currentPostIndex + 1] ?? null;
 
