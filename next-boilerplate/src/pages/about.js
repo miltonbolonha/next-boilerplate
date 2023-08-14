@@ -69,31 +69,6 @@ const AboutPage = () => (
           </p>
         </div>
       </Row>
-
-      <Row
-        opt={{
-          numColumns: 2,
-          isBoxed: true,
-          classes: "hero-txt contact-wrapper",
-        }}
-      >
-        <Image
-          src={"/brandimages/envelope-greeting.png"}
-          alt={"Maskot Contact"}
-          placeholder={"NONE"}
-          critical='true'
-          className={""}
-          width={300}
-          height={300}
-        />
-        <div id='contato' className='contact-info'>
-          <h2>Contato</h2>
-          <p>
-            Fale com a gente por meio do e-mail:{" "}
-            <strong>miltonbolonha@gmail.com</strong>
-          </p>
-        </div>
-      </Row>
     </div>
   </MainWrapperContainer>
 );
