@@ -18,19 +18,7 @@
       {
         "item": {
           "label": "Contato",
-          "to": "/contato"
-        }
-      },
-      {
-        "item": {
-          "icon": "bag"
-        }
-      },
-      {
-        "item": {
-          "search_widget": false,
-          "search_label": "Procure um curso",
-          "search_url_prefix": "/cursos?search="
+          "to": "/contact"
         }
       }
     ]
