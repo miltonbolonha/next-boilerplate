@@ -87,8 +87,9 @@
 }
 
 .toggle-dark-mode {
+  z-index: 99;
   position: absolute;
-  right: 20px;
+  right: 50px;
   top: 60px;
   transform: rotate(90deg);
   display: flex;
