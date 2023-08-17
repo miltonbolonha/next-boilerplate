@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import MainMenuList from "../components/MainMenuList";
 import OverlayBlock from "../components/OverlayBlock";
 
@@ -9,7 +9,6 @@ const MainMenuContainer = ({
   refState,
   handleRefState,
 }) => {
-  const [overlayVisibility, setOverlayVisibility] = useState(false);
   const isVisibleClass = !refState ? "visible" : "not-visible";
   const navClasses = isMobile
     ? "main-nav menu-state-" + isVisibleClass
