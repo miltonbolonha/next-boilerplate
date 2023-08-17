@@ -5,7 +5,7 @@
     "items": [
       {
         "item": {
-          "label": "Início",
+          "label": "Home",
           "to": "/"
         }
       },
