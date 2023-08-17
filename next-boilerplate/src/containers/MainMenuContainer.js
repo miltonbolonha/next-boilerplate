@@ -15,9 +15,6 @@ const MainMenuContainer = ({
     ? "main-nav menu-state-" + isVisibleClass
     : "main-nav main-header-" + isVisibleClass;
   const labelledby = isMobile ? "check-toggle-icon" : null;
-  function doThis() {
-    return setOverlayVisibility(!overlayVisibility);
-  }
   return (
     <>
       <div onClick={handleRefState}>
