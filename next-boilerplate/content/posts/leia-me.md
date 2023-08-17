@@ -1,3 +1,13 @@
+---
+layout: post
+title: Leia-Me
+date: 2023-08-16 00:00:04
+image: "homem-computador.jpg"
+description: "Algumas dicas."
+categories:
+  - programação
+---
+
 ## Selos de Qualidade:
 
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate) [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=bugs)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=miltonbolonha_next-boilerplate&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=miltonbolonha_next-boilerplate)
@@ -16,13 +26,15 @@ Este repositório serve como ponto de partida para nossas atividades pedagógica
 
 Segue a contagem de palavras e relação das principais tecnologias:
 
+```
 |                | **Linhas de códigos** | **Caracteres** | **Palavras** | **Páginas** |
-| -------------- | :-------------------: | :------------: | :----------: | :---------: |
-| **JavaScript** |         1513          |     46248      |     4635     |     10      |
-| **SCSS**       |         1987          |     39934      |     4598     |     10      |
+|----------------|:---------------------:|:--------------:|:------------:|:-----------:|
+| **JavaScript** |          1513         |      46248     |     4635     |      10     |
+| **SCSS**       |          1987         |      39934     |     4598     |      10     |
 | **MD**         |          154          |      9240      |     1405     |      3      |
-| **JSON**       |          85           |      2286      |     257      |     1/2     |
-| **TOTAL**      |         3739          |     97708      |    10895     |  13 e 1/2   |
+| **JSON**       |           85          |      2286      |      257     |     1/2     |
+|    **TOTAL**   |          3739         |      97708     |     10895    |   13 e 1/2  |
+```
 
 # Como Usar
 
