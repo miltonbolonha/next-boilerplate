@@ -1,6 +1,6 @@
 {
   "name": "next-boilerplate-workspace",
-  "version": "0.5.0",
+  "version": "0.5.10",
   "workspaces": [
     "next-boilerplate"
   ],
