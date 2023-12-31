@@ -29,6 +29,8 @@ yarn-error.log*
 
 # local env files
 .env*.local
+/next-boilerplate/.env*
+!/next-boilerplate/.env.local.example
 
 # vercel
 .vercel
@@ -36,3 +38,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+node_modules
+
+# github workspaces
+../../node_modules
+/next-boilerplate/node_modules
+../out
+/next-boilerplate/out
+../.next
+/next-boilerplate/.next
