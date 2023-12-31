@@ -7,12 +7,10 @@ import "../styles/styles.scss";
 
 import NextNProgress from "nextjs-progressbar";
 import { ThemeProvider } from "next-themes";
-import Layout from "../components/Layout";
 
 function App({ Component, pageProps }) {
   return (
     <ThemeProvider>
-      <Layout>
         <NextNProgress
           color='#F231A5'
           startPosition={0.3}
@@ -21,7 +19,6 @@ function App({ Component, pageProps }) {
           showSpinner={false}
         />
         <Component {...pageProps} />
-      </Layout>
     </ThemeProvider>
   );
 }
