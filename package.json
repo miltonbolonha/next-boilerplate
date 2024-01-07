@@ -25,7 +25,8 @@
     "build": "npm run build -w next-boilerplate",
     "serve": "npm run serve -w next-boilerplate",
     "clean": "npm run clean -w next-boilerplate",
-    "develop": "npm run dev --workspace=next-boilerplate"
+    "develop": "npm run dev --workspace=next-boilerplate",
+    "dev": "npm run dev --workspace=next-boilerplate"
   },
   "repository": {
     "type": "git",
