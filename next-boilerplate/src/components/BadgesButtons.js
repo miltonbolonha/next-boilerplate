@@ -42,7 +42,7 @@ const BadgesButtons = ({
         rel='noopener noreferrer'
         target={"_blank"}
         className={"desktop-only"}
-        onClick={e => handleQuestionBadgeClick(e)}
+        onFocus={e => handleQuestionBadgeClick(e)}
       >
         {opt.badgesQuestion}
       </div>
