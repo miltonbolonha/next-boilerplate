@@ -1,19 +1,20 @@
 /*
-Theme Name: Bolonha Conversas - Next Boilerplate
+Theme Name: Next Boilerplate
 Theme URI: https://miltonbolonha.com.br
-Design System: TE[i]As
 Description: Website feito em NextJS.
-Author: Milton Bolonha - Bolonha Conversas
+Author: Milton Bolonha
 Template: Next Boilerplate
-Version: 0.5.0
+Version: 0.6.0
 */
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 1.0 Basic global settings
-3.0 Modules
-4.0 Helpers & Fixes
+2.0 Pages
+3.0 Components
+4.0 Modules
+5.0 Helpers & Fixes
 --------------------------------------------------------------*/
 
 @import "global/vars";
@@ -33,27 +34,25 @@ Version: 0.5.0
 @import "pages/link-tree";
 
 /*--------------------------------------------------------------
-3.1 Components
+3.0 Components
 --------------------------------------------------------------*/
 
 @import "components/row";
 @import "components/buttons";
-@import "components/badges";
 @import "components/header";
 @import "components/footer";
 @import "components/main-wrapper";
 
 /*--------------------------------------------------------------
-3.1 Modules / Block Builder
+4.0 Modules
 --------------------------------------------------------------*/
 
-@import "modules/landings";
 @import "modules/menus";
 @import "modules/pages";
 @import "modules/single-post";
 
 /*--------------------------------------------------------------
-4.0 Helpers & Fixes
+5.0 Helpers & Fixes
 --------------------------------------------------------------*/
 
 @import "helpers/responsive";
