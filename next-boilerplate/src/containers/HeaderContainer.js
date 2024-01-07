@@ -28,7 +28,7 @@ const HeaderContainer = ({ mainMenu, opt }) => {
       <Image
         src={opt.isDarkLogo ? logoImage : logoLightImage}
         alt={"Bolonha Conversas"}
-        placeholder={"NONE"}
+       
         critical='true'
         className={"main-logo"}
         width={120}

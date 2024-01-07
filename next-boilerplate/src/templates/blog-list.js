@@ -18,7 +18,6 @@ const BlogList = ({ posts }) => {
     <>
       {current.map((post, i) => {
         const x = i + 1;
-        console.log("hello");
         return (
           <Post
             key={x}

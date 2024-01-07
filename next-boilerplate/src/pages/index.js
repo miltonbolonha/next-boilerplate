@@ -12,27 +12,27 @@ const Home = ({ posts }) => (
     <SeoContainer
       killSeo={false}
       data={{
-        slug: mainConfigs.pages.index.slug,
-        title: `${mainConfigs.pages.index.title} - ${mainConfigs.business.brandName}`,
-        description: mainConfigs.pages.index.description,
-        author: mainConfigs.website.author,
-        siteUrl: mainConfigs.website.siteUrl,
-        brandName: mainConfigs.business.brandName,
-        brandEmail: mainConfigs.business.brandEmail,
-        brandLogo: mainConfigs.business.brandLogo,
-        brandPhone: mainConfigs.business.brandPhone,
-        brandDescription: mainConfigs.business.brandDescription,
-        brandCardImage: mainConfigs.business.brandCardImage,
-        featuredImage: `${mainConfigs.website.siteUrl}${slugPrefix}/favicon-32x32.png`,
-        datePublished: mainConfigs.website.datePublished,
-        i18n: mainConfigs.website.i18n,
-        keywords: mainConfigs.website.keywords,
-        questions: mainConfigs.website.questions,
+        slug: mainConfigs?.pages?.index.slug,
+        title: `${mainConfigs?.pages?.index.title} - ${mainConfigs?.business?.brandName}`,
+        description: mainConfigs?.pages?.index.description,
+        author: mainConfigs?.website?.author,
+        siteUrl: mainConfigs?.website?.siteUrl,
+        brandName: mainConfigs?.business?.brandName,
+        brandEmail: mainConfigs?.business?.brandEmail,
+        brandLogo: mainConfigs?.business?.brandLogo,
+        brandPhone: mainConfigs?.business?.brandPhone,
+        brandDescription: mainConfigs?.business?.brandDescription,
+        brandCardImage: mainConfigs?.business?.brandCardImage,
+        featuredImage: `${mainConfigs?.website?.siteUrl}${slugPrefix}/favicon-32x32.png`,
+        datePublished: mainConfigs?.website?.datePublished,
+        i18n: mainConfigs?.website?.i18n,
+        keywords: mainConfigs?.website?.keywords,
+        questions: mainConfigs?.website?.questions,
         topology: "pages",
-        articleUrl: `${mainConfigs.website.siteUrl}/${mainConfigs.pages.index.slug}`,
+        articleUrl: `${mainConfigs?.website?.siteUrl}/${mainConfigs?.pages?.index.slug}`,
         themeColor: "#d3d3d3",
-        sameAs: mainConfigs.business.sameAs,
-        twitter: mainConfigs.business.twitterCard,
+        sameAs: mainConfigs?.business?.sameAs,
+        twitter: mainConfigs?.business?.twitterCard,
       }}
     />
     <h2>Início: Sumário</h2>
@@ -40,17 +40,15 @@ const Home = ({ posts }) => (
       <Row opt={{ isBoxed: true }}>
         <div className='hero-txt'>
           <ul>
-            <li>Ação de Posicionamento de Marketing </li>
-            <li>Organização de Dados Estruturados</li>
-            <li>Gerenciamento de Comunidades</li>
-            <li>Aquisição de Tecnologia de Ponta</li>
-            <li>Modelagem de Inteligência Artificial</li>
-            <li>Obtenção de Resultados</li>
+            {mainConfigs?.website.keywords.map((k,c)=>{
+              const x = c + 1; // lint hack, sorry
+              return <li key={x}>{k}</li>
+            })}
           </ul>
         </div>
       </Row>
     </div>
-    <h2>Lista: DEVaneios</h2>
+    <h2>Lista: {mainConfigs?.pages?.index.title}</h2>
     <div className='wrapper-box'>
       <div className='post'>
         <BlogList posts={posts} />

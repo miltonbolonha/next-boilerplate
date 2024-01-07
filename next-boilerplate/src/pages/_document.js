@@ -1,6 +1,5 @@
 import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import { Analytics } from "@vercel/analytics/react";
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -28,7 +27,6 @@ export default class MyDocument extends Document {
         <body className="theme-one">
           <Main />
           <NextScript />
-          <Analytics />
         </body>
       </Html>
     );

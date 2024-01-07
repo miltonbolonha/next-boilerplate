@@ -43,7 +43,7 @@ const SinglePostBlock = ({
                   <Image
                     src={"/brandimages/profile-image.png"}
                     alt={"Profile Image"}
-                    placeholder={"NONE"}
+                   
                     critical='true'
                     width={50}
                     height={50}
@@ -69,7 +69,7 @@ const SinglePostBlock = ({
             <Image
               src={`/postsimages/${highlightImage}`}
               alt={"Maskot Reading"}
-              placeholder={"NONE"}
+             
               critical='true'
               className={""}
               width={824}

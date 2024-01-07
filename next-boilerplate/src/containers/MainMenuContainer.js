@@ -16,7 +16,7 @@ const MainMenuContainer = ({
   const labelledby = isMobile ? "check-toggle-icon" : null;
   return (
     <>
-      <div onClick={handleRefState}>
+      <div onFocus={handleRefState}>
         <OverlayBlock hide={refState} />
       </div>
       <nav

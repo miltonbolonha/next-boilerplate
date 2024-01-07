@@ -49,7 +49,7 @@ const AboutPage = () => (
             <Image
               src={"/brandimages/laptop-reading.png"}
               alt={"Maskot Reading"}
-              placeholder={"NONE"}
+             
               critical='true'
               className={""}
               width={300}

@@ -1,44 +1,32 @@
 {
   "folders": [
     {
-      "name": "Conteúdo",
-      "path": "./next-boilerplate/content"
-    },
-    {
       "name": "Arquivos",
       "path": "./next-boilerplate/public"
     },
     {
-      "name": "Páginas - Conteúdo",
-      "path": "./next-boilerplate/content/pages"
+      "name": " Conteúdo",
+      "path": "./next-boilerplate/content"
     },
     {
-      "name": "Postagens - Conteúdo",
-      "path": "./next-boilerplate/content/posts"
-    },
-    {
-      "name": "Source",
-      "path": "./next-boilerplate/src"
-    },
-    {
-      "name": "Raiz",
-      "path": "./"
-    },
-    {
-      "name": "Componentes",
-      "path": "./next-boilerplate/src/components"
-    },
-    {
-      "name": "Estilos",
-      "path": "./next-boilerplate/src/styles"
+      "name": "Next Boilerplate",
+      "path": "./next-boilerplate/"
     },
     {
       "name": "Páginas",
       "path": "./next-boilerplate/src/pages"
     },
     {
+      "name": "Estilos",
+      "path": "./next-boilerplate/src/styles"
+    },
+    {
       "name": "Configs",
       "path": "./next-boilerplate/src/configs"
+    },
+    {
+      "name": "Raiz",
+      "path": "./"
     }
   ],
   "settings": {
@@ -46,9 +34,15 @@
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
     "workbench.iconTheme": "material-icon-theme",
-    "editor.rulers": [80, 120],
+    "editor.rulers": [
+      80,
+      120
+    ],
     "editor.formatOnSave": true,
-    "eslint.validate": ["javascript", "javascriptreact"],
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact"
+    ],
     "editor.renderLineHighlight": "gutter",
     "editor.tabSize": 2,
     "terminal.integrated.fontSize": 14,

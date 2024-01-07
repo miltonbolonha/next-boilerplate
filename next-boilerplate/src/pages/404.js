@@ -57,7 +57,6 @@ const NotFoundPage = () => (
         <Image
           src={"/brandimages/envelope-greeting.png"}
           alt={"Maskot Contact"}
-          placeholder={"NONE"}
           critical='true'
           className={""}
           width={300}

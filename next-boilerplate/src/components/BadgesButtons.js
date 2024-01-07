@@ -23,7 +23,7 @@ const BadgesButtons = ({
               className='chat-question'
               key={x}
               id={indx}
-              onClick={event => handleQuestionLinkClick(event)}
+              onFocus={event => handleQuestionLinkClick(event)}
             >
               {question[0]}
             </button>
@@ -51,7 +51,7 @@ const BadgesButtons = ({
         rel='noopener noreferrer'
         target={"_blank"}
         className={"mobile-only"}
-        onClick={e => handleQuestionBadgeClick(e)}
+        onFocus={e => handleQuestionBadgeClick(e)}
       >
         {opt.badgesQuestion}
       </div>
