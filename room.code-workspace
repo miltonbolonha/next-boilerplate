@@ -75,5 +75,10 @@
     "window.zoomLevel": 2,
     "workbench.colorTheme": "Edu4Dev Dark",
     "workbench.activityBar.location": "hidden"
+  },
+  "extensions": {
+    "recommendations": [
+      "edu4dev.vscode-edu4dev-color-theme"
+    ]
   }
 }

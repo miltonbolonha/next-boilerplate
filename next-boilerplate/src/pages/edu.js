@@ -6,7 +6,7 @@ import SeoContainer from "../containers/SeoContainer";
 import { slugPrefix } from "../lib/utils";
 import mainConfigs from "../configs/main-infos.json";
 
-const Contato = () => (
+const Edu = () => (
   <MainWrapperContainer rowWidth={960}>
     <SeoContainer
       killSeo={false}
@@ -34,33 +34,32 @@ const Contato = () => (
         twitter: mainConfigs.business.twitterCard,
       }}
     />
-    <h2>Página: Contato</h2>
+    <h2>Página: Edu</h2>
     <div className='wrapper-box'>
       <Row opt={{ isBoxed: true }}>
         <div className='hero-txt'>
-          <h1>Fale direto com o Milton</h1>
-          <h2>(12) 98106-2959</h2>
+          <h1>Matrial Didático</h1>
         </div>
         <ul className='contact-link-tree-wrapper'>
           <li>Carta de boas-vindas</li>
           <li>
             Imagens para perfil, cover, stories, papel de parede para desktop e
-            mobile
+            mobile;
           </li>
-          <li>02 videoaulas</li>
-          <li>04 e-books</li>
+          <li>02 videoaulas;</li>
+          <li>04 e-books;</li>
           <li>01 hacker-book</li>
-          <li>01 livro oficial do curso (pdf)</li>
-          <li>01 Modelo GitHub de website em Next.js</li>
-          <li>01 livro da aventura: Eugenia 3.0: As Crianças CTO’s (pdf)</li>
+          <li>01 livro oficial do curso (pdf);</li>
+          <li>01 Modelo GitHub de website em Next.js;</li>
+          <li>01 livro da aventura: Eugenia 3.0: As Crianças CTO’s (pdf);</li>
           <li>
             01 álbum de músicas instrumentais para estudo: As Crianças CTO’s
-            (disponível nas plataformas de streaming)
+            (disponível nas plataformas de streaming);
           </li>
-          <li>WhatsApp Stickers</li>
+          <li>WhatsApp Stickers.</li>
         </ul>
       </Row>
     </div>
   </MainWrapperContainer>
 );
-export default Contato;
+export default Edu;

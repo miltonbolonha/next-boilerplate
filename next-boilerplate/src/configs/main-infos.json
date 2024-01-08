@@ -51,7 +51,12 @@
     },
     "contact": {
       "title": "Contato",
-      "slug": "contato",
+      "slug": "contact",
+      "description": "Fale com Milton por meio do what's (12) 98106-2959, ou e-mail: miltonbolonha@gmail.com."
+    },
+    "edu": {
+      "title": "Material Didático",
+      "slug": "edu",
       "description": "Fale com Milton por meio do what's (12) 98106-2959, ou e-mail: miltonbolonha@gmail.com."
     }
   }
