@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
+import SeoContainer from "./SeoContainer";
 import MainWrapper from "../components/MainWrapper";
 import mainConfigs from "../configs/main-infos.json";
 import { useTheme } from "next-themes";
 
-const MainWrapperContainer = ({ children, rowWidth }) => {
+const MainWrapperContainer = ({ children, rowWidth, data, killSEO }) => {
   const [mounted, setMounted] = useState(false);
   const { theme } = useTheme();
   const isGithubPages = process.env.IS_GITHUB_PAGE || false;
@@ -33,6 +34,10 @@ const MainWrapperContainer = ({ children, rowWidth }) => {
       rowWidth={rowWidth}
       killSeo={true}
     >
+      <SeoContainer
+      killSeo={data && killSEO || false}
+      data={data}
+    />
       {children}
     </MainWrapper>
   );
