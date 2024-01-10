@@ -35,6 +35,7 @@ const Edu = () => (
       <Row opt={{ isBoxed: true }}>
         <div className='hero-txt'>
           <h1>Matrial Didático</h1>
+          <h2>Página em Construção, entre em contato direto com o autor: 16 991997935</h2>
         </div>
         <ul className='contact-link-tree-wrapper'>
           <li>Carta de boas-vindas</li>
