@@ -1,6 +1,5 @@
 import React from "react";
 import MainMenuList from "../components/MainMenuList";
-import OverlayBlock from "../components/OverlayBlock";
 
 const MainMenuContainer = ({
   isMobile,
@@ -17,7 +16,6 @@ const MainMenuContainer = ({
   return (
     <>
       <div onFocus={handleRefState}>
-        <OverlayBlock hide={refState} />
       </div>
       <nav
         className={navClasses}
