@@ -14,27 +14,28 @@ const SeoContainer = ({ data, killSeo = true }) => {
       </SEO>
     );
   }
-  const authorType = data.author === data.brandName ? "Organization" : "Person";
+  const authorType =
+    data?.author === data?.brandName ? "Organization" : "Person";
   let socialValues = [];
-  for (const key in data.sameAs) {
-    if (Object.hasOwn(data.sameAs, key)) {
-      socialValues.push(data.sameAs[key]);
+  for (const key in data?.sameAs) {
+    if (Object.hasOwn(data?.sameAs, key)) {
+      socialValues.push(data?.sameAs[key]);
     }
   }
   const orgSchema = [
     {
       "@type": ["Organization"],
       "@context": "https://schema.org",
-      name: data.brandName,
-      url: data.siteUrl,
-      email: data.brandEmail,
-      description: data.brandDescription,
+      name: data?.brandName,
+      url: data?.siteUrl,
+      email: data?.brandEmail,
+      description: data?.brandDescription,
       sameAs: socialValues,
-      logo: data.brandLogo,
+      logo: data?.brandLogo,
       contactPoint: [
         {
           "@type": "ContactPoint",
-          telephone: data.brandPhone,
+          telephone: data?.brandPhone,
           contactType: "Serviço Ao Cliente",
         },
       ],
@@ -45,15 +46,15 @@ const SeoContainer = ({ data, killSeo = true }) => {
     {
       "@type": "WebSite",
       "@context": "https://schema.org",
-      name: data.title,
-      description: data.brandDescription,
-      url: data.siteUrl,
-      keywords: [data.keywords.map(e => e)],
-      inLanguage: data.i18n,
+      name: data?.title,
+      description: data?.brandDescription,
+      url: data?.siteUrl,
+      keywords: [data?.keywords.map(e => e)],
+      inLanguage: data?.i18n,
       copyrightYear: new Date().getFullYear(),
-      datePublished: data.dateCreated,
-      dateModified: data.dateNow,
-      image: data.brandCardImage || data.featuredImage,
+      datePublished: data?.dateCreated,
+      dateModified: data?.dateNow,
+      image: data?.brandCardImage || data?.featuredImage,
       sameAs: socialValues,
     },
   ];
@@ -62,33 +63,33 @@ const SeoContainer = ({ data, killSeo = true }) => {
     {
       "@context": "https://schema.org",
       "@type": "NewsArticle",
-      name: data.title,
-      headline: data.description,
-      description: data.description,
+      name: data?.title,
+      headline: data?.description,
+      description: data?.description,
       author: {
         "@type": authorType,
-        name: data.author,
-        url: data.siteUrl,
+        name: data?.author,
+        url: data?.siteUrl,
       },
       image: {
         "@type": "ImageObject",
-        url: data.brandCardImage || data.featuredImage,
+        url: data?.brandCardImage || data?.featuredImage,
         height: 156,
         width: 60,
       },
-      articleBody: data.articleBody,
+      articleBody: data?.articleBody,
       publisher: {
         "@type": "Organization",
-        name: data.brandName,
-        url: data.siteUrl,
+        name: data?.brandName,
+        url: data?.siteUrl,
         logo: {
           "@type": "ImageObject",
-          url: data.brandLogo,
+          url: data?.brandLogo,
           width: 156,
           height: 60,
         },
       },
-      datePublished: data.datePublished,
+      datePublished: data?.datePublished,
     },
   ];
   let arrayQuestions = [];
@@ -113,31 +114,31 @@ const SeoContainer = ({ data, killSeo = true }) => {
   return (
     <SEO
       data={{
-        author: data.author,
-        siteUrl: data.siteUrl,
-        brandName: data.brandName,
-        brandEmail: data.brandEmail,
-        brandLogo: data.brandLogo,
-        brandPhone: data.brandPhone,
-        title: data.title,
-        brandDescription: data.brandDescription,
-        dateCreated: data.dateCreated,
-        dateNow: data.dateNow,
-        articleBody: data.articleBody,
-        datePublished: data.datePublished,
-        album: data.album,
-        track: data.track,
-        i18n: data.i18n,
-        keywords: data.keywords,
-        topology: data.topology,
-        articleUrl: data.articleUrl,
-        description: data.description,
-        brandCardImage: data.brandCardImage,
-        featuredImage: data.featuredImage,
-        themeColor: data.themeColor,
-        slug: data.slug,
-        fbAppID: data.fbAppID,
-        twitter: data.twitter,
+        author: data?.author,
+        siteUrl: data?.siteUrl,
+        brandName: data?.brandName,
+        brandEmail: data?.brandEmail,
+        brandLogo: data?.brandLogo,
+        brandPhone: data?.brandPhone,
+        title: data?.title,
+        brandDescription: data?.brandDescription,
+        dateCreated: data?.dateCreated,
+        dateNow: data?.dateNow,
+        articleBody: data?.articleBody,
+        datePublished: data?.datePublished,
+        album: data?.album,
+        track: data?.track,
+        i18n: data?.i18n,
+        keywords: data?.keywords,
+        topology: data?.topology,
+        articleUrl: data?.articleUrl,
+        description: data?.description,
+        brandCardImage: data?.brandCardImage,
+        featuredImage: data?.featuredImage,
+        themeColor: data?.themeColor,
+        slug: data?.slug,
+        fbAppID: data?.fbAppID,
+        twitter: data?.twitter,
         articleSchema: articleSchema,
         webSiteSchema: webSiteSchema,
         orgSchema: orgSchema,
