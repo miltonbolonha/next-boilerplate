@@ -1,0 +1,217 @@
+repo_name: miltonbolonha/next-boilerplate
+report_id: b9f6a0db2445207c493935d71204883a
+version: 0.1
+repo_type: Public
+timestamp: '2024-08-04T11:09:19+00:00'
+requested_by: miltonbolonha
+provider: github
+branch: master
+detected_tools_count: 16
+tools:
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/miltonbolonha/next-boilerplate
+  detection_source: Repo Metadata
+- name: Next.js
+  description: A small framework for server-rendered universal JavaScript apps
+  website_url: https://nextjs.org/
+  version: 14.0.4
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/5936/nextjs.png
+  detection_source_url: https://github.com/miltonbolonha/next-boilerplate/blob/master/package-lock.json
+  detection_source: next-boilerplate/package.json
+  last_updated_by: miltonbolonha
+  last_updated_on: 2023-07-07 18:39:41.000000000 Z
+- name: React
+  description: A JavaScript library for building user interfaces
+  website_url: https://reactjs.org/
+  version: 18.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/1020/OYIaJ1KK.png
+  detection_source_url: https://github.com/miltonbolonha/next-boilerplate/blob/master/package-lock.json
+  detection_source: next-boilerplate/package.json
+  last_updated_by: miltonbolonha
+  last_updated_on: 2023-07-07 18:39:41.000000000 Z
+- name: Sass
+  description: Syntactically Awesome Style Sheets
+  website_url: http://sass-lang.com/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/1171/jCR2zNJV.png
+  detection_source_url: https://github.com/miltonbolonha/next-boilerplate/blob/master/next-boilerplate/package.json
+  detection_source: next-boilerplate/package.json
+  last_updated_by: miltonbolonha
+  last_updated_on: 2023-07-07 18:39:41.000000000 Z
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/miltonbolonha/next-boilerplate/blob/master/next-boilerplate/package.json
+  detection_source: next-boilerplate/package.json
+  last_updated_by: miltonbolonha
+  last_updated_on: 2023-07-07 18:39:41.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/miltonbolonha/next-boilerplate
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/miltonbolonha/next-boilerplate/blob/master/.github/workflows/nextjs-github-pages.yml
+  detection_source: ".github/workflows/nextjs-github-pages.yml"
+  last_updated_by: miltonbolonha
+  last_updated_on: 2023-07-30 20:49:02.000000000 Z
+- name: Prettier
+  description: Prettier is an opinionated code formatter.
+  website_url: https://prettier.io/
+  version: 3.1.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg
+  detection_source_url: https://github.com/miltonbolonha/next-boilerplate/blob/master/package-lock.json
+  detection_source: next-boilerplate/package.json
+  last_updated_by: Milton Bolonha
+  last_updated_on: 2024-01-07 03:21:32.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/miltonbolonha/next-boilerplate/blob/master/next-boilerplate/package.json
+  detection_source: next-boilerplate/package.json
+  last_updated_by: miltonbolonha
+  last_updated_on: 2023-07-07 18:39:41.000000000 Z
+- name: Lodash
+  description: A JavaScript utility library
+  website_url: https://lodash.com
+  version: 4.17.21
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/2438/lodash.png
+  detection_source_url: https://github.com/miltonbolonha/next-boilerplate/blob/master/package-lock.json
+  detection_source: next-boilerplate/package.json
+  last_updated_by: miltonbolonha
+  last_updated_on: 2023-07-07 18:39:41.000000000 Z
+- name: date-fns
+  description: Modern JavaScript date utility library
+  website_url: https://date-fns.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/10865/default_5551fb8853689f607a2bc0d5a09355d5a3d52bf0.png
+  detection_source_url: https://github.com/miltonbolonha/next-boilerplate/blob/master/next-boilerplate/package.json
+  detection_source: next-boilerplate/package.json
+  last_updated_by: Milton Bolonha
+  last_updated_on: 2024-01-07 03:21:32.000000000 Z
+- name: eslint-config-next
+  description: ESLint configuration used by Next.js
+  package_url: https://www.npmjs.com/eslint-config-next
+  version: 14.0.4
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/npm/image.png
+  detection_source_url: https://github.com/miltonbolonha/next-boilerplate/blob/master/package-lock.json
+  detection_source: next-boilerplate/package.json
+  last_updated_by: Milton Bolonha
+  last_updated_on: 2024-01-07 03:21:32.000000000 Z
+- name: gray-matter
+  description: Parse front-matter from a string or file
+  package_url: https://www.npmjs.com/gray-matter
+  version: 4.0.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17773/default_2f87d5add351cc79d3471e48bc0dd6f92c1288ad.png
+  detection_source_url: https://github.com/miltonbolonha/next-boilerplate/blob/master/package-lock.json
+  detection_source: next-boilerplate/package.json
+  last_updated_by: miltonbolonha
+  last_updated_on: 2023-07-07 18:39:41.000000000 Z
+- name: react-dom
+  description: React package for working with the DOM
+  package_url: https://www.npmjs.com/react-dom
+  version: 18.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15808/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/miltonbolonha/next-boilerplate/blob/master/package-lock.json
+  detection_source: next-boilerplate/package.json
+  last_updated_by: miltonbolonha
+  last_updated_on: 2023-07-07 18:39:41.000000000 Z
+- name: remark
+  description: Markdown processor powered by plugins
+  package_url: https://www.npmjs.com/remark
+  version: 14.0.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16952/default_caea01ce44a5fd1bb200d8fc0f8f2a1695b4e569.png
+  detection_source_url: https://github.com/miltonbolonha/next-boilerplate/blob/master/package-lock.json
+  detection_source: next-boilerplate/package.json
+  last_updated_by: miltonbolonha
+  last_updated_on: 2023-07-07 18:39:41.000000000 Z
+- name: slugify
+  description: Slugifies a String
+  package_url: https://www.npmjs.com/slugify
+  version: 1.6.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17389/default_33c3173e7d0e91f7cea0eab9883ca83b157bd4a5.png
+  detection_source_url: https://github.com/miltonbolonha/next-boilerplate/blob/master/package-lock.json
+  detection_source: next-boilerplate/package.json
+  last_updated_by: Milton Bolonha
+  last_updated_on: 2023-12-31 14:43:16.000000000 Z
